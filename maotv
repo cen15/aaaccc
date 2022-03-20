@@ -1,31 +1,18 @@
-大地资源,https://dadiapi.com/api.php
-老鸭资源,http://xujia2018.com//api.php/provide/vod/at/xml/
-老鸭资源(备用),http://laoyazy.vip/api.php/provide/vod/at/xml/
-浪潮资源,http://aomen23.com/api.php/provide/vod/at/xml/
-花椒资源,https://apihjzy.com/api.php/provide/vod/at/xml/ 
-辣椒资源,http://api.11bat.com/mac10.php 
-乐播资源,https://lbapi9.com/api.php/provide/vod/at/xml/ 
-博天堂,http://bttcj.com/inc/sapi.php 
-IXX资源,http://api.iixxzyapi.com/inc/api.php
-​环亚资源,http://wmcj8.com/inc/sapi.php
-JAV名优,http://mygzycj.com/api.php
-av888资源,http://m.7777688.com/inc/api.php
-​玖玖资源,http://99zywcj.com/inc/ck.php
-撸死你资源,http://lsnzxcj.com/inc/sapi.php
-​富二代资源,http://f2dcj6.com/api
-字幕网,http://zmcj88.com/api
-久草资源,http://jcspcj8.com/api
-利来资源,http://llzxcj.com/inc/ck.php
-​佳丽资源,http://jialixx.com/api.php/provide/vod/at/xml/
-云霸资源,http://cj.1234567bt.com/api.php/provide/vod/at/xml/ 
-快活资源,https://www.khzyapi.com/api.php/provide/vod/at/xml/
-​炮台资源,http://ptcj.ptzycj.com/api.php/hyang/vod/at/xml/ 
-番号资源,http://fhapi9.com/api.php/provide/vod/at/xml/ 
-苍天资源,http://cj.cangtiancj.com/api.php/provide/vod/at/xml/ 
-鲨鱼资源,https://shayuapi.com/api.php/provide/vod/at/xml/ 
-狼少年,http://cjmygzy.com/inc/api.php 
-77资源,https://www.77zyw.live/inc/api.php
-​速度资源,http://www.ggmmzy.com:9999/inc/xml 
-优果资源,https://www.ugvapi.com/inc/zyapimac.php 
-茄子资源,https://ssl.qieziapi.xyz/inc/api.php 
-92爱资源,http://www.92aizy.com/api/macs.php
+ 
+ ​{ 
+ ​  ​"sites"​: [ 
+ ​    { 
+ ​      ​"key"​: ​"​速度资源"​, 
+ ​      ​"name"​: ​"​速度资源"​, 
+ ​      ​"type"​: ​0​, 
+ ​      ​"api"​: ​"​http://www.ggmmzy.com:9999/inc/xml"​, 
+ ​      ​"playUrl"​: ​"​"​, 
+ ​      ​"categories"​: [ 
+ ​        ​"​1"​, 
+ ​        ​"​2"​, 
+ ​        ​"​3"​, 
+ ​        ​"​4"​, 
+ ​        ​"​5"​, 
+ ​        ​"​6"​,
+ ​      ] 
+ ​    },
