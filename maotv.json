@@ -1,5 +1,6 @@
 {
-  "spider": [
+  "sites": [ 
+  
   {"key":"csp_appys_xiaogui_爱尚影视", "name":"电视多：710110741", "type":3, "api":"csp_AppYs","searchable":1,"quickSearch":0,"filterable":1,"ext":"xiaogui_爱尚影视"},
   {
 
