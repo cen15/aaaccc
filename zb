@@ -120,7 +120,7 @@ https://iplive-try.wasu.tv/11125.m3u8?group=600112&servicetype=0&livemode=1&serv
 #EXTINF:-1,tvg-id="海南卫视" tvg-name="海南卫视" tvg-logo="https://epg.112114.xyz/logo/海南卫视.png" group-title="卫视",海南卫视
 http://39.136.48.58:8089/PLTV/88888888/224/3221226325/index.m3u8
 #EXTINF:-1,tvg-id="云南卫视" tvg-name="云南卫视" tvg-logo="https://epg.112114.xyz/logo/云南卫视.png" group-title="卫视",云南卫视
-http://39.130.204.134:6610/gitv_live/G_YUNNAN-HD/G_YUNNAN-HD.m3u8?
+http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221227181/index.m3u8?
 #EXTM3U
 #EXTINF:-1,tvg-id="山西卫视" tvg-name="山西卫视" tvg-logo="https://epg.112114.xyz/logo/山西卫视.png" group-title="卫视",山西卫视
 http://liveflash.sxrtv.com/live/sxwshd.flv
@@ -378,7 +378,7 @@ http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000006000020630/index.m3u8?chann
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/IHOT爱浪漫.png" group-title="IHOT",iHOT爱浪漫
 
 http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000006000040630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000040630&livemode=1&stbId=no
-#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/IHOT爱喜剧.png" group-title="IHOT",iHOT��喜剧
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/IHOT爱喜剧.png" group-title="IHOT",iHOT爱喜剧
 http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000006000010630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000010630&livemode=1&stbId=no
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/IHOT爱悬疑.png" group-title="IHOT",iHOT爱悬疑
 http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000006000050630/index.m3u8?channel-id=wasusyt&Contentid=6000000006000050630&livemode=1&stbId=no
