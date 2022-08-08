@@ -559,7 +559,7 @@ http://txtest-xp2p.p2p.huya.com/src/1423787865-1423787865-6115122316616663040-28
 http://txtest-xp2p.p2p.huya.com/src/1449698962-1449698962-6226409630835146752-2789274564-10057-A-0-1.xs
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/热播大片.png" group-title="虎牙",虎牙热播大片
 http://txtest-xp2p.p2p.huya.com/src/1423782052-1423782052-6115097349971771392-2847687560-10057-A-0-1.xs  
-#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/动作灾难.png" group-title="虎牙",虎牙动作灾难
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/动作灾难.png" group-title="虎牙",虎牙韩国电影
 http://txtest-xp2p.p2p.huya.com/src/1448738217-1448738217-6222283262480351232-2847699222-10057-A-0-1.xs
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/古装偶像剧.png" group-title="虎牙",虎牙古装偶像剧
 http://txtest-xp2p.p2p.huya.com/src/1423787860-1423787860-6115122295141826560-2847699176-10057-A-0-1.xs
@@ -587,7 +587,7 @@ http://data.3g.yy.com/live/hls/28205255/28205255
 http://data.3g.yy.com/live/hls/29460894/29460894
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/YY顶级欧美电影.png" group-title="YY",YY顶级欧美电影
 http://data.3g.yy.com/live/hls/24923327/24923327
-#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/YY碟中谍系列.png" group-title="YY",YY碟中谍系列
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/YY碟中谍系列.png" group-title="YY",YY动作大片
 http://data.3g.yy.com/live/hls/29170933/29170933
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/YY斗罗斗破动漫.png" group-title="YY",YY斗罗斗破动漫
 http://data.3g.yy.com/live/hls/28796627/28796627
