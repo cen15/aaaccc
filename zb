@@ -192,7 +192,7 @@ http://58.58.111.222:808/hls/77/index.m3u8
 http://120.221.40.68:6410/shandong_cabletv.live.zte.com////CHANNEL00000407/index.m3u8
 #EXTM3U
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/峨眉电影.png" group-title="数字",峨眉电影
-http://[2409:8c02:21c:60::2b]/live.rxip.sc96655.com/live/emdygqH265_4000.m3u8
+http://112.19.214.90:8883/tsfile/live/1004_1.m3u8
 #EXTM3U
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/4K电影.png" group-title="数字",4K超高清电影
 http://[2409:8c02:21c:60::2b]/live.rxip.sc96655.com/live/emdy4k_8000.m3u8
