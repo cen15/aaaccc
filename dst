@@ -20,17 +20,12 @@ CCTV15,http://39.135.41.245/cdnrrs.gx.chinamobile.com/PLTV/88888888/224/32212256
 CCTV15,http://59.49.41.44/live.aishang.ctlcdn.com/00000110240329_1/playlist.m3u8?CONTENTID=00000110240329_1$爱尚电信
 CCTV16,http://111.13.42.238/PLTV/88888888/224/3221226887/1.m3u8$北京移动
 CCTV17,http://111.13.42.238/PLTV/88888888/224/3221226459/1.m3u8?icpid=88888888&from=1&hms_devid=461$北京移动
-CCTV4美洲,http://120.221.40.68:6410/shandong_cabletv.live.zte.com////CHANNEL00000351/index.m3u8$青岛移动
-CCTV4欧洲,http://120.221.40.68:6410/shandong_cabletv.live.zte.com////CHANNEL00000350/index.m3u8$青岛移动
 CCTV4美洲,http://39.136.48.20:8089/TVOD/88888888/224/3221226395/index.m3u8$东营移动
 CCTV4欧洲,http://39.136.48.20:8089/TVOD/88888888/224/3221226318/index.m3u8$东营移动
 CCTV4欧洲,rtsp://221.203.83.34:554/PLTV/88888888/224/3221226741/10000100000000060000000006582740_0.smil$辽宁联通
 CCTV4美洲,rtsp://221.203.83.34:554/PLTV/88888888/224/3221226762/10000100000000060000000006582745_0.smil$辽宁联通
 CCTV4欧洲,http://cdnrrs.gz.chinamobile.com/PLTV/88888888/224/3221226268/1/index.m3u8?fmt=ts2hls$贵州移动v6
 CCTV4美洲,http://[2409:8087:6a01:1020::11]/cdnrrs.gz.chinamobile.com/PLTV/88888888/224/3221226300/1/index.m3u8?fmt=ts2hls$贵州移动v6
-CCTV4美洲,http://live.aikan.miguvideo.com/PLTV/88888888/224/3221231654/index.m3u8$咪咕爱看
-CCTV4K,http://hms444nc1972679600.live.aikan.miguvideo.com/wh7f454c46tw448217849_-471294483/PLTV/88888888/224/3221233400/index.m3u8?icpid=88888888&RTS=1655980923&from=8&hms_devid=444&prioritypopid=8&online=1655980923$咪咕爱看
-CCTV4K,http://migu.jilu8.cn/3221233400/index.m3u8$咪咕
 CCTV4K,https://p.ggiptv.com/v/4k.m3u8$蓝光4K
 CCTV4K,http://open.live-web.timetv.cn/live03/cctv4k.m3u8$蓝光4K
 CCTV4K,https://v.bjiptv.eu.org/4.php$蓝光4K
@@ -186,10 +181,8 @@ CCTV高尔夫网球,http://cdnrrs.gz.chinamobile.com/PLTV/88888888/224/322122611
 黑龙江卫视,http://111.13.42.242/PLTV/88888888/224/3221226498/1.m3u8?icpid=88888888&from=1&hms_devid=462$北京移动
 甘肃卫视,http://39.134.32.102:6610/270000001111/1110000322/index.m3u8?IASHttpSessionId=OTT$兰州移动
 甘肃卫视,http://39.134.35.199/PLTV/88888888/224/3221226240/index.m3u8$金昌移动
-青海卫视,http://120.221.40.68:6410/shandong_cabletv.live.zte.com////CHANNEL00000366/index.m3u8$青海移动
-云南卫视,http://120.221.40.68:6410/shandong_cabletv.live.zte.com////CHANNEL00000367/index.m3u8$青海移动
-广西卫视,http://120.221.40.68:6410/shandong_cabletv.live.zte.com////CHANNEL00000368/index.m3u8$青海移动
 海南卫视,http://39.136.48.58:8089/PLTV/88888888/224/3221226325/index.m3u8$东营移动
+青海卫视,http://39.136.48.51:8089/PLTV/88888888/224/3221226400/index.m3u8
 
 东南卫视,http://59.49.41.44/live.aishang.ctlcdn.com/00000110240588_1/playlist.m3u8?CONTENTID=00000110240588_1$爱尚电信
 东方卫视,http://59.49.41.44/live.aishang.ctlcdn.com/00000110240242_1/playlist.m3u8?CONTENTID=00000110240242_1$爱尚电信
@@ -284,7 +277,6 @@ CCTV高尔夫网球,http://cdnrrs.gz.chinamobile.com/PLTV/88888888/224/322122611
 北京卫视,http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221225937/index.m3u8?servicetype=1&IASHttpSessionId=OTT$福建移动v6
 东方卫视,http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221226560/index.m3u8?servicetype=1&IASHttpSessionId=OTT$福建移动v6
 天津卫视,http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221225941/index.m3u8?servicetype=1&IASHttpSessionId=OTT$福建移动v6
-浙江卫视,http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221225870/index.m3u8?servicetype=1&IASHttpSessionId=OTT$福建移动v6
 广东卫视,http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221227164/index.m3u8?servicetype=1&IASHttpSessionId=OTT$福建移动v6
 深圳卫视,http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221225938/index.m3u8?servicetype=1&IASHttpSessionId=OTT$福建移动v6
 海南卫视,http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221227216/index.m3u8?servicetype=1&IASHttpSessionId=OTT$福建移动v6
