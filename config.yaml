@@ -1,0 +1,1181 @@
+﻿port: 7890
+socks-port: 7891
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853', 223.5.5.5]
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+proxies:
+ - {"name": "🇧🇷[openproxylist.com] (1)","server": "213.159.66.206","port": "443","type": "ss","cipher": "chacha20-ietf-poly1305","password": "pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu"}
+ - {"name":"美国(yfuye.com免费节点)_8 (128) (2) (2)","server":"115.40.244.240","port":"12696","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "gaosir.unfeeling.sbs"},"path": "%2fx%40%e8%8a%82%e7%82%b9%e7%8b%82%e9%ad%94%2f"},"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","network":"ws","servername":"gaosir.unfeeling.sbs","tls":true}
+ - {"name":"🇩🇪[openproxylist.com] (3)","server":"vp9.myphotomoments.ir","port":"443","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"Warpi-Free-Vpn-In-GooglePlay","network":"tcp","tls":false}
+ - {"name":"@v2FreeHub 🇪🇸 (4)","server":"185.114.72.31","port":"2053","type":"trojan","ws-opts": {"headers": {"Host": "joss.gpj.web.id"},"path": "%2FFree-VPN-CF-Geo-Project%2F185.114.72.31%3D2053"},"password":"fa115af5-0647-4549-acd9-5166695ea2de","network":"ws","sni":"joss.gpj.web.id","client-fingerprint":"randomized"}
+ - {"name":"14|KR_speednode_0034 (13) (5)","server":"61.85.1.77","port":"12374","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "gaosir.unfeeling.sbs"},"path": "/Telegram@freecodes/?ed=2560security=tls"},"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","network":"ws","servername":"gaosir.unfeeling.sbs","tls":true}
+ - {"name":"🇩🇪[openproxylist.com] (6)","server":"91.107.154.115","port":"8443","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"269134a7-6f44-4f03-8fb7-560875e19f77","network":"tcp","tls":false}
+ - {"name": "🇰🇷KR-218.237.185.230-0408 (7)","server": "p141.panda001.net","port": "4652","type": "ss","cipher": "aes-256-cfb","password": "qwerREWQ@@"}
+ - {"name":"🇫🇷_FR_法国 (8)","server":"163.172.21.105","port":"5355","type":"hysteria2","skip-cert-verify":true,"client-fingerprint":"chrome","password":"dongtaiwang.com","sni":"www.bing.com"}
+ - {"name":"🇩🇪_德国 (9)","server":"sk3.node.ibst.me","port":"7079","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"a54c3b5a-5f44-4411-8c1e-7bf52a567d7f","network":"tcp","tls":false}
+ - {"name": "🇵🇾PY-38.165.233.93-0267 (10)","server": "38.165.233.93","port": "989","type": "ss","cipher": "aes-256-cfb","password": "f8f7aCzcPKbsF8p3"}
+ - {"name":"🇧🇷  (Hysteria) (11)","server":"132.226.162.10","port":"30102","type":"hysteria2","skip-cert-verify":true,"client-fingerprint":"chrome","password":"338ce171-d764-4610-8fd5-6688b0d321f0"}
+ - {"name": "🇻🇳 越南|@stairnode (12)","server": "103.186.154.193","port": "38388","type": "ss","cipher": "aes-256-cfb","password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
+ - {"name":"@Takv2ray_org | ð¸ð¬ÙÙÙ Ø§Ù¾Ø±Ø§ØªÙØ±ÙØ§ (13)","server":"aio.unlimited.biz.id","port":"443","type":"vmess","skip-cert-verify":true,"ws-opts": {"headers": {"Host": "aio.unlimited.biz.id"},"path": "/aioproxybot/129.150.49.58-18650?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY"},"uuid":"f282b878-8711-45a1-8c69-5564172123c1","alterId":"0","cipher":"zero","network":"ws","servername":"aio.unlimited.biz.id","tls":true}
+ - {"name":"SG新加坡(mibei77.com 米贝节点分享) (7) (14)","server":"us6.candyfans.win","port":"443","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "us6.candyfans.win"},"path": "%2Fnmzuws"},"uuid":"5f60f4be-c6b1-4b07-ae9f-30cdcefe1759","network":"ws","servername":"us6.candyfans.win","tls":true}
+ - {"name":"香港3|@ripaojiedian (15)","server":"58.152.110.216","port":"443","type":"trojan","ws-opts": {"headers": {}},"password":"2274c52572e721086f8bd8f88984643c","sni":"www.nintendogames.net"}
+ - {"name":"🇩🇪[openproxylist.com] (16)","server":"vp5.myphotomoments.ir","port":"443","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"Warpi-Free-Vpn-In-GooglePlay","network":"tcp","tls":false}
+ - {"name":"🇯🇵_日本 (17)","server":"38.180.28.163","port":"2053","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "gaosir.unfeeling.sbs"},"path": "X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560"},"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","network":"ws","servername":"gaosir.unfeeling.sbs","tls":true}
+ - {"name":"🇺🇸 机场推荐:dafei.de 美国 04 (24) (47) (18)","server":"172.67.162.50","port":"443","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "eEedFR5.7777155.Xyz"},"path": "%2F6OWLjRc26b0nHYr5hYXD"},"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","network":"ws","servername":"eEedFR5.7777155.Xyz","tls":true}
+ - {"name":"@v2FreeHub 🇵🇹 (19)","server":"45.159.251.8","port":"81","type":"trojan","ws-opts": {"headers": {"Host": "joss.gpj.web.id"},"path": "%2FFree-VPN-CF-Geo-Project%2F45.159.251.8%3D81"},"password":"cc09e855-dfad-4587-9775-369a2df36a1f","network":"ws","sni":"joss.gpj.web.id","client-fingerprint":"randomized"}
+ - {"name":"r♡ya (20)","server":"dir.lightnright.com","port":"989","type":"hysteria2","skip-cert-verify":true,"client-fingerprint":"chrome","password":"6202ab997f570a6a180ae980b41f5789","sni":"jnir-x.pichondan.com","obfs":"salamander","obfs-password":"@JavidnamanIran-Javid-SHAH-King-Reza-Pahlavi"}
+ - {"name": "🇰🇷 机场推荐:dafei.de 韩国 04 (21)","server": "221.139.79.57","port": "37008","type": "ss","cipher": "aes-256-cfb","password": "qwerREWQ@@"}
+ - {"name": "法国_111604494 (22)","server": "51.158.204.165","port": "443","type": "ss","cipher": "chacha20-ietf-poly1305","password": "0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG"}
+ - {"name":"14|US_speednode_0053 (43) (23)","server":"104.21.80.1","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "cxrolvpn.freev2-edb.workers.dev"},"path": "/BJMz0Rpb9gejBzKP?ed=2560"},"uuid":"81caa837-c213-4731-a02e-662380ad1e2f","network":"ws","servername":"cxrolvpn.freev2-edb.workers.dev","tls":false}
+ - {"name": "🇰🇷 机场推荐:dafei.de 韩国 01 (24)","server": "218.237.185.230","port": "4652","type": "ss","cipher": "aes-256-cfb","password": "qwerREWQ@@"}
+ - {"name": "@awlix_ir (25)","server": "103.186.155.22","port": "38388","type": "ss","cipher": "aes-256-cfb","password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
+ - {"name": "t.me/OutlineVpnOfficial%20%3E%3E%40OutlineVpnOfficial::BR (26)","server": "38.54.57.90","port": "990","type": "ss","cipher": "chacha20-ietf-poly1305","password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="}
+ - {"name":"@v2FreeHub 🇧🇪 (27)","server":"45.83.20.29","port":"443","type":"trojan","ws-opts": {"headers": {"Host": "joss.gpj.web.id"},"path": "%2FFree-VPN-CF-Geo-Project%2F45.83.20.29%3D443"},"password":"ff022848-4fb7-465a-9e6f-756d3dfc2c6a","network":"ws","sni":"joss.gpj.web.id","client-fingerprint":"randomized"}
+ - {"name": "🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯 (28)","server": "185.153.197.5","port": "989","type": "ss","cipher": "aes-256-cfb","password": "f8f7aCzcPKbsF8p3"}
+ - {"name": "@awlix_ir (29)","server": "38.54.57.90","port": "989","type": "ss","cipher": "aes-256-cfb","password": "f8f7aCzcPKbsF8p3"}
+ - {"name":"🇺🇸 机场推荐:dafei.de 美国 21 (30)","server":"mg4.aeccghuyjftyg.shop","port":"20000","type":"hysteria2","skip-cert-verify":true,"client-fingerprint":"chrome","password":"92cf2b59-6aab-44d2-bb42-63b820af1b76","sni":"mg4.aeccghuyjftyg.shop","obfs":"salamander","obfs-password":"fdrccJDGatdFDDRp"}
+ - {"name": "🇭🇰 机场推荐:dafei.de 香港 22 (31)","server": "liubu9.singdns.com","port": "17459","type": "ss","cipher": "aes-128-gcm","password": "57bc0c04-8184-48f5-906b-897d095ed445"}
+ - {"name": "【机场推荐：https://a0a.xyz/】20 (32)","server": "sl.fgmcx.top","port": "41047","type": "ss","cipher": "chacha20-ietf-poly1305","password": "014e90df-a3ee-4654-a9f6-d118e02dd02a"}
+ - {"name": "🇵🇹 机场推荐:dafei.de 葡萄牙 01 (33)","server": "185.231.233.112","port": "989","type": "ss","cipher": "aes-256-cfb","password": "f8f7aCzcPKbsF8p3"}
+ - {"name":"🏳️_未知 (34)","server":"210.87.111.61","port":"39738","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "vless3.datatestvless.click"},"path": "%2F%3Fed%3D2560%26Telegram%40freecodes"},"uuid":"aa7f42cc-616f-4550-9a87-4b85bb409121","network":"ws","servername":"vless3.datatestvless.click","tls":true}
+ - {"name":"@v2FreeHub 🇫🇷 (35)","server":"141.94.222.214","port":"2053","type":"trojan","ws-opts": {"headers": {"Host": "joss.gpj.web.id"},"path": "%2FFree-VPN-CF-Geo-Project%2F141.94.222.214%3D2053"},"password":"17178783-0dd7-4544-bf6b-e0694a1e3da7","network":"ws","sni":"joss.gpj.web.id","client-fingerprint":"randomized"}
+ - {"name": "新加坡_110609002 (36)","server": "15.235.186.140","port": "8443","type": "ss","cipher": "aes-256-gcm","password": "bd080898-b41a-48ae-b164-1baae4124627"}
+ - {"name": "乌克兰_093013009 (27) (397) (37)","server": "213.111.132.100","port": "8443","type": "ss","cipher": "chacha20-ietf-poly1305","password": "UEz3lCgyrS2nL9xJAgboy1"}
+ - {"name": "🇹🇼 台湾|@ripaojiedian (38)","server": "60.249.35.3","port": "2377","type": "ss","cipher": "chacha20-ietf-poly1305","password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"}
+ - {"name": "瑞典_110509004 (39)","server": "78.40.116.11","port": "50589","type": "ss","cipher": "chacha20-ietf-poly1305","password": "e0AuSSE9kqrZnpK1RgcuPt"}
+ - {"name": "🇯🇵 日本4|@ripaojiedian (40)","server": "172.105.217.136","port": "2377","type": "ss","cipher": "chacha20-ietf-poly1305","password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"}
+ - {"name":"🇺🇸_美国 (41)","server":"ro.otunnel.icu","port":"443","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "www.orange.ro"}},"uuid":"b41bfc57-24af-42c7-a791-89e7099958c5","network":"tcp","servername":"www.orange.ro","tls":false}
+ - {"name": "美国_110509038 (42)","server": "45.12.150.199","port": "39447","type": "ss","cipher": "chacha20-ietf-poly1305","password": "VnSL5YmYusDmMsUV2Y9dh7"}
+ - {"name": "🇭🇰 机场推荐:dafei.de 香港 21 (43)","server": "154.197.26.237","port": "8388","type": "ss","cipher": "chacha20-ietf","password": "asd123456"}
+ - {"name": "俄罗斯联邦_101309333 (154) (405) (44)","server": "94.198.220.183","port": "64674","type": "ss","cipher": "chacha20-ietf-poly1305","password": "s8LbJCgUiGXeCKVc63tHJP"}
+ - {"name": "德国_111313021 (45)","server": "62.133.60.60","port": "7048","type": "ss","cipher": "chacha20-ietf-poly1305","password": "wkEpN0Aah790OAX940P4qm"}
+ - {"name":"💎کانفیگ (179) (408) (46)","server":"5.10.248.60","port":"2390","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"6a488250-3c23-681c-1d7a-0b4ed4f5dc16","network":"tcp","tls":false}
+ - {"name":"💎کانفیگ (177) (409) (47)","server":"noetic.bagsale.click","port":"443","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"0ffffabd-5622-4eef-90c8-da504ed2c209","network":"tcp","tls":false}
+ - {"name":"کانال+تلگرام+AYMH19@ (184) (410) (48)","server":"tt1.hennessypro.site","port":"4001","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"9af68224-c0ba-4323-a86c-f095b88a26e8","network":"tcp","tls":false}
+ - {"name": "کانال (185) (411) (49)","server": "188.190.4.212","port": "8561","type": "ss","cipher": "chacha20-ietf-poly1305","password": "wQFXr3mmxKgurmUxKAMBGn"}
+ - {"name": "WiFi-@V2rayAlpha--3 (50)","server": "45.144.235.103","port": "1080","type": "ss","cipher": "chacha20-ietf-poly1305","password": "aE5rFdxzG8GQf5TAQhZhRA"}
+ - {"name": "@vpnserverrr (51)","server": "5.129.231.197","port": "46024","type": "ss","cipher": "chacha20-ietf-poly1305","password": "V23RaFkRzP8c88y0VzOj0F"}
+ - {"name":"(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 (402) (14) (52)","server":"ger.4uvpn1.us","port":"52361","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"6031861f-67b7-4e41-9943-ed041bf559de","network":"tcp","tls":false}
+ - {"name":"@vmessorg (58) (53)","server":"numberland.ir","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"e71e9e5c-f27f-4b20-fbbe-acb7b6a62d23","network":"ws","tls":false}
+ - {"name":"@vmessorg (44) (54)","server":"www.speedtest.net","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"e71e9e5c-f27f-4b20-fbbe-acb7b6a62d23","network":"ws","tls":false}
+ - {"name":"@vmessorg (20) (55)","server":"numberland.ir","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"a4baa696-9a35-44a4-d354-b61bba5c677a","network":"ws","tls":false}
+ - {"name":"@vmessorg (18) (56)","server":"www.speedtest.net","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"95260b6a-e711-455c-d273-3439ca210d44","network":"ws","tls":false}
+ - {"name":"@vmessorg (17) (57)","server":"www.speedtest.net","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"c319b01e-ac54-4d5c-f8b2-3fb2256c23cc","network":"ws","tls":false}
+ - {"name":"@vmessorg (17) (58)","server":"numberland.ir","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"c319b01e-ac54-4d5c-f8b2-3fb2256c23cc","network":"ws","tls":false}
+ - {"name":"@vmesskhodam)تلگراممون (194) (417) (59)","server":"62.60.163.77","port":"3333","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"7d283c1a-3a5b-4b2a-a924-0bd256e89726","network":"tcp","tls":false}
+ - {"name":"@V2RAY_VMESS_free (418) (60)","server":"94.182.137.12","port":"20532","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"8496c102-4094-4dd3-ad63-7bb7a35cbaee","network":"tcp","tls":false}
+ - {"name": ">>@v2rayNG_Matsuri::DE (419) (61)","server": "h110vpnde.outlinekeys.net","port": "7048","type": "ss","cipher": "chacha20-ietf-poly1305","password": "i78Qsxi7PZMK3DW5P6Uk0H"}
+ - {"name":"@V2RAYNG_IP❤️‍🔥 (175) (423) (62)","server":"172.66.40.99","port":"8080","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7?ed=2048"},"uuid":"96c9844d-5b56-4dcb-9029-d83480873e9a","network":"ws","tls":false}
+ - {"name": "@V2rayNG3 (63)","server": "62.60.233.72","port": "33155","type": "ss","cipher": "aes-256-gcm","password": "AYbFL39bn4EfDXfDbueamN"}
+ - {"name": "V2rayNG3 (64)","server": "192.121.113.60","port": "8443","type": "ss","cipher": "chacha20-ietf-poly1305","password": "D2E6lItiRXmYERCyvPdgHz"}
+ - {"name": "@V2ray_confing33 (65)","server": "172.238.21.121","port": "64919","type": "ss","cipher": "chacha20-ietf-poly1305","password": "0ghZkORvV4grvekDJ9Wcge"}
+ - {"name":"@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (66)","server":"185.18.184.66","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "hello.96xckkzx.workers.dev"},"path": "/?ed=2048@v2ray_configs_pools--@v2ray_configs_pools"},"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","network":"ws","servername":"hello.96xckkzx.workers.dev","tls":false}
+ - {"name":"✅@v2ray_configs_pools (198) (412) (21) (67)","server":"all85-vip.f-sub.com","port":"1517","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/"},"uuid":"051ccd99-f47f-4f94-a7a1-9a8387c85c53","network":"tcp","tls":false}
+ - {"name":"@v2ray_configs_pools❤️‍🔥⚡ (197) (397) (35) (68)","server":"www.speedtest.net","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@v2ray_configs_pools---@v2ray_configs_pools/www.speedtest.net?ed=2080"},"uuid":"f5119458-dede-4782-8e30-b4d4d67f3dba","network":"ws","tls":false}
+ - {"name":"✅@v2ray_configs_pools (178) (488) (22) (69)","server":"ns.cloudflare.com","port":"8880","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "ws/?ed=2048"},"uuid":"293b72a4-a55e-4319-850e-40514d33afc5","network":"ws","tls":false}
+ - {"name":"V2rayArgon (182) (428) (70)","server":"172.66.40.99","port":"8880","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed=2048"},"uuid":"2569eda8-7022-46f2-8099-4e239cae9a7c","network":"ws","tls":false}
+ - {"name": "🇺🇸 US美国(mibei77.com 米贝节点分享) (71)","server": "210.16.183.122","port": "41047","type": "ss","cipher": "chacha20-ietf-poly1305","password": "014e90df-a3ee-4654-a9f6-d118e02dd02a"}
+ - {"name": "Ú©Ø§ÙØ§Ù (54) (429) (72)","server": "212.52.16.81","port": "8443","type": "ss","cipher": "chacha20-ietf-poly1305","password": "RgroEWW2ppwOWfp5kjoQoA"}
+ - {"name":"@unlimiteddev-link1 (208) (405) (26) (73)","server":"cumhuriyet.com.tr","port":"8080","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@unlimiteddev----@unlimiteddev-----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimitedev----@unlimitedev----@unlimiteddev----@unlimiteddev?ed=2480"},"uuid":"02151ca0-a1d5-437c-d818-ffa739176fab","network":"ws","tls":false}
+ - {"name":"@unlimiteddev-link1 (187) (417) (32) (74)","server":"cumhuriyet.com.tr","port":"8080","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@unlimiteddev----@unlimiteddev-----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimitedev----@unlimitedev----@unlimiteddev----@unlimiteddev?ed=2480"},"uuid":"3cad3259-e714-4496-c0c8-0603e7635dc8","network":"ws","tls":false}
+ - {"name":"[🇵🇱]t.me/Raiv2mmr (189) (431) (75)","server":"91.236.168.126","port":"5151","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"37aec4fa-81b0-469b-b3b3-bad6d92ea922","network":"tcp","tls":false}
+ - {"name":"test@JKVPN (190) (432) (76)","server":"www.speedtest.net","port":"2086","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/TELEGRAM--BYA--@JKVPN?ed=2048"},"uuid":"TEL--ID--JKVPN","network":"ws","tls":false}
+ - {"name":"telegram (213) (437) (77)","server":"172.105.19.143","port":"443","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/"},"uuid":"ea96b13d-68f1-4f30-aeb5-d7ebf7c84e78","network":"xhttp","tls":false}
+ - {"name":"telegram (212) (438) (78)","server":"37.32.6.8","port":"35021","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/"},"uuid":"d814beb3-f48d-4bbe-b6ba-b084ffea4d91","network":"tcp","tls":false}
+ - {"name":"telegram (192) (439) (79)","server":"tgju.org","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/?ed=2048"},"uuid":"297128e9-5422-486e-9232-046b4952de1a","network":"ws","tls":false}
+ - {"name":"@spikevpn👈 (225) (456) (32) (80)","server":"www.speedtest.net","port":"2082","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082"},"uuid":"a08c9fe7-8622-4847-dcea-6f39b68ee8d4","network":"ws","tls":false}
+ - {"name":"@spikevpn👈 (220) (443) (81)","server":"www.speedtest.net","port":"2082","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082"},"uuid":"ef2ee52b-adb6-4d73-9439-5a540dbb621a","network":"ws","tls":false}
+ - {"name":"@spikevpn👈 (200) (459) (34) (82)","server":"www.speedtest.net","port":"2082","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082"},"uuid":"e41d5038-65de-4beb-950f-9f26a4ab03eb","network":"ws","tls":false}
+ - {"name": "[Shadowsocks] (83)","server": "us-1.stunnel.cc","port": "8444","type": "ss","cipher": "chacha20-ietf-poly1305","password": "tunnel-mobilesignal"}
+ - {"name": "[Shadowsocks] (84)","server": "nl-1.stunnel.cc","port": "8444","type": "ss","cipher": "chacha20-ietf-poly1305","password": "tunnel-astrovpn_offcial-nl"}
+ - {"name":"🇩🇪 (85)","server":"a-lf-0.okamii.ir","port":"2095","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"19b7d4d8-de95-41cf-b270-a310cc21f151","network":"tcp","tls":false}
+ - {"name":"🇩🇪[openproxylist.com] (86)","server":"ger.4uvpn1.us","port":"52361","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"0078d912-bca4-4898-a414-2514233c008a","network":"tcp","tls":false}
+ - {"name": "🇹🇷[openproxylist.com] (87)","server": "31.210.50.196","port": "12422","type": "ss","cipher": "chacha20-ietf-poly1305","password": "7W3VPCTJ9QevQ2300DGR65"}
+ - {"name":"🇺🇸[openproxylist.com] (93) (88)","server":"khabar.motionbetter.ir","port":"20854","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"5b9fb1fe-f919-426b-761c-55a5d9139e0e","network":"httpupgrade","tls":false}
+ - {"name":"@ogsvpnbotخرید (29) (89)","server":"cumhuriyet.com.tr","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"58186ddc-be2e-4148-a680-ccd546994988","network":"ws","tls":false}
+ - {"name":"@ogsvpnbotخرید (28) (90)","server":"cumhuriyet.com.tr","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"60071f13-91ee-4592-fc98-4e6f539f394e","network":"ws","tls":false}
+ - {"name":"@ogsvpnbotخرید (229) (450) (91)","server":"cumhuriyet.com.tr","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"a9013cee-7b9d-4776-d1d0-f46840008ea1","network":"ws","tls":false}
+ - {"name":"@ogsvpnbot (43) (92)","server":"cumhuriyet.com.tr","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"a41d6ac2-ae25-42ee-b102-f424bfb03670","network":"ws","tls":false}
+ - {"name":"@ogsvpnbot (35) (93)","server":"cumhuriyet.com.tr","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"cf0e2b73-088d-4d2e-c95d-3a4002216831","network":"ws","tls":false}
+ - {"name":"@ogsvpnbot (34) (94)","server":"cumhuriyet.com.tr","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"b243c2ae-83cf-4721-f777-72895c68183d","network":"ws","tls":false}
+ - {"name":"@ogsvpnbot (33) (95)","server":"opening-hours.nz","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"39ef56cc-5cd3-4d78-f095-25b216498736","network":"ws","tls":false}
+ - {"name":"@ogsvpnbot (31) (96)","server":"cumhuriyet.com.tr","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"01232cb4-ceab-43c1-f384-09f698db6c19","network":"ws","tls":false}
+ - {"name":"@ogsvpnbot (30) (97)","server":"cumhuriyet.com.tr","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"52bb1620-f57a-432d-b8fc-4db175ff3f63","network":"ws","tls":false}
+ - {"name":"@melov2ray🇫🇮 (259) (451) (98)","server":"cafearz.com","port":"8080","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/olem/ws?ed=1024"},"uuid":"5badc2fd-58f1-4eb6-d099-83a35a25b007","network":"ws","tls":false}
+ - {"name":"@melov2ray🇫🇮 (254) (427) (46) (99)","server":"tgju.org","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/olem/ws?ed=1024"},"uuid":"c6438552-6882-44b9-f186-ec2ffef8d01a","network":"ws","tls":false}
+ - {"name":"@melov2ray🇫🇮 (253) (428) (42) (100)","server":"tgju.org","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/olem/ws?ed=1024"},"uuid":"f3528ca9-bd6e-4e0e-c790-d85e75d3ba57","network":"ws","tls":false}
+ - {"name":"🇨🇦𝐣𝐨𝐢𝐍-@𝐅𝐑𝐄𝐄𝐕𝟐𝐑𝐍𝐆 (242) (468) (42) (101)","server":"104.16.69.64","port":"8880","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/7YVyoVNnbaVzgl6D?ed=2560"},"uuid":"02811288-9ef3-42ef-86db-d9b1399c1a59","network":"ws","tls":false}
+ - {"name":"IR_speednode_0084 (454) (102)","server":"300.shecanmarket.com","port":"8443","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "head.shecanMarket.com"}},"uuid":"77371595-b7aa-472a-9d61-e9731861af07","servername":"head.shecanMarket.com","tls":false}
+ - {"name": "https://t.me/ShadowsocksM3 (103)","server": "62.133.60.60","port": "7048","type": "ss","cipher": "chacha20-ietf-poly1305","password": "UMVTLFhm1CJSEOjOFQsM7h"}
+ - {"name":"https://t.me/ShadowsocksM23 (104)","server":"77.90.10.139","port":"5000","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"d48db943-d4e4-447a-a3ef-afd87c77ef91","network":"tcp","tls":false}
+ - {"name":"🇩🇪Germany³ (278) (456) (105)","server":"de3.stafillo.com","port":"8008","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"d7d450c5-00b4-4be6-9946-eeeaaa5b878b","network":"tcp","tls":false}
+ - {"name":"🇹🇷@FreakConfig (106)","server":"v2shop-tr1.bing-net.com","port":"3040","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"33f2c6ae-7790-4e37-8965-30780b718760","network":"tcp","tls":false}
+ - {"name":"🇫🇮@FreakConfig (107)","server":"v2shop-fl1.bing-net.com","port":"3044","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"33f2c6ae-7790-4e37-8965-30780b718760","network":"tcp","tls":false}
+ - {"name":"🇩🇪@FreakConfig (280) (474) (45) (108)","server":"104.16.1.106","port":"2082","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/?ed=2052"},"uuid":"7d810ea1-7b3c-41f3-a8f1-fa72355ffdd5","network":"ws","tls":false}
+ - {"name":"➪+@FILTERK0SH++منبع+کانفیگ+رایگان (281) (457) (109)","server":"172.66.40.99","port":"8080","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE?ed=2048"},"uuid":"ba8112db-293a-4e8c-bd10-a93c502a92ee","network":"ws","tls":false}
+ - {"name":"🇩🇪 DE | 🔓 VMESS | @magickey_shop [2] (110)","server":"168.119.174.229","port":"443","type":"vmess","skip-cert-verify":true,"ws-opts": {"headers": {"Host": ""},"path": "/"},"uuid":"6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147","alterId":"0","cipher":"auto","network":"tcp","tls":true}
+ - {"name": "ð«ð®@vpnserverrrÚ©Ø§ÙØ§Ù (111)","server": "91.204.74.95","port": "27335","type": "ss","cipher": "chacha20-ietf-poly1305","password": "uGXVZgXqB7RnDkBxd1RyIu"}
+ - {"name": "ð«ð®[Telegram:NetifyVpn] (112)","server": "38.244.209.215","port": "443","type": "ss","cipher": "aes-256-gcm","password": "1a9e1430-1227-4ca3-bcf9-52081d87f1ef"}
+ - {"name": "ð±ð»LV (460) (113)","server": "45.128.151.67","port": "31348","type": "ss","cipher": "chacha20-ietf-poly1305","password": "d3TphPPfMkIxFmPJpA0j7RkPJHjeHqaJk2D7Co7VsFuUU2v1"}
+ - {"name": "ð«ð®ð£ð¨ð¢ð-@ððððððððð (461) (114)","server": "38.244.136.196","port": "5555","type": "ss","cipher": "chacha20-ietf-poly1305","password": "NKNdncCtn4BoodLy_VnZ9g"}
+ - {"name": "[ð¸ðª]t.me/Raiv2mmr (56) (462) (115)","server": "46.246.97.245","port": "2340","type": "ss","cipher": "chacha20-ietf-poly1305","password": "tgKls86JHy7cJPUlnkWpNZ"}
+ - {"name": "ð¸ðª[Telegram:NetifyVpn] (116)","server": "91.186.217.246","port": "31764","type": "ss","cipher": "chacha20-ietf-poly1305","password": "Ftc17VH9ZXQON5vslJCYmv"}
+ - {"name": "ð©ðª[Telegram:NetifyVpn] (117)","server": "62.133.60.60","port": "7048","type": "ss","cipher": "chacha20-ietf-poly1305","password": "VtG2tvkXdpR9nuiTA4MuzP"}
+ - {"name": "ð¨ð³[Telegram:NetifyVpn] (463) (118)","server": "14.18.106.88","port": "6100","type": "ss","cipher": "aes-256-gcm","password": "123"}
+ - {"name": "ð¨ð³1@vpnserverrr (119)","server": "39.104.68.204","port": "8443","type": "ss","cipher": "chacha20-ietf-poly1305","password": "6hVowjcc82p6Nu9UvOXhhF"}
+ - {"name": "@daredevill_404 (120)","server": "3.29.221.225","port": "443","type": "ss","cipher": "chacha20-ietf-poly1305","password": "mps3FwmDjLrWaOVg"}
+ - {"name": "ðªð¸70@vpnserverrr (121)","server": "45.86.229.170","port": "56019","type": "ss","cipher": "chacha20-ietf-poly1305","password": "eT3cx4LuYj5pAorp8c4xeW"}
+ - {"name": "ð³ð±Telegram:@tik7net_vpn (122)","server": "195.66.27.81","port": "11746","type": "ss","cipher": "chacha20-ietf-poly1305","password": "DaiJfYM6WoCXmBbF69QFR0"}
+ - {"name":"Channel-@vmesskhodam (120) (123)","server":"172.67.65.158","port":"8880","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/Etb1L6YUdZFZuTOr?ed=2560"},"uuid":"e9979910-79d1-4621-a93c-b2a579c44ba7","network":"ws","tls":false}
+ - {"name":"Channel id: @ShadowProxy66 🇮🇷 (292) (470) (124)","server":"91.236.168.126","port":"5151","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"33c0a50d-aa93-4470-b465-ef196f49050a","network":"tcp","tls":false}
+ - {"name":"Channel id: @ShadowProxy66 🇮🇷 (291) (471) (125)","server":"91.236.168.126","port":"5151","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"f5a77a8d-0e03-462d-9ebc-3416f00dbc82","network":"tcp","tls":false}
+ - {"name":"@bored_vpn (39) (126)","server":"104.26.4.112","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"06a69ade-0ebf-44dc-8f06-69dda39be844","network":"ws","tls":false}
+ - {"name":"@bored_vpn (38) (127)","server":"104.17.147.22","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"95260b6a-e711-455c-d273-3439ca210d44","network":"ws","tls":false}
+ - {"name":"@bored_vpn (36) (128)","server":"104.26.5.112","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"e71e9e5c-f27f-4b20-fbbe-acb7b6a62d23","network":"ws","tls":false}
+ - {"name":"@bored_vpn (120) (129)","server":"104.17.147.22","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"e71e9e5c-f27f-4b20-fbbe-acb7b6a62d23","network":"ws","tls":false}
+ - {"name":"@bored_vp (293) (488) (41) (130)","server":"172.66.40.99","port":"2095","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048"},"uuid":"6df16859-fbc4-49c1-cb80-a9a816af4377","network":"ws","tls":false}
+ - {"name":"BinexTiFy🪸-q9eoiag4 (262) (447) (51) (131)","server":"Zula.iR","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY?ed=2560"},"uuid":"ab28b406-0c4b-4923-fe9a-081b6057c9cc","network":"ws","tls":false}
+ - {"name":"AZADIV2RAYY (295) (473) (132)","server":"46.31.76.33","port":"2002","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"591f69e3-9da6-4903-8812-a9dabc52a4e3","network":"tcp","tls":false}
+ - {"name": "All-@V2rayAlpha--8 (133)","server": "134.255.210.209","port": "8443","type": "ss","cipher": "chacha20-ietf-poly1305","password": "2AGpqmflUUJHtBUpq4iCUf"}
+ - {"name": "All-@IRAN_V2RAY1 (134)","server": "ss.80808.sbs","port": "20","type": "ss","cipher": "aes-256-gcm","password": "a4VtqRwhj6gWbHwL4Jt26w"}
+ - {"name":"All-@IRAN_V2RAY1 (298) (497) (54) (135)","server":"172.66.40.99","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE?ed=2048"},"uuid":"876f998c-603e-419e-b8cc-e263dc9ba6e4","network":"ws","tls":false}
+ - {"name":"All²🇳🇱@JKVPN (302) (499) (55) (136)","server":"www.speedtest.net","port":"2095","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/TELEGRAM-@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN--@JKVPN?ed=2048"},"uuid":"01COPE--AZ--JKVPN-JKVPN","network":"ws","tls":false}
+ - {"name":"9c9qc5eg (305) (457) (43) (137)","server":"172.66.40.99","port":"8880","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed=2048"},"uuid":"30428ae8-2b02-45ea-a281-9206899e167e","network":"ws","tls":false}
+ - {"name":"🇩🇪 (92) (138)","server":"numberland.ir","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"b5ea09a3-c4b2-425b-c3f9-1b190ffd30f5","network":"ws","tls":false}
+ - {"name":"🇳🇱 (88) (139)","server":"104.17.147.22","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"c319b01e-ac54-4d5c-f8b2-3fb2256c23cc","network":"ws","tls":false}
+ - {"name":"🇩🇪 (85) (140)","server":"www.speedtest.net","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"575a7246-e065-4ded-d05b-5500cd6cbe21","network":"ws","tls":false}
+ - {"name":"84eec1wm (275) (455) (45) (141)","server":"172.66.40.99","port":"8880","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed=2048"},"uuid":"29a83d86-dca3-44f2-9169-42893f55621b","network":"ws","tls":false}
+ - {"name":"🇩🇪 (29) (142)","server":"172.67.72.39","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"575a7246-e065-4ded-d05b-5500cd6cbe21","network":"ws","tls":false}
+ - {"name":"🇩🇪 (28) (143)","server":"104.26.11.194","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"60071f13-91ee-4592-fc98-4e6f539f394e","network":"ws","tls":false}
+ - {"name":"🇩🇪 (26) (144)","server":"172.67.72.39","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"ec906c46-8a02-4148-f560-364d5579a0cf","network":"ws","tls":false}
+ - {"name":"🇩🇪 (26) (145)","server":"172.67.72.39","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"06a69ade-0ebf-44dc-8f06-69dda39be844","network":"ws","tls":false}
+ - {"name":"🇩🇪 (25) (146)","server":"cumhuriyet.com.tr","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"1f21f605-917a-4b31-8415-cad059b4aea4","network":"ws","tls":false}
+ - {"name":"🇩🇪 (24) (147)","server":"www.speedtest.net","port":"2052","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480"},"uuid":"b5ea09a3-c4b2-425b-c3f9-1b190ffd30f5","network":"ws","tls":false}
+ - {"name": "🔐 (234) (483) (148)","server": "62.60.233.220","port": "18685","type": "ss","cipher": "chacha20-ietf-poly1305","password": "wh2K0qVVN6fTZAJFsbu6Dq"}
+ - {"name":"✅ (231) (484) (149)","server":"dl.nim3.azarbanou.ir","port":"5252","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"6261b90d-3268-4a3d-b02a-16329e0a4a9a","network":"tcp","tls":false}
+ - {"name":"✅ (230) (485) (150)","server":"dl.nim.azarbanou.ir","port":"5252","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"6261b90d-3268-4a3d-b02a-16329e0a4a9a","network":"tcp","tls":false}
+ - {"name":"✅ (229) (486) (151)","server":"dl.tr.azarbanou.ir","port":"5055","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {}},"uuid":"6261b90d-3268-4a3d-b02a-16329e0a4a9a","network":"tcp","tls":false}
+ - {"name":"🇩🇪 (209) (491) (152)","server":"test2.amin8263.ir","port":"2095","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048"},"uuid":"b512c4cc-ebb5-43a6-b0e2-18467d8e1a3b","network":"ws","tls":false}
+ - {"name":"🇳🇱 (208) (469) (63) (153)","server":"www.speedtest.net","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420/Telegram,@EXPRESSVPN_420?ed=2080"},"uuid":"a3a0643a-5fec-4d6b-8bab-9c5620f671a0","network":"ws","tls":false}
+ - {"name":"14|US_speednode_0066 (41) (154)","server":"104.21.81.174","port":"80","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {"Host": "DaWn-lAKE-d5E3.WocoYA4320.wOrkERs.DeV"},"path": "/wP3dwCyRAVyMJFfW?ed=2560"},"uuid":"23b3cbba-e6ac-485a-9481-342a0415eab9","network":"ws","servername":"DaWn-lAKE-d5E3.WocoYA4320.wOrkERs.DeV","tls":false}
+ - {"name":"0ubbvny7 (307) (492) (155)","server":"172.66.40.99","port":"8880","type":"vless","client-fingerprint":"chrome","ws-opts": {"headers": {},"path": "/@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed=2048"},"uuid":"fee9bcc9-75c3-4bf5-95bb-c40b81465960","network":"ws","tls":false}
+   ##proxies
+
+proxy-groups:
+
+  - name: 手动选择
+    type: select
+    proxies:
+       - 自动选择
+       - 故障转移
+       - "🇧🇷[openproxylist.com] (1)"
+       - "美国(yfuye.com免费节点)_8 (128) (2) (2)"
+       - "🇩🇪[openproxylist.com] (3)"
+       - "@v2FreeHub 🇪🇸 (4)"
+       - "14|KR_speednode_0034 (13) (5)"
+       - "🇩🇪[openproxylist.com] (6)"
+       - "🇰🇷KR-218.237.185.230-0408 (7)"
+       - "🇫🇷_FR_法国 (8)"
+       - "🇩🇪_德国 (9)"
+       - "🇵🇾PY-38.165.233.93-0267 (10)"
+       - "🇧🇷  (Hysteria) (11)"
+       - "🇻🇳 越南|@stairnode (12)"
+       - "@Takv2ray_org | ð¸ð¬ÙÙÙ Ø§Ù¾Ø±Ø§ØªÙØ±ÙØ§ (13)"
+       - "SG新加坡(mibei77.com 米贝节点分享) (7) (14)"
+       - "香港3|@ripaojiedian (15)"
+       - "🇩🇪[openproxylist.com] (16)"
+       - "🇯🇵_日本 (17)"
+       - "🇺🇸 机场推荐:dafei.de 美国 04 (24) (47) (18)"
+       - "@v2FreeHub 🇵🇹 (19)"
+       - "r♡ya (20)"
+       - "🇰🇷 机场推荐:dafei.de 韩国 04 (21)"
+       - "法国_111604494 (22)"
+       - "14|US_speednode_0053 (43) (23)"
+       - "🇰🇷 机场推荐:dafei.de 韩国 01 (24)"
+       - "@awlix_ir (25)"
+       - "t.me/OutlineVpnOfficial%20%3E%3E%40OutlineVpnOfficial::BR (26)"
+       - "@v2FreeHub 🇧🇪 (27)"
+       - "🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯 (28)"
+       - "@awlix_ir (29)"
+       - "🇺🇸 机场推荐:dafei.de 美国 21 (30)"
+       - "🇭🇰 机场推荐:dafei.de 香港 22 (31)"
+       - "【机场推荐：https://a0a.xyz/】20 (32)"
+       - "🇵🇹 机场推荐:dafei.de 葡萄牙 01 (33)"
+       - "🏳️_未知 (34)"
+       - "@v2FreeHub 🇫🇷 (35)"
+       - "新加坡_110609002 (36)"
+       - "乌克兰_093013009 (27) (397) (37)"
+       - "🇹🇼 台湾|@ripaojiedian (38)"
+       - "瑞典_110509004 (39)"
+       - "🇯🇵 日本4|@ripaojiedian (40)"
+       - "🇺🇸_美国 (41)"
+       - "美国_110509038 (42)"
+       - "🇭🇰 机场推荐:dafei.de 香港 21 (43)"
+       - "俄罗斯联邦_101309333 (154) (405) (44)"
+       - "德国_111313021 (45)"
+       - "💎کانفیگ (179) (408) (46)"
+       - "💎کانفیگ (177) (409) (47)"
+       - "کانال+تلگرام+AYMH19@ (184) (410) (48)"
+       - "کانال (185) (411) (49)"
+       - "WiFi-@V2rayAlpha--3 (50)"
+       - "@vpnserverrr (51)"
+       - "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 (402) (14) (52)"
+       - "@vmessorg (58) (53)"
+       - "@vmessorg (44) (54)"
+       - "@vmessorg (20) (55)"
+       - "@vmessorg (18) (56)"
+       - "@vmessorg (17) (57)"
+       - "@vmessorg (17) (58)"
+       - "@vmesskhodam)تلگراممون (194) (417) (59)"
+       - "@V2RAY_VMESS_free (418) (60)"
+       - ">>@v2rayNG_Matsuri::DE (419) (61)"
+       - "@V2RAYNG_IP❤️‍🔥 (175) (423) (62)"
+       - "@V2rayNG3 (63)"
+       - "V2rayNG3 (64)"
+       - "@V2ray_confing33 (65)"
+       - "@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (66)"
+       - "✅@v2ray_configs_pools (198) (412) (21) (67)"
+       - "@v2ray_configs_pools❤️‍🔥⚡ (197) (397) (35) (68)"
+       - "✅@v2ray_configs_pools (178) (488) (22) (69)"
+       - "V2rayArgon (182) (428) (70)"
+       - "🇺🇸 US美国(mibei77.com 米贝节点分享) (71)"
+       - "Ú©Ø§ÙØ§Ù (54) (429) (72)"
+       - "@unlimiteddev-link1 (208) (405) (26) (73)"
+       - "@unlimiteddev-link1 (187) (417) (32) (74)"
+       - "[🇵🇱]t.me/Raiv2mmr (189) (431) (75)"
+       - "test@JKVPN (190) (432) (76)"
+       - "telegram (213) (437) (77)"
+       - "telegram (212) (438) (78)"
+       - "telegram (192) (439) (79)"
+       - "@spikevpn👈 (225) (456) (32) (80)"
+       - "@spikevpn👈 (220) (443) (81)"
+       - "@spikevpn👈 (200) (459) (34) (82)"
+       - "[Shadowsocks] (83)"
+       - "[Shadowsocks] (84)"
+       - "🇩🇪 (85)"
+       - "🇩🇪[openproxylist.com] (86)"
+       - "🇹🇷[openproxylist.com] (87)"
+       - "🇺🇸[openproxylist.com] (93) (88)"
+       - "@ogsvpnbotخرید (29) (89)"
+       - "@ogsvpnbotخرید (28) (90)"
+       - "@ogsvpnbotخرید (229) (450) (91)"
+       - "@ogsvpnbot (43) (92)"
+       - "@ogsvpnbot (35) (93)"
+       - "@ogsvpnbot (34) (94)"
+       - "@ogsvpnbot (33) (95)"
+       - "@ogsvpnbot (31) (96)"
+       - "@ogsvpnbot (30) (97)"
+       - "@melov2ray🇫🇮 (259) (451) (98)"
+       - "@melov2ray🇫🇮 (254) (427) (46) (99)"
+       - "@melov2ray🇫🇮 (253) (428) (42) (100)"
+       - "🇨🇦𝐣𝐨𝐢𝐍-@𝐅𝐑𝐄𝐄𝐕𝟐𝐑𝐍𝐆 (242) (468) (42) (101)"
+       - "IR_speednode_0084 (454) (102)"
+       - "https://t.me/ShadowsocksM3 (103)"
+       - "https://t.me/ShadowsocksM23 (104)"
+       - "🇩🇪Germany³ (278) (456) (105)"
+       - "🇹🇷@FreakConfig (106)"
+       - "🇫🇮@FreakConfig (107)"
+       - "🇩🇪@FreakConfig (280) (474) (45) (108)"
+       - "➪+@FILTERK0SH++منبع+کانفیگ+رایگان (281) (457) (109)"
+       - "🇩🇪 DE | 🔓 VMESS | @magickey_shop [2] (110)"
+       - "ð«ð®@vpnserverrrÚ©Ø§ÙØ§Ù (111)"
+       - "ð«ð®[Telegram:NetifyVpn] (112)"
+       - "ð±ð»LV (460) (113)"
+       - "ð«ð®ð£ð¨ð¢ð-@ððððððððð (461) (114)"
+       - "[ð¸ðª]t.me/Raiv2mmr (56) (462) (115)"
+       - "ð¸ðª[Telegram:NetifyVpn] (116)"
+       - "ð©ðª[Telegram:NetifyVpn] (117)"
+       - "ð¨ð³[Telegram:NetifyVpn] (463) (118)"
+       - "ð¨ð³1@vpnserverrr (119)"
+       - "@daredevill_404 (120)"
+       - "ðªð¸70@vpnserverrr (121)"
+       - "ð³ð±Telegram:@tik7net_vpn (122)"
+       - "Channel-@vmesskhodam (120) (123)"
+       - "Channel id: @ShadowProxy66 🇮🇷 (292) (470) (124)"
+       - "Channel id: @ShadowProxy66 🇮🇷 (291) (471) (125)"
+       - "@bored_vpn (39) (126)"
+       - "@bored_vpn (38) (127)"
+       - "@bored_vpn (36) (128)"
+       - "@bored_vpn (120) (129)"
+       - "@bored_vp (293) (488) (41) (130)"
+       - "BinexTiFy🪸-q9eoiag4 (262) (447) (51) (131)"
+       - "AZADIV2RAYY (295) (473) (132)"
+       - "All-@V2rayAlpha--8 (133)"
+       - "All-@IRAN_V2RAY1 (134)"
+       - "All-@IRAN_V2RAY1 (298) (497) (54) (135)"
+       - "All²🇳🇱@JKVPN (302) (499) (55) (136)"
+       - "9c9qc5eg (305) (457) (43) (137)"
+       - "🇩🇪 (92) (138)"
+       - "🇳🇱 (88) (139)"
+       - "🇩🇪 (85) (140)"
+       - "84eec1wm (275) (455) (45) (141)"
+       - "🇩🇪 (29) (142)"
+       - "🇩🇪 (28) (143)"
+       - "🇩🇪 (26) (144)"
+       - "🇩🇪 (26) (145)"
+       - "🇩🇪 (25) (146)"
+       - "🇩🇪 (24) (147)"
+       - "🔐 (234) (483) (148)"
+       - "✅ (231) (484) (149)"
+       - "✅ (230) (485) (150)"
+       - "✅ (229) (486) (151)"
+       - "🇩🇪 (209) (491) (152)"
+       - "🇳🇱 (208) (469) (63) (153)"
+       - "14|US_speednode_0066 (41) (154)"
+       - "0ubbvny7 (307) (492) (155)"
+       #n
+    ###select
+
+  - name: 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 100
+    tolerance: 30
+    proxies:
+       - "🇧🇷[openproxylist.com] (1)"
+       - "美国(yfuye.com免费节点)_8 (128) (2) (2)"
+       - "🇩🇪[openproxylist.com] (3)"
+       - "@v2FreeHub 🇪🇸 (4)"
+       - "14|KR_speednode_0034 (13) (5)"
+       - "🇩🇪[openproxylist.com] (6)"
+       - "🇰🇷KR-218.237.185.230-0408 (7)"
+       - "🇫🇷_FR_法国 (8)"
+       - "🇩🇪_德国 (9)"
+       - "🇵🇾PY-38.165.233.93-0267 (10)"
+       - "🇧🇷  (Hysteria) (11)"
+       - "🇻🇳 越南|@stairnode (12)"
+       - "@Takv2ray_org | ð¸ð¬ÙÙÙ Ø§Ù¾Ø±Ø§ØªÙØ±ÙØ§ (13)"
+       - "SG新加坡(mibei77.com 米贝节点分享) (7) (14)"
+       - "香港3|@ripaojiedian (15)"
+       - "🇩🇪[openproxylist.com] (16)"
+       - "🇯🇵_日本 (17)"
+       - "🇺🇸 机场推荐:dafei.de 美国 04 (24) (47) (18)"
+       - "@v2FreeHub 🇵🇹 (19)"
+       - "r♡ya (20)"
+       - "🇰🇷 机场推荐:dafei.de 韩国 04 (21)"
+       - "法国_111604494 (22)"
+       - "14|US_speednode_0053 (43) (23)"
+       - "🇰🇷 机场推荐:dafei.de 韩国 01 (24)"
+       - "@awlix_ir (25)"
+       - "t.me/OutlineVpnOfficial%20%3E%3E%40OutlineVpnOfficial::BR (26)"
+       - "@v2FreeHub 🇧🇪 (27)"
+       - "🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯 (28)"
+       - "@awlix_ir (29)"
+       - "🇺🇸 机场推荐:dafei.de 美国 21 (30)"
+       - "🇭🇰 机场推荐:dafei.de 香港 22 (31)"
+       - "【机场推荐：https://a0a.xyz/】20 (32)"
+       - "🇵🇹 机场推荐:dafei.de 葡萄牙 01 (33)"
+       - "🏳️_未知 (34)"
+       - "@v2FreeHub 🇫🇷 (35)"
+       - "新加坡_110609002 (36)"
+       - "乌克兰_093013009 (27) (397) (37)"
+       - "🇹🇼 台湾|@ripaojiedian (38)"
+       - "瑞典_110509004 (39)"
+       - "🇯🇵 日本4|@ripaojiedian (40)"
+       - "🇺🇸_美国 (41)"
+       - "美国_110509038 (42)"
+       - "🇭🇰 机场推荐:dafei.de 香港 21 (43)"
+       - "俄罗斯联邦_101309333 (154) (405) (44)"
+       - "德国_111313021 (45)"
+       - "💎کانفیگ (179) (408) (46)"
+       - "💎کانفیگ (177) (409) (47)"
+       - "کانال+تلگرام+AYMH19@ (184) (410) (48)"
+       - "کانال (185) (411) (49)"
+       - "WiFi-@V2rayAlpha--3 (50)"
+       - "@vpnserverrr (51)"
+       - "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 (402) (14) (52)"
+       - "@vmessorg (58) (53)"
+       - "@vmessorg (44) (54)"
+       - "@vmessorg (20) (55)"
+       - "@vmessorg (18) (56)"
+       - "@vmessorg (17) (57)"
+       - "@vmessorg (17) (58)"
+       - "@vmesskhodam)تلگراممون (194) (417) (59)"
+       - "@V2RAY_VMESS_free (418) (60)"
+       - ">>@v2rayNG_Matsuri::DE (419) (61)"
+       - "@V2RAYNG_IP❤️‍🔥 (175) (423) (62)"
+       - "@V2rayNG3 (63)"
+       - "V2rayNG3 (64)"
+       - "@V2ray_confing33 (65)"
+       - "@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (66)"
+       - "✅@v2ray_configs_pools (198) (412) (21) (67)"
+       - "@v2ray_configs_pools❤️‍🔥⚡ (197) (397) (35) (68)"
+       - "✅@v2ray_configs_pools (178) (488) (22) (69)"
+       - "V2rayArgon (182) (428) (70)"
+       - "🇺🇸 US美国(mibei77.com 米贝节点分享) (71)"
+       - "Ú©Ø§ÙØ§Ù (54) (429) (72)"
+       - "@unlimiteddev-link1 (208) (405) (26) (73)"
+       - "@unlimiteddev-link1 (187) (417) (32) (74)"
+       - "[🇵🇱]t.me/Raiv2mmr (189) (431) (75)"
+       - "test@JKVPN (190) (432) (76)"
+       - "telegram (213) (437) (77)"
+       - "telegram (212) (438) (78)"
+       - "telegram (192) (439) (79)"
+       - "@spikevpn👈 (225) (456) (32) (80)"
+       - "@spikevpn👈 (220) (443) (81)"
+       - "@spikevpn👈 (200) (459) (34) (82)"
+       - "[Shadowsocks] (83)"
+       - "[Shadowsocks] (84)"
+       - "🇩🇪 (85)"
+       - "🇩🇪[openproxylist.com] (86)"
+       - "🇹🇷[openproxylist.com] (87)"
+       - "🇺🇸[openproxylist.com] (93) (88)"
+       - "@ogsvpnbotخرید (29) (89)"
+       - "@ogsvpnbotخرید (28) (90)"
+       - "@ogsvpnbotخرید (229) (450) (91)"
+       - "@ogsvpnbot (43) (92)"
+       - "@ogsvpnbot (35) (93)"
+       - "@ogsvpnbot (34) (94)"
+       - "@ogsvpnbot (33) (95)"
+       - "@ogsvpnbot (31) (96)"
+       - "@ogsvpnbot (30) (97)"
+       - "@melov2ray🇫🇮 (259) (451) (98)"
+       - "@melov2ray🇫🇮 (254) (427) (46) (99)"
+       - "@melov2ray🇫🇮 (253) (428) (42) (100)"
+       - "🇨🇦𝐣𝐨𝐢𝐍-@𝐅𝐑𝐄𝐄𝐕𝟐𝐑𝐍𝐆 (242) (468) (42) (101)"
+       - "IR_speednode_0084 (454) (102)"
+       - "https://t.me/ShadowsocksM3 (103)"
+       - "https://t.me/ShadowsocksM23 (104)"
+       - "🇩🇪Germany³ (278) (456) (105)"
+       - "🇹🇷@FreakConfig (106)"
+       - "🇫🇮@FreakConfig (107)"
+       - "🇩🇪@FreakConfig (280) (474) (45) (108)"
+       - "➪+@FILTERK0SH++منبع+کانفیگ+رایگان (281) (457) (109)"
+       - "🇩🇪 DE | 🔓 VMESS | @magickey_shop [2] (110)"
+       - "ð«ð®@vpnserverrrÚ©Ø§ÙØ§Ù (111)"
+       - "ð«ð®[Telegram:NetifyVpn] (112)"
+       - "ð±ð»LV (460) (113)"
+       - "ð«ð®ð£ð¨ð¢ð-@ððððððððð (461) (114)"
+       - "[ð¸ðª]t.me/Raiv2mmr (56) (462) (115)"
+       - "ð¸ðª[Telegram:NetifyVpn] (116)"
+       - "ð©ðª[Telegram:NetifyVpn] (117)"
+       - "ð¨ð³[Telegram:NetifyVpn] (463) (118)"
+       - "ð¨ð³1@vpnserverrr (119)"
+       - "@daredevill_404 (120)"
+       - "ðªð¸70@vpnserverrr (121)"
+       - "ð³ð±Telegram:@tik7net_vpn (122)"
+       - "Channel-@vmesskhodam (120) (123)"
+       - "Channel id: @ShadowProxy66 🇮🇷 (292) (470) (124)"
+       - "Channel id: @ShadowProxy66 🇮🇷 (291) (471) (125)"
+       - "@bored_vpn (39) (126)"
+       - "@bored_vpn (38) (127)"
+       - "@bored_vpn (36) (128)"
+       - "@bored_vpn (120) (129)"
+       - "@bored_vp (293) (488) (41) (130)"
+       - "BinexTiFy🪸-q9eoiag4 (262) (447) (51) (131)"
+       - "AZADIV2RAYY (295) (473) (132)"
+       - "All-@V2rayAlpha--8 (133)"
+       - "All-@IRAN_V2RAY1 (134)"
+       - "All-@IRAN_V2RAY1 (298) (497) (54) (135)"
+       - "All²🇳🇱@JKVPN (302) (499) (55) (136)"
+       - "9c9qc5eg (305) (457) (43) (137)"
+       - "🇩🇪 (92) (138)"
+       - "🇳🇱 (88) (139)"
+       - "🇩🇪 (85) (140)"
+       - "84eec1wm (275) (455) (45) (141)"
+       - "🇩🇪 (29) (142)"
+       - "🇩🇪 (28) (143)"
+       - "🇩🇪 (26) (144)"
+       - "🇩🇪 (26) (145)"
+       - "🇩🇪 (25) (146)"
+       - "🇩🇪 (24) (147)"
+       - "🔐 (234) (483) (148)"
+       - "✅ (231) (484) (149)"
+       - "✅ (230) (485) (150)"
+       - "✅ (229) (486) (151)"
+       - "🇩🇪 (209) (491) (152)"
+       - "🇳🇱 (208) (469) (63) (153)"
+       - "14|US_speednode_0066 (41) (154)"
+       - "0ubbvny7 (307) (492) (155)"
+    ###urltest
+
+  - name: 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 100
+    proxies:
+       - "🇧🇷[openproxylist.com] (1)"
+       - "美国(yfuye.com免费节点)_8 (128) (2) (2)"
+       - "🇩🇪[openproxylist.com] (3)"
+       - "@v2FreeHub 🇪🇸 (4)"
+       - "14|KR_speednode_0034 (13) (5)"
+       - "🇩🇪[openproxylist.com] (6)"
+       - "🇰🇷KR-218.237.185.230-0408 (7)"
+       - "🇫🇷_FR_法国 (8)"
+       - "🇩🇪_德国 (9)"
+       - "🇵🇾PY-38.165.233.93-0267 (10)"
+       - "🇧🇷  (Hysteria) (11)"
+       - "🇻🇳 越南|@stairnode (12)"
+       - "@Takv2ray_org | ð¸ð¬ÙÙÙ Ø§Ù¾Ø±Ø§ØªÙØ±ÙØ§ (13)"
+       - "SG新加坡(mibei77.com 米贝节点分享) (7) (14)"
+       - "香港3|@ripaojiedian (15)"
+       - "🇩🇪[openproxylist.com] (16)"
+       - "🇯🇵_日本 (17)"
+       - "🇺🇸 机场推荐:dafei.de 美国 04 (24) (47) (18)"
+       - "@v2FreeHub 🇵🇹 (19)"
+       - "r♡ya (20)"
+       - "🇰🇷 机场推荐:dafei.de 韩国 04 (21)"
+       - "法国_111604494 (22)"
+       - "14|US_speednode_0053 (43) (23)"
+       - "🇰🇷 机场推荐:dafei.de 韩国 01 (24)"
+       - "@awlix_ir (25)"
+       - "t.me/OutlineVpnOfficial%20%3E%3E%40OutlineVpnOfficial::BR (26)"
+       - "@v2FreeHub 🇧🇪 (27)"
+       - "🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯 (28)"
+       - "@awlix_ir (29)"
+       - "🇺🇸 机场推荐:dafei.de 美国 21 (30)"
+       - "🇭🇰 机场推荐:dafei.de 香港 22 (31)"
+       - "【机场推荐：https://a0a.xyz/】20 (32)"
+       - "🇵🇹 机场推荐:dafei.de 葡萄牙 01 (33)"
+       - "🏳️_未知 (34)"
+       - "@v2FreeHub 🇫🇷 (35)"
+       - "新加坡_110609002 (36)"
+       - "乌克兰_093013009 (27) (397) (37)"
+       - "🇹🇼 台湾|@ripaojiedian (38)"
+       - "瑞典_110509004 (39)"
+       - "🇯🇵 日本4|@ripaojiedian (40)"
+       - "🇺🇸_美国 (41)"
+       - "美国_110509038 (42)"
+       - "🇭🇰 机场推荐:dafei.de 香港 21 (43)"
+       - "俄罗斯联邦_101309333 (154) (405) (44)"
+       - "德国_111313021 (45)"
+       - "💎کانفیگ (179) (408) (46)"
+       - "💎کانفیگ (177) (409) (47)"
+       - "کانال+تلگرام+AYMH19@ (184) (410) (48)"
+       - "کانال (185) (411) (49)"
+       - "WiFi-@V2rayAlpha--3 (50)"
+       - "@vpnserverrr (51)"
+       - "(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 (402) (14) (52)"
+       - "@vmessorg (58) (53)"
+       - "@vmessorg (44) (54)"
+       - "@vmessorg (20) (55)"
+       - "@vmessorg (18) (56)"
+       - "@vmessorg (17) (57)"
+       - "@vmessorg (17) (58)"
+       - "@vmesskhodam)تلگراممون (194) (417) (59)"
+       - "@V2RAY_VMESS_free (418) (60)"
+       - ">>@v2rayNG_Matsuri::DE (419) (61)"
+       - "@V2RAYNG_IP❤️‍🔥 (175) (423) (62)"
+       - "@V2rayNG3 (63)"
+       - "V2rayNG3 (64)"
+       - "@V2ray_confing33 (65)"
+       - "@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (66)"
+       - "✅@v2ray_configs_pools (198) (412) (21) (67)"
+       - "@v2ray_configs_pools❤️‍🔥⚡ (197) (397) (35) (68)"
+       - "✅@v2ray_configs_pools (178) (488) (22) (69)"
+       - "V2rayArgon (182) (428) (70)"
+       - "🇺🇸 US美国(mibei77.com 米贝节点分享) (71)"
+       - "Ú©Ø§ÙØ§Ù (54) (429) (72)"
+       - "@unlimiteddev-link1 (208) (405) (26) (73)"
+       - "@unlimiteddev-link1 (187) (417) (32) (74)"
+       - "[🇵🇱]t.me/Raiv2mmr (189) (431) (75)"
+       - "test@JKVPN (190) (432) (76)"
+       - "telegram (213) (437) (77)"
+       - "telegram (212) (438) (78)"
+       - "telegram (192) (439) (79)"
+       - "@spikevpn👈 (225) (456) (32) (80)"
+       - "@spikevpn👈 (220) (443) (81)"
+       - "@spikevpn👈 (200) (459) (34) (82)"
+       - "[Shadowsocks] (83)"
+       - "[Shadowsocks] (84)"
+       - "🇩🇪 (85)"
+       - "🇩🇪[openproxylist.com] (86)"
+       - "🇹🇷[openproxylist.com] (87)"
+       - "🇺🇸[openproxylist.com] (93) (88)"
+       - "@ogsvpnbotخرید (29) (89)"
+       - "@ogsvpnbotخرید (28) (90)"
+       - "@ogsvpnbotخرید (229) (450) (91)"
+       - "@ogsvpnbot (43) (92)"
+       - "@ogsvpnbot (35) (93)"
+       - "@ogsvpnbot (34) (94)"
+       - "@ogsvpnbot (33) (95)"
+       - "@ogsvpnbot (31) (96)"
+       - "@ogsvpnbot (30) (97)"
+       - "@melov2ray🇫🇮 (259) (451) (98)"
+       - "@melov2ray🇫🇮 (254) (427) (46) (99)"
+       - "@melov2ray🇫🇮 (253) (428) (42) (100)"
+       - "🇨🇦𝐣𝐨𝐢𝐍-@𝐅𝐑𝐄𝐄𝐕𝟐𝐑𝐍𝐆 (242) (468) (42) (101)"
+       - "IR_speednode_0084 (454) (102)"
+       - "https://t.me/ShadowsocksM3 (103)"
+       - "https://t.me/ShadowsocksM23 (104)"
+       - "🇩🇪Germany³ (278) (456) (105)"
+       - "🇹🇷@FreakConfig (106)"
+       - "🇫🇮@FreakConfig (107)"
+       - "🇩🇪@FreakConfig (280) (474) (45) (108)"
+       - "➪+@FILTERK0SH++منبع+کانفیگ+رایگان (281) (457) (109)"
+       - "🇩🇪 DE | 🔓 VMESS | @magickey_shop [2] (110)"
+       - "ð«ð®@vpnserverrrÚ©Ø§ÙØ§Ù (111)"
+       - "ð«ð®[Telegram:NetifyVpn] (112)"
+       - "ð±ð»LV (460) (113)"
+       - "ð«ð®ð£ð¨ð¢ð-@ððððððððð (461) (114)"
+       - "[ð¸ðª]t.me/Raiv2mmr (56) (462) (115)"
+       - "ð¸ðª[Telegram:NetifyVpn] (116)"
+       - "ð©ðª[Telegram:NetifyVpn] (117)"
+       - "ð¨ð³[Telegram:NetifyVpn] (463) (118)"
+       - "ð¨ð³1@vpnserverrr (119)"
+       - "@daredevill_404 (120)"
+       - "ðªð¸70@vpnserverrr (121)"
+       - "ð³ð±Telegram:@tik7net_vpn (122)"
+       - "Channel-@vmesskhodam (120) (123)"
+       - "Channel id: @ShadowProxy66 🇮🇷 (292) (470) (124)"
+       - "Channel id: @ShadowProxy66 🇮🇷 (291) (471) (125)"
+       - "@bored_vpn (39) (126)"
+       - "@bored_vpn (38) (127)"
+       - "@bored_vpn (36) (128)"
+       - "@bored_vpn (120) (129)"
+       - "@bored_vp (293) (488) (41) (130)"
+       - "BinexTiFy🪸-q9eoiag4 (262) (447) (51) (131)"
+       - "AZADIV2RAYY (295) (473) (132)"
+       - "All-@V2rayAlpha--8 (133)"
+       - "All-@IRAN_V2RAY1 (134)"
+       - "All-@IRAN_V2RAY1 (298) (497) (54) (135)"
+       - "All²🇳🇱@JKVPN (302) (499) (55) (136)"
+       - "9c9qc5eg (305) (457) (43) (137)"
+       - "🇩🇪 (92) (138)"
+       - "🇳🇱 (88) (139)"
+       - "🇩🇪 (85) (140)"
+       - "84eec1wm (275) (455) (45) (141)"
+       - "🇩🇪 (29) (142)"
+       - "🇩🇪 (28) (143)"
+       - "🇩🇪 (26) (144)"
+       - "🇩🇪 (26) (145)"
+       - "🇩🇪 (25) (146)"
+       - "🇩🇪 (24) (147)"
+       - "🔐 (234) (483) (148)"
+       - "✅ (231) (484) (149)"
+       - "✅ (230) (485) (150)"
+       - "✅ (229) (486) (151)"
+       - "🇩🇪 (209) (491) (152)"
+       - "🇳🇱 (208) (469) (63) (153)"
+       - "14|US_speednode_0066 (41) (154)"
+       - "0ubbvny7 (307) (492) (155)"
+    ###fallback
+
+
+
+rules:
+    - 'DOMAIN,zzxxcdfsdfxxvvgddd.zyzyzyzysbs.sbs,DIRECT'
+    - 'DOMAIN-SUFFIX,services.googleapis.cn,手动选择'
+    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,手动选择'
+    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
+    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
+    - 'DOMAIN,developer.apple.com,手动选择'
+    - 'DOMAIN-SUFFIX,digicert.com,手动选择'
+    - 'DOMAIN,ocsp.apple.com,手动选择'
+    - 'DOMAIN,ocsp.comodoca.com,手动选择'
+    - 'DOMAIN,ocsp.usertrust.com,手动选择'
+    - 'DOMAIN,ocsp.sectigo.com,手动选择'
+    - 'DOMAIN,ocsp.verisign.net,手动选择'
+    - 'DOMAIN-SUFFIX,apple-dns.net,手动选择'
+    - 'DOMAIN,testflight.apple.com,手动选择'
+    - 'DOMAIN,sandbox.itunes.apple.com,手动选择'
+    - 'DOMAIN,itunes.apple.com,手动选择'
+    - 'DOMAIN-SUFFIX,apps.apple.com,手动选择'
+    - 'DOMAIN-SUFFIX,blobstore.apple.com,手动选择'
+    - 'DOMAIN,cvws.icloud-content.com,手动选择'
+    - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
+    - 'DOMAIN-SUFFIX,me.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn20.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,akadns.net,DIRECT'
+    - 'DOMAIN-SUFFIX,akamaiedge.net,DIRECT'
+    - 'DOMAIN-SUFFIX,edgekey.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcname.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-mapkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.net,DIRECT'
+    - 'DOMAIN-SUFFIX,127.net,DIRECT'
+    - 'DOMAIN-SUFFIX,163.com,DIRECT'
+    - 'DOMAIN-SUFFIX,360buyimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,36kr.com,DIRECT'
+    - 'DOMAIN-SUFFIX,acfun.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,air-matters.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aixifan.com,DIRECT'
+    - 'DOMAIN-KEYWORD,alicdn,DIRECT'
+    - 'DOMAIN-KEYWORD,alipay,DIRECT'
+    - 'DOMAIN-KEYWORD,taobao,DIRECT'
+    - 'DOMAIN-SUFFIX,amap.com,DIRECT'
+    - 'DOMAIN-SUFFIX,autonavi.com,DIRECT'
+    - 'DOMAIN-KEYWORD,baidu,DIRECT'
+    - 'DOMAIN-SUFFIX,bdimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bdstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilivideo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,caiyunapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,clouddn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbeta.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbetacdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cootekservice.com,DIRECT'
+    - 'DOMAIN-SUFFIX,csdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ctrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dgtle.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dianping.com,DIRECT'
+    - 'DOMAIN-SUFFIX,douban.com,DIRECT'
+    - 'DOMAIN-SUFFIX,doubanio.com,DIRECT'
+    - 'DOMAIN-SUFFIX,duokan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,easou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ele.me,DIRECT'
+    - 'DOMAIN-SUFFIX,feng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,fir.im,DIRECT'
+    - 'DOMAIN-SUFFIX,frdic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,g-cores.com,DIRECT'
+    - 'DOMAIN-SUFFIX,godic.net,DIRECT'
+    - 'DOMAIN-SUFFIX,gtimg.com,DIRECT'
+    - 'DOMAIN,cdn.hockeyapp.net,DIRECT'
+    - 'DOMAIN-SUFFIX,hongxiu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,hxcdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iciba.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifeng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifengimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ipip.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jianshu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,knewone.com,DIRECT'
+    - 'DOMAIN-SUFFIX,le.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lecloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lemicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,licdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,luoo.net,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miaopai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoft.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoftonline.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miui.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miwifi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mob.com,DIRECT'
+    - 'DOMAIN-SUFFIX,netease.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office365.com,DIRECT'
+    - 'DOMAIN-KEYWORD,officecdn,DIRECT'
+    - 'DOMAIN-SUFFIX,oschina.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ppsimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,pstatp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qcloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdaily.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdmm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhres.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qidian.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qihucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiyipic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qqurl.com,DIRECT'
+    - 'DOMAIN-SUFFIX,rarbg.to,DIRECT'
+    - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,smzdm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,soku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,suning.com,DIRECT'
+    - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tenpay.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tianyancha.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tmall.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tudou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,umetrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upaiyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,veryzhun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weather.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weibo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.net,DIRECT'
+    - 'DOMAIN-SUFFIX,xiaomicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ximalaya.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xmcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xunlei.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yhd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yihaodianimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yinxiang.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ykimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youdao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zealer.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
+    - 'DOMAIN-KEYWORD,amazon,手动选择'
+    - 'DOMAIN-KEYWORD,google,手动选择'
+    - 'DOMAIN-KEYWORD,gmail,手动选择'
+    - 'DOMAIN-KEYWORD,youtube,手动选择'
+    - 'DOMAIN-KEYWORD,facebook,手动选择'
+    - 'DOMAIN-SUFFIX,fb.me,手动选择'
+    - 'DOMAIN-SUFFIX,fbcdn.net,手动选择'
+    - 'DOMAIN-KEYWORD,twitter,手动选择'
+    - 'DOMAIN-KEYWORD,instagram,手动选择'
+    - 'DOMAIN-KEYWORD,dropbox,手动选择'
+    - 'DOMAIN-SUFFIX,twimg.com,手动选择'
+    - 'DOMAIN-KEYWORD,blogspot,手动选择'
+    - 'DOMAIN-SUFFIX,youtu.be,手动选择'
+    - 'DOMAIN-KEYWORD,whatsapp,手动选择'
+    - 'DOMAIN-KEYWORD,admarvel,REJECT'
+    - 'DOMAIN-KEYWORD,admaster,REJECT'
+    - 'DOMAIN-KEYWORD,adsage,REJECT'
+    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
+    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
+    - 'DOMAIN-KEYWORD,adwords,REJECT'
+    - 'DOMAIN-KEYWORD,adservice,REJECT'
+    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
+    - 'DOMAIN-KEYWORD,domob,REJECT'
+    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
+    - 'DOMAIN-KEYWORD,duomeng,REJECT'
+    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
+    - 'DOMAIN-KEYWORD,guanggao,REJECT'
+    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
+    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
+    - 'DOMAIN-KEYWORD,mopub,REJECT'
+    - 'DOMAIN-KEYWORD,omgmta,REJECT'
+    - 'DOMAIN-KEYWORD,openx,REJECT'
+    - 'DOMAIN-KEYWORD,partnerad,REJECT'
+    - 'DOMAIN-KEYWORD,pingfore,REJECT'
+    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
+    - 'DOMAIN-KEYWORD,uedas,REJECT'
+    - 'DOMAIN-KEYWORD,umeng,REJECT'
+    - 'DOMAIN-KEYWORD,usage,REJECT'
+    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
+    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
+    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
+    - 'DOMAIN-SUFFIX,9to5mac.com,手动选择'
+    - 'DOMAIN-SUFFIX,abpchina.org,手动选择'
+    - 'DOMAIN-SUFFIX,adblockplus.org,手动选择'
+    - 'DOMAIN-SUFFIX,adobe.com,手动选择'
+    - 'DOMAIN-SUFFIX,akamaized.net,手动选择'
+    - 'DOMAIN-SUFFIX,alfredapp.com,手动选择'
+    - 'DOMAIN-SUFFIX,amplitude.com,手动选择'
+    - 'DOMAIN-SUFFIX,ampproject.org,手动选择'
+    - 'DOMAIN-SUFFIX,android.com,手动选择'
+    - 'DOMAIN-SUFFIX,angularjs.org,手动选择'
+    - 'DOMAIN-SUFFIX,aolcdn.com,手动选择'
+    - 'DOMAIN-SUFFIX,apkpure.com,手动选择'
+    - 'DOMAIN-SUFFIX,appledaily.com,手动选择'
+    - 'DOMAIN-SUFFIX,appshopper.com,手动选择'
+    - 'DOMAIN-SUFFIX,appspot.com,手动选择'
+    - 'DOMAIN-SUFFIX,arcgis.com,手动选择'
+    - 'DOMAIN-SUFFIX,archive.org,手动选择'
+    - 'DOMAIN-SUFFIX,armorgames.com,手动选择'
+    - 'DOMAIN-SUFFIX,aspnetcdn.com,手动选择'
+    - 'DOMAIN-SUFFIX,att.com,手动选择'
+    - 'DOMAIN-SUFFIX,awsstatic.com,手动选择'
+    - 'DOMAIN-SUFFIX,azureedge.net,手动选择'
+    - 'DOMAIN-SUFFIX,azurewebsites.net,手动选择'
+    - 'DOMAIN-SUFFIX,bing.com,手动选择'
+    - 'DOMAIN-SUFFIX,bintray.com,手动选择'
+    - 'DOMAIN-SUFFIX,bit.com,手动选择'
+    - 'DOMAIN-SUFFIX,bit.ly,手动选择'
+    - 'DOMAIN-SUFFIX,bitbucket.org,手动选择'
+    - 'DOMAIN-SUFFIX,bjango.com,手动选择'
+    - 'DOMAIN-SUFFIX,bkrtx.com,手动选择'
+    - 'DOMAIN-SUFFIX,blog.com,手动选择'
+    - 'DOMAIN-SUFFIX,blogcdn.com,手动选择'
+    - 'DOMAIN-SUFFIX,blogger.com,手动选择'
+    - 'DOMAIN-SUFFIX,blogsmithmedia.com,手动选择'
+    - 'DOMAIN-SUFFIX,blogspot.com,手动选择'
+    - 'DOMAIN-SUFFIX,blogspot.hk,手动选择'
+    - 'DOMAIN-SUFFIX,bloomberg.com,手动选择'
+    - 'DOMAIN-SUFFIX,box.com,手动选择'
+    - 'DOMAIN-SUFFIX,box.net,手动选择'
+    - 'DOMAIN-SUFFIX,cachefly.net,手动选择'
+    - 'DOMAIN-SUFFIX,chromium.org,手动选择'
+    - 'DOMAIN-SUFFIX,cl.ly,手动选择'
+    - 'DOMAIN-SUFFIX,cloudflare.com,手动选择'
+    - 'DOMAIN-SUFFIX,cloudfront.net,手动选择'
+    - 'DOMAIN-SUFFIX,cloudmagic.com,手动选择'
+    - 'DOMAIN-SUFFIX,cmail19.com,手动选择'
+    - 'DOMAIN-SUFFIX,cnet.com,手动选择'
+    - 'DOMAIN-SUFFIX,cocoapods.org,手动选择'
+    - 'DOMAIN-SUFFIX,comodoca.com,手动选择'
+    - 'DOMAIN-SUFFIX,crashlytics.com,手动选择'
+    - 'DOMAIN-SUFFIX,culturedcode.com,手动选择'
+    - 'DOMAIN-SUFFIX,d.pr,手动选择'
+    - 'DOMAIN-SUFFIX,danilo.to,手动选择'
+    - 'DOMAIN-SUFFIX,dayone.me,手动选择'
+    - 'DOMAIN-SUFFIX,db.tt,手动选择'
+    - 'DOMAIN-SUFFIX,deskconnect.com,手动选择'
+    - 'DOMAIN-SUFFIX,disq.us,手动选择'
+    - 'DOMAIN-SUFFIX,disqus.com,手动选择'
+    - 'DOMAIN-SUFFIX,disquscdn.com,手动选择'
+    - 'DOMAIN-SUFFIX,dnsimple.com,手动选择'
+    - 'DOMAIN-SUFFIX,docker.com,手动选择'
+    - 'DOMAIN-SUFFIX,dribbble.com,手动选择'
+    - 'DOMAIN-SUFFIX,droplr.com,手动选择'
+    - 'DOMAIN-SUFFIX,duckduckgo.com,手动选择'
+    - 'DOMAIN-SUFFIX,dueapp.com,手动选择'
+    - 'DOMAIN-SUFFIX,dytt8.net,手动选择'
+    - 'DOMAIN-SUFFIX,edgecastcdn.net,手动选择'
+    - 'DOMAIN-SUFFIX,edgekey.net,手动选择'
+    - 'DOMAIN-SUFFIX,edgesuite.net,手动选择'
+    - 'DOMAIN-SUFFIX,engadget.com,手动选择'
+    - 'DOMAIN-SUFFIX,entrust.net,手动选择'
+    - 'DOMAIN-SUFFIX,eurekavpt.com,手动选择'
+    - 'DOMAIN-SUFFIX,evernote.com,手动选择'
+    - 'DOMAIN-SUFFIX,fabric.io,手动选择'
+    - 'DOMAIN-SUFFIX,fast.com,手动选择'
+    - 'DOMAIN-SUFFIX,fastly.net,手动选择'
+    - 'DOMAIN-SUFFIX,fc2.com,手动选择'
+    - 'DOMAIN-SUFFIX,feedburner.com,手动选择'
+    - 'DOMAIN-SUFFIX,feedly.com,手动选择'
+    - 'DOMAIN-SUFFIX,feedsportal.com,手动选择'
+    - 'DOMAIN-SUFFIX,fiftythree.com,手动选择'
+    - 'DOMAIN-SUFFIX,firebaseio.com,手动选择'
+    - 'DOMAIN-SUFFIX,flexibits.com,手动选择'
+    - 'DOMAIN-SUFFIX,flickr.com,手动选择'
+    - 'DOMAIN-SUFFIX,flipboard.com,手动选择'
+    - 'DOMAIN-SUFFIX,g.co,手动选择'
+    - 'DOMAIN-SUFFIX,gabia.net,手动选择'
+    - 'DOMAIN-SUFFIX,geni.us,手动选择'
+    - 'DOMAIN-SUFFIX,gfx.ms,手动选择'
+    - 'DOMAIN-SUFFIX,ggpht.com,手动选择'
+    - 'DOMAIN-SUFFIX,ghostnoteapp.com,手动选择'
+    - 'DOMAIN-SUFFIX,git.io,手动选择'
+    - 'DOMAIN-KEYWORD,github,手动选择'
+    - 'DOMAIN-SUFFIX,globalsign.com,手动选择'
+    - 'DOMAIN-SUFFIX,gmodules.com,手动选择'
+    - 'DOMAIN-SUFFIX,godaddy.com,手动选择'
+    - 'DOMAIN-SUFFIX,golang.org,手动选择'
+    - 'DOMAIN-SUFFIX,gongm.in,手动选择'
+    - 'DOMAIN-SUFFIX,goo.gl,手动选择'
+    - 'DOMAIN-SUFFIX,goodreaders.com,手动选择'
+    - 'DOMAIN-SUFFIX,goodreads.com,手动选择'
+    - 'DOMAIN-SUFFIX,gravatar.com,手动选择'
+    - 'DOMAIN-SUFFIX,gstatic.com,手动选择'
+    - 'DOMAIN-SUFFIX,gvt0.com,手动选择'
+    - 'DOMAIN-SUFFIX,hockeyapp.net,手动选择'
+    - 'DOMAIN-SUFFIX,hotmail.com,手动选择'
+    - 'DOMAIN-SUFFIX,icons8.com,手动选择'
+    - 'DOMAIN-SUFFIX,ifixit.com,手动选择'
+    - 'DOMAIN-SUFFIX,ift.tt,手动选择'
+    - 'DOMAIN-SUFFIX,ifttt.com,手动选择'
+    - 'DOMAIN-SUFFIX,iherb.com,手动选择'
+    - 'DOMAIN-SUFFIX,imageshack.us,手动选择'
+    - 'DOMAIN-SUFFIX,img.ly,手动选择'
+    - 'DOMAIN-SUFFIX,imgur.com,手动选择'
+    - 'DOMAIN-SUFFIX,imore.com,手动选择'
+    - 'DOMAIN-SUFFIX,instapaper.com,手动选择'
+    - 'DOMAIN-SUFFIX,ipn.li,手动选择'
+    - 'DOMAIN-SUFFIX,is.gd,手动选择'
+    - 'DOMAIN-SUFFIX,issuu.com,手动选择'
+    - 'DOMAIN-SUFFIX,itgonglun.com,手动选择'
+    - 'DOMAIN-SUFFIX,itun.es,手动选择'
+    - 'DOMAIN-SUFFIX,ixquick.com,手动选择'
+    - 'DOMAIN-SUFFIX,j.mp,手动选择'
+    - 'DOMAIN-SUFFIX,js.revsci.net,手动选择'
+    - 'DOMAIN-SUFFIX,jshint.com,手动选择'
+    - 'DOMAIN-SUFFIX,jtvnw.net,手动选择'
+    - 'DOMAIN-SUFFIX,justgetflux.com,手动选择'
+    - 'DOMAIN-SUFFIX,kat.cr,手动选择'
+    - 'DOMAIN-SUFFIX,klip.me,手动选择'
+    - 'DOMAIN-SUFFIX,libsyn.com,手动选择'
+    - 'DOMAIN-SUFFIX,linkedin.com,手动选择'
+    - 'DOMAIN-SUFFIX,line-apps.com,手动选择'
+    - 'DOMAIN-SUFFIX,linode.com,手动选择'
+    - 'DOMAIN-SUFFIX,lithium.com,手动选择'
+    - 'DOMAIN-SUFFIX,littlehj.com,手动选择'
+    - 'DOMAIN-SUFFIX,live.com,手动选择'
+    - 'DOMAIN-SUFFIX,live.net,手动选择'
+    - 'DOMAIN-SUFFIX,livefilestore.com,手动选择'
+    - 'DOMAIN-SUFFIX,llnwd.net,手动选择'
+    - 'DOMAIN-SUFFIX,macid.co,手动选择'
+    - 'DOMAIN-SUFFIX,macromedia.com,手动选择'
+    - 'DOMAIN-SUFFIX,macrumors.com,手动选择'
+    - 'DOMAIN-SUFFIX,mashable.com,手动选择'
+    - 'DOMAIN-SUFFIX,mathjax.org,手动选择'
+    - 'DOMAIN-SUFFIX,medium.com,手动选择'
+    - 'DOMAIN-SUFFIX,mega.co.nz,手动选择'
+    - 'DOMAIN-SUFFIX,mega.nz,手动选择'
+    - 'DOMAIN-SUFFIX,megaupload.com,手动选择'
+    - 'DOMAIN-SUFFIX,microsofttranslator.com,手动选择'
+    - 'DOMAIN-SUFFIX,mindnode.com,手动选择'
+    - 'DOMAIN-SUFFIX,mobile01.com,手动选择'
+    - 'DOMAIN-SUFFIX,modmyi.com,手动选择'
+    - 'DOMAIN-SUFFIX,msedge.net,手动选择'
+    - 'DOMAIN-SUFFIX,myfontastic.com,手动选择'
+    - 'DOMAIN-SUFFIX,name.com,手动选择'
+    - 'DOMAIN-SUFFIX,nextmedia.com,手动选择'
+    - 'DOMAIN-SUFFIX,nsstatic.net,手动选择'
+    - 'DOMAIN-SUFFIX,nssurge.com,手动选择'
+    - 'DOMAIN-SUFFIX,nyt.com,手动选择'
+    - 'DOMAIN-SUFFIX,nytimes.com,手动选择'
+    - 'DOMAIN-SUFFIX,omnigroup.com,手动选择'
+    - 'DOMAIN-SUFFIX,onedrive.com,手动选择'
+    - 'DOMAIN-SUFFIX,onenote.com,手动选择'
+    - 'DOMAIN-SUFFIX,ooyala.com,手动选择'
+    - 'DOMAIN-SUFFIX,openvpn.net,手动选择'
+    - 'DOMAIN-SUFFIX,openwrt.org,手动选择'
+    - 'DOMAIN-SUFFIX,orkut.com,手动选择'
+    - 'DOMAIN-SUFFIX,osxdaily.com,手动选择'
+    - 'DOMAIN-SUFFIX,outlook.com,手动选择'
+    - 'DOMAIN-SUFFIX,ow.ly,手动选择'
+    - 'DOMAIN-SUFFIX,paddleapi.com,手动选择'
+    - 'DOMAIN-SUFFIX,parallels.com,手动选择'
+    - 'DOMAIN-SUFFIX,parse.com,手动选择'
+    - 'DOMAIN-SUFFIX,pdfexpert.com,手动选择'
+    - 'DOMAIN-SUFFIX,periscope.tv,手动选择'
+    - 'DOMAIN-SUFFIX,pinboard.in,手动选择'
+    - 'DOMAIN-SUFFIX,pinterest.com,手动选择'
+    - 'DOMAIN-SUFFIX,pixelmator.com,手动选择'
+    - 'DOMAIN-SUFFIX,pixiv.net,手动选择'
+    - 'DOMAIN-SUFFIX,playpcesor.com,手动选择'
+    - 'DOMAIN-SUFFIX,playstation.com,手动选择'
+    - 'DOMAIN-SUFFIX,playstation.com.hk,手动选择'
+    - 'DOMAIN-SUFFIX,playstation.net,手动选择'
+    - 'DOMAIN-SUFFIX,playstationnetwork.com,手动选择'
+    - 'DOMAIN-SUFFIX,pushwoosh.com,手动选择'
+    - 'DOMAIN-SUFFIX,rime.im,手动选择'
+    - 'DOMAIN-SUFFIX,servebom.com,手动选择'
+    - 'DOMAIN-SUFFIX,sfx.ms,手动选择'
+    - 'DOMAIN-SUFFIX,shadowsocks.org,手动选择'
+    - 'DOMAIN-SUFFIX,sharethis.com,手动选择'
+    - 'DOMAIN-SUFFIX,shazam.com,手动选择'
+    - 'DOMAIN-SUFFIX,skype.com,手动选择'
+    - 'DOMAIN-SUFFIX,smartmailcloud.com,手动选择'
+    - 'DOMAIN-SUFFIX,sndcdn.com,手动选择'
+    - 'DOMAIN-SUFFIX,sony.com,手动选择'
+    - 'DOMAIN-SUFFIX,soundcloud.com,手动选择'
+    - 'DOMAIN-SUFFIX,sourceforge.net,手动选择'
+    - 'DOMAIN-SUFFIX,spotify.com,手动选择'
+    - 'DOMAIN-SUFFIX,squarespace.com,手动选择'
+    - 'DOMAIN-SUFFIX,sstatic.net,手动选择'
+    - 'DOMAIN-SUFFIX,st.luluku.pw,手动选择'
+    - 'DOMAIN-SUFFIX,stackoverflow.com,手动选择'
+    - 'DOMAIN-SUFFIX,startpage.com,手动选择'
+    - 'DOMAIN-SUFFIX,staticflickr.com,手动选择'
+    - 'DOMAIN-SUFFIX,steamcommunity.com,手动选择'
+    - 'DOMAIN-SUFFIX,symauth.com,手动选择'
+    - 'DOMAIN-SUFFIX,symcb.com,手动选择'
+    - 'DOMAIN-SUFFIX,symcd.com,手动选择'
+    - 'DOMAIN-SUFFIX,tapbots.com,手动选择'
+    - 'DOMAIN-SUFFIX,tapbots.net,手动选择'
+    - 'DOMAIN-SUFFIX,tdesktop.com,手动选择'
+    - 'DOMAIN-SUFFIX,techcrunch.com,手动选择'
+    - 'DOMAIN-SUFFIX,techsmith.com,手动选择'
+    - 'DOMAIN-SUFFIX,thepiratebay.org,手动选择'
+    - 'DOMAIN-SUFFIX,theverge.com,手动选择'
+    - 'DOMAIN-SUFFIX,time.com,手动选择'
+    - 'DOMAIN-SUFFIX,timeinc.net,手动选择'
+    - 'DOMAIN-SUFFIX,tiny.cc,手动选择'
+    - 'DOMAIN-SUFFIX,tinypic.com,手动选择'
+    - 'DOMAIN-SUFFIX,tmblr.co,手动选择'
+    - 'DOMAIN-SUFFIX,todoist.com,手动选择'
+    - 'DOMAIN-SUFFIX,trello.com,手动选择'
+    - 'DOMAIN-SUFFIX,trustasiassl.com,手动选择'
+    - 'DOMAIN-SUFFIX,tumblr.co,手动选择'
+    - 'DOMAIN-SUFFIX,tumblr.com,手动选择'
+    - 'DOMAIN-SUFFIX,tweetdeck.com,手动选择'
+    - 'DOMAIN-SUFFIX,tweetmarker.net,手动选择'
+    - 'DOMAIN-SUFFIX,twitch.tv,手动选择'
+    - 'DOMAIN-SUFFIX,txmblr.com,手动选择'
+    - 'DOMAIN-SUFFIX,typekit.net,手动选择'
+    - 'DOMAIN-SUFFIX,ubertags.com,手动选择'
+    - 'DOMAIN-SUFFIX,ublock.org,手动选择'
+    - 'DOMAIN-SUFFIX,ubnt.com,手动选择'
+    - 'DOMAIN-SUFFIX,ulyssesapp.com,手动选择'
+    - 'DOMAIN-SUFFIX,urchin.com,手动选择'
+    - 'DOMAIN-SUFFIX,usertrust.com,手动选择'
+    - 'DOMAIN-SUFFIX,v.gd,手动选择'
+    - 'DOMAIN-SUFFIX,v2ex.com,手动选择'
+    - 'DOMAIN-SUFFIX,vimeo.com,手动选择'
+    - 'DOMAIN-SUFFIX,vimeocdn.com,手动选择'
+    - 'DOMAIN-SUFFIX,vine.co,手动选择'
+    - 'DOMAIN-SUFFIX,vivaldi.com,手动选择'
+    - 'DOMAIN-SUFFIX,vox-cdn.com,手动选择'
+    - 'DOMAIN-SUFFIX,vsco.co,手动选择'
+    - 'DOMAIN-SUFFIX,vultr.com,手动选择'
+    - 'DOMAIN-SUFFIX,w.org,手动选择'
+    - 'DOMAIN-SUFFIX,w3schools.com,手动选择'
+    - 'DOMAIN-SUFFIX,webtype.com,手动选择'
+    - 'DOMAIN-SUFFIX,wikiwand.com,手动选择'
+    - 'DOMAIN-SUFFIX,wikileaks.org,手动选择'
+    - 'DOMAIN-SUFFIX,wikimedia.org,手动选择'
+    - 'DOMAIN-SUFFIX,wikipedia.com,手动选择'
+    - 'DOMAIN-SUFFIX,wikipedia.org,手动选择'
+    - 'DOMAIN-SUFFIX,windows.com,手动选择'
+    - 'DOMAIN-SUFFIX,windows.net,手动选择'
+    - 'DOMAIN-SUFFIX,wire.com,手动选择'
+    - 'DOMAIN-SUFFIX,wordpress.com,手动选择'
+    - 'DOMAIN-SUFFIX,workflowy.com,手动选择'
+    - 'DOMAIN-SUFFIX,wp.com,手动选择'
+    - 'DOMAIN-SUFFIX,wsj.com,手动选择'
+    - 'DOMAIN-SUFFIX,wsj.net,手动选择'
+    - 'DOMAIN-SUFFIX,xda-developers.com,手动选择'
+    - 'DOMAIN-SUFFIX,xeeno.com,手动选择'
+    - 'DOMAIN-SUFFIX,xiti.com,手动选择'
+    - 'DOMAIN-SUFFIX,yahoo.com,手动选择'
+    - 'DOMAIN-SUFFIX,yimg.com,手动选择'
+    - 'DOMAIN-SUFFIX,ying.com,手动选择'
+    - 'DOMAIN-SUFFIX,yoyo.org,手动选择'
+    - 'DOMAIN-SUFFIX,ytimg.com,手动选择'
+    - 'DOMAIN-SUFFIX,telegra.ph,手动选择'
+    - 'DOMAIN-SUFFIX,telegram.org,手动选择'
+    - 'IP-CIDR,91.108.4.0/22,手动选择,no-resolve'
+    - 'IP-CIDR,91.108.8.0/21,手动选择,no-resolve'
+    - 'IP-CIDR,91.108.16.0/22,手动选择,no-resolve'
+    - 'IP-CIDR,91.108.56.0/22,手动选择,no-resolve'
+    - 'IP-CIDR,149.154.160.0/20,手动选择,no-resolve'
+    - 'IP-CIDR6,2001:67c:4e8::/48,手动选择,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23d::/48,手动选择,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23f::/48,手动选择,no-resolve'
+    - 'IP-CIDR,120.232.181.162/32,手动选择,no-resolve'
+    - 'IP-CIDR,120.241.147.226/32,手动选择,no-resolve'
+    - 'IP-CIDR,120.253.253.226/32,手动选择,no-resolve'
+    - 'IP-CIDR,120.253.255.162/32,手动选择,no-resolve'
+    - 'IP-CIDR,120.253.255.34/32,手动选择,no-resolve'
+    - 'IP-CIDR,120.253.255.98/32,手动选择,no-resolve'
+    - 'IP-CIDR,180.163.150.162/32,手动选择,no-resolve'
+    - 'IP-CIDR,180.163.150.34/32,手动选择,no-resolve'
+    - 'IP-CIDR,180.163.151.162/32,手动选择,no-resolve'
+    - 'IP-CIDR,180.163.151.34/32,手动选择,no-resolve'
+    - 'IP-CIDR,203.208.39.0/24,手动选择,no-resolve'
+    - 'IP-CIDR,203.208.40.0/24,手动选择,no-resolve'
+    - 'IP-CIDR,203.208.41.0/24,手动选择,no-resolve'
+    - 'IP-CIDR,203.208.43.0/24,手动选择,no-resolve'
+    - 'IP-CIDR,203.208.50.0/24,手动选择,no-resolve'
+    - 'IP-CIDR,220.181.174.162/32,手动选择,no-resolve'
+    - 'IP-CIDR,220.181.174.226/32,手动选择,no-resolve'
+    - 'IP-CIDR,220.181.174.34/32,手动选择,no-resolve'
+    - 'DOMAIN,injections.adguard.org,DIRECT'
+    - 'DOMAIN,local.adguard.org,DIRECT'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'DOMAIN-SUFFIX,cn,DIRECT'
+    - 'DOMAIN-KEYWORD,-cn,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,手动选择'
