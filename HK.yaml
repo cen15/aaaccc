@@ -1,0 +1,743 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: :9090
+proxies:
+- name: 🇭🇰 香港
+  server: 203.198.122.135
+  port: 443
+  type: trojan
+  password: dd2f25b4c70689de8bc0f7fa9d6591cb
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇭🇰 香港2
+  server: 58.152.26.173
+  port: 443
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 香港3
+  server: 219.79.165.55
+  port: 443
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 香港4
+  server: 58.152.26.173
+  port: 443
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港5
+  server: 219.79.165.55
+  port: 443
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- country: 🇭🇰HK
+  name: 🇭🇰香港6
+  password: BxceQaOe
+  port: 443
+  server: 219.79.165.55
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- name: 🇹🇼台湾
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+proxy-groups:
+- name: 🚀 手动切换
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇭🇰 香港4
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 📺 巴哈姆特动画疯
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🅱️️ 哔哩哔哩港澳台
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 📹 YouTube
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - ♻️ 自动选择
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🎥 NETFLIX
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🦄 DisneyPlus
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🎞️ Prime Video
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🎮👑👑 HBO MAX
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 📹️ HBOGO Asia
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 💿 AbemaTV
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🔞 Pornhub
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🎶 TikTok
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🎧 Spotify
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 🎯 全球直连
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🎮️ 游戏平台
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🤖 ChatGPT、Claude、Gemini、微软AI
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 🎯 全球直连
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 📲 电报信息
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 📢 谷歌FCM
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 手动切换
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 🎯 全球直连
+  - 8元老牌专线机场：cczzuu.top
+  - 🇭🇰 香港|@stairnode
+  - 🇭🇰 香港2|@stairnode
+  - 🇭🇰 香港
+  - 🇭🇰 香港2
+  - 🇭🇰 香港3
+  - 🇯🇵 日本|@stairnode
+  - 🇯🇵 日本2|@stairnode
+  - 🇯🇵 日本3|@stairnode
+  - 🇯🇵 日本4|@stairnode
+  - 🇸🇬 新加坡|@stairnode
+  - 🇸🇬 新加坡2|@stairnode
+  - 🇸🇬 新加坡3|@stairnode
+  - 🇺🇸 美国|@stairnode
+  - 🇺🇸 美国2|@stairnode
+  - 🇺🇸 美国3|@stairnode
+  - 🇻🇳 越南|@stairnode
+rule-providers:
+  YouTube:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/youtube.yaml
+    path: ./ruleset/youtube.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  NETFLIX:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/netflix.yaml
+    path: ./ruleset/netflix.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  NETFLIXip:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/netflix.yaml
+    path: ./ruleset/netflix_ip.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  游戏平台:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/category-games-!cn.yaml
+    path: ./ruleset/category-games-!cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  TELEGRAM:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/telegram.yaml
+    path: ./ruleset/telegram.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  TELEGRAMip:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/telegram.yaml
+    path: ./ruleset/telegram_ip.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  苹果服务:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/apple.yaml
+    path: ./ruleset/apple.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  ChatGPT、Claude、Gemini、微软AI:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/category-ai-chat-!cn.yaml
+    path: ./ruleset/category-ai-chat-!cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  微软服务:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/microsoft.yaml
+    path: ./ruleset/microsoft.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  谷歌FCM:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/googlefcm.yaml
+    path: ./ruleset/googlefcm.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  📺 巴哈姆特动画疯:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/bahamut.yaml
+    path: ./ruleset/bahamut.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  🅱️️ 哔哩哔哩港澳台:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/bilibili%40!cn.yaml
+    path: ./ruleset/biliintl.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  🦄 DisneyPlus:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/disney.yaml
+    path: ./ruleset/disney.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  🎞️ Prime Video:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/primevideo.yaml
+    path: ./ruleset/primevideo.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  🎮👑👑 HBO MAX:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/hbo.yaml
+    path: ./ruleset/hbo.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  📹️ HBOGO Asia:
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBOAsia/HBOAsia.yaml
+    path: ./ruleset/hbogo.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  💿 AbemaTV:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/abema.yaml
+    path: ./ruleset/abema.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  🔞 Pornhub:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/pornhub.yaml
+    path: ./ruleset/pornhub.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  🎶 TikTok:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/tiktok.yaml
+    path: ./ruleset/tiktok.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  🎧 Spotify:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/spotify.yaml
+    path: ./ruleset/spotify.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  Proxy:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/geolocation-!cn.yaml
+    path: ./ruleset/geolocation-!cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+rules:
+- RULE-SET,YouTube,📹 YouTube
+- RULE-SET,NETFLIX,🎥 NETFLIX
+- RULE-SET,NETFLIXip,🎥 NETFLIX
+- RULE-SET,游戏平台,🎮️ 游戏平台
+- RULE-SET,TELEGRAM,📲 电报信息
+- RULE-SET,TELEGRAMip,📲 电报信息
+- RULE-SET,苹果服务,🍎 苹果服务
+- RULE-SET,ChatGPT、Claude、Gemini、微软AI,🤖 ChatGPT、Claude、Gemini、微软AI
+- RULE-SET,微软服务,Ⓜ️ 微软服务
+- RULE-SET,谷歌FCM,📢 谷歌FCM
+- RULE-SET,📺 巴哈姆特动画疯,📺 巴哈姆特动画疯
+- RULE-SET,🅱️️ 哔哩哔哩港澳台,🅱️️ 哔哩哔哩港澳台
+- RULE-SET,🦄 DisneyPlus,🦄 DisneyPlus
+- RULE-SET,🎞️ Prime Video,🎞️ Prime Video
+- RULE-SET,📹️ HBOGO Asia,📹️ HBOGO Asia
+- RULE-SET,🎮👑👑 HBO MAX,🎮👑👑 HBO MAX
+- RULE-SET,💿 AbemaTV,💿 AbemaTV
+- RULE-SET,🔞 Pornhub,🔞 Pornhub
+- RULE-SET,🎶 TikTok,🎶 TikTok
+- RULE-SET,🎧 Spotify,🎧 Spotify
+- GEOSITE,geolocation-cn,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- RULE-SET,Proxy,🚀 手动切换
+- MATCH,🐟 漏网之鱼
