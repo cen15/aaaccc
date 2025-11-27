@@ -1,0 +1,8244 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 9090
+proxies:
+- name: '#001 VN1'
+  type: hysteria2
+  server: ptyn.jgpyjc.top
+  password: 59832ca0-31c1-4d01-9b52-e2aaa8ad81fd
+  sni: ptyn.jgpyjc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+- name: '#002 AE1 CF1'
+  type: vless
+  server: 193.123.90.82
+  port: 12648
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#003 HK1'
+  type: trojan
+  server: 112.120.31.179
+  port: 443
+  password: BxceQaOe
+  udp: true
+  tfo: false
+  tls: true
+  sni: 112.120.31.179
+  skip-cert-verify: true
+  network: tcp
+- name: '#004 KR1'
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: seoul02.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: seoul02.zgjok.com
+- name: '#005 TR1'
+  type: ss
+  server: 185.39.204.189
+  port: 34085
+  cipher: chacha20-ietf-poly1305
+  password: depjSbjv2Uql6W4Vge7sDf
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: '#006 JP1'
+  type: hysteria2
+  server: sfdhgseffswqefw.jgpyjc.top
+  password: 59832ca0-31c1-4d01-9b52-e2aaa8ad81fd
+  sni: sfdhgseffswqefw.jgpyjc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+- name: '#007 JP2'
+  type: vmess
+  server: tokyo01.zgjok.com
+  port: 443
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: tokyo01.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: tokyo01.zgjok.com
+- name: '#008 US1'
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#009 SG1'
+  type: vmess
+  server: v12.hdacd.com
+  port: 30812
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#010 RU1'
+  type: trojan
+  server: 37.18.14.33
+  port: 443
+  password: Qzy7tgpRhu
+  udp: true
+  tfo: false
+  tls: true
+  sni: 37.18.14.33
+  skip-cert-verify: true
+  network: tcp
+- name: '#011 DE1'
+  type: vmess
+  server: frankfurt01.zgjok.com
+  port: 443
+  uuid: b71579b1-6593-426d-90ac-f002fa96ade1
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: frankfurt01.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: frankfurt01.zgjok.com
+- name: '#012 RU2'
+  type: vmess
+  server: 45.136.244.201
+  port: 49934
+  uuid: 90afa47d-341a-497d-ae25-1d81258804d5
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#013 US2'
+  type: trojan
+  server: ufbji.zippydeal.xyz
+  port: 5743
+  password: fg20mtCFHy
+  udp: true
+  tfo: false
+  tls: true
+  sni: ufbji.zippydeal.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: '#014 HK2'
+  type: trojan
+  server: hkucy.zippydeal.xyz
+  port: 5903
+  password: fg20mtCFHy
+  udp: true
+  tfo: false
+  tls: true
+  sni: hkucy.zippydeal.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: '#015 NL1'
+  type: ss
+  server: 109.71.246.210
+  port: 56689
+  cipher: chacha20-ietf-poly1305
+  password: YQCSKoCF3QazW8YlvDBWA4
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: '#016 SG2'
+  type: ss
+  server: 167.150.100.115
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: '#017 SG3'
+  type: vmess
+  server: singapore02.zgjok.com
+  port: 443
+  uuid: 780c7671-e8c8-45ab-922b-4fdfc4310aa0
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: singapore02.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: singapore02.zgjok.com
+- name: '#018 RU3'
+  type: hysteria2
+  server: xbly.qishuijc.top
+  password: 59832ca0-31c1-4d01-9b52-e2aaa8ad81fd
+  sni: xbly.qishuijc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-40450
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+- name: '#019 CA1'
+  type: trojan
+  server: cauyt.zippydeal.xyz
+  port: 5706
+  password: fg20mtCFHy
+  udp: true
+  tfo: false
+  tls: true
+  sni: cauyt.zippydeal.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: '#020 ES1'
+  type: ss
+  server: 213.159.67.124
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: '#021 HR1'
+  type: ss
+  server: 185.156.110.92
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: gXOXk2FJwsz9P6nXIICuDNOqF9gWX1dn
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: '#022 HK3'
+  type: vmess
+  server: www.zhoubowen.vip
+  port: 443
+  uuid: 71b2655e-07d9-4dad-a770-a2b08275142b
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: www.zhoubowen.vip
+  ws-opts:
+    path: /biutefor.icu
+    headers:
+      Host: www.zhoubowen.vip
+- name: '#023 CA2'
+  type: hysteria2
+  server: fgsgfgffggfqa.qishuijc.top
+  password: 59832ca0-31c1-4d01-9b52-e2aaa8ad81fd
+  sni: fgsgfgffggfqa.qishuijc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+- name: '#024 BR1'
+  type: ss
+  server: 213.159.66.206
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: '#025 NL2'
+  type: ss
+  server: 213.176.16.77
+  port: 7022
+  cipher: chacha20-ietf-poly1305
+  password: 8HtC7rj6NfZncXYvAjDV5t
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: '#026 HK4'
+  type: trojan
+  server: 58.152.53.8
+  port: 443
+  password: BxceQaOe
+  udp: true
+  tfo: false
+  tls: true
+  sni: 58.152.53.8
+  skip-cert-verify: true
+  network: tcp
+- name: '#027 CA3'
+  type: hysteria2
+  server: fgsgfgffggfqa.qishuijc.top
+  password: ff479aa3-981d-48a3-b762-056ceb9ac54c
+  sni: fgsgfgffggfqa.qishuijc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+- name: '#028 NL3 CF2'
+  type: vless
+  server: 194.35.119.135
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#029 DE2 CF3'
+  type: vless
+  server: 80.76.32.12
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#030 HK5 CF4'
+  type: vless
+  server: 8.217.180.234
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#031 GB1 CF5'
+  type: vless
+  server: 167.99.86.115
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#032 GB2 CF6'
+  type: vless
+  server: 206.189.25.65
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#033 NL4 CF7'
+  type: vless
+  server: 85.193.92.242
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#034 NL5 CF8'
+  type: vless
+  server: 95.140.157.183
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#035 NL6 CF9'
+  type: vless
+  server: 194.35.119.49
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#036 HK6 CF10'
+  type: vless
+  server: 202.85.53.54
+  port: 7000
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#037 DE3 CF11'
+  type: vless
+  server: 51.195.102.180
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#038 GB3 CF12'
+  type: vless
+  server: 5.144.182.111
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#039 JP3 CF13'
+  type: vless
+  server: 5.34.222.200
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#040 AE2 CF14'
+  type: vless
+  server: 139.185.50.5
+  port: 14594
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#041 US3 CF15'
+  type: vless
+  server: 193.124.18.13
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#042 US4 CF16'
+  type: vless
+  server: 193.124.18.13
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#043 RU4'
+  type: trojan
+  server: 37.18.14.33
+  port: 443
+  password: Qzy7tgpRhu
+  udp: true
+  tfo: false
+  tls: true
+  sni: m.vk.com
+  skip-cert-verify: true
+  network: tcp
+- name: '#044 RU5'
+  type: trojan
+  server: 37.18.14.33
+  port: 443
+  password: Qzy7tgpRhu
+  udp: true
+  tfo: false
+  tls: true
+  sni: sun9-101.userapi.com
+  skip-cert-verify: true
+  network: tcp
+- name: '#045 US5'
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#046 RU6'
+  type: trojan
+  server: 37.18.14.33
+  port: 443
+  password: Qzy7tgpRhu
+  udp: true
+  tfo: false
+  tls: true
+  sni: sun6-22.userapi.com
+  skip-cert-verify: true
+  network: tcp
+- name: '#047 KZ1'
+  type: vless
+  server: 178.236.16.98
+  port: 35728
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  servername: yahoo.com
+  client-fingerprint: chrome
+  network: tcp
+- name: '#048 RU7'
+  type: trojan
+  server: 37.18.14.33
+  port: 443
+  password: Qzy7tgpRhu
+  udp: true
+  tfo: false
+  tls: true
+  sni: m.vk.com
+  skip-cert-verify: true
+  network: tcp
+- name: '#049 RU8'
+  type: trojan
+  server: 37.18.14.33
+  port: 443
+  password: Qzy7tgpRhu
+  udp: true
+  tfo: false
+  tls: true
+  sni: sun9-101.userapi.com
+  skip-cert-verify: true
+  network: tcp
+- name: '#050 RU9'
+  type: trojan
+  server: 37.18.14.33
+  port: 443
+  password: Qzy7tgpRhu
+  udp: true
+  tfo: false
+  tls: true
+  sni: sun6-22.userapi.com
+  skip-cert-verify: true
+  network: tcp
+- name: '#051 RU10 CF17'
+  type: vless
+  server: 80.90.187.190
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#052 PL1 CF18'
+  type: vless
+  server: 193.124.41.29
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#053 US6 CF19'
+  type: vless
+  server: 211.252.50.74
+  port: 30004
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#054 US7 CF20'
+  type: vless
+  server: 211.252.50.74
+  port: 30004
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#055 JP4 CF21'
+  type: vless
+  server: 54.95.79.44
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#056 JP5 CF22'
+  type: vless
+  server: 54.249.169.40
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#057 IN1 CF23'
+  type: vless
+  server: 98.70.151.190
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#058 IN2 CF24'
+  type: vless
+  server: 98.70.151.190
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#059 GB4 CF25'
+  type: vless
+  server: 167.99.86.115
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#060 GB5 CF26'
+  type: vless
+  server: 5.144.182.111
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#061 DE4 CF27'
+  type: vless
+  server: 51.195.43.174
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#062 DE5 CF28'
+  type: vless
+  server: 142.132.140.130
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#063 NL7 CF29'
+  type: vless
+  server: 194.35.119.49
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#064 NL8 CF30'
+  type: vless
+  server: 194.35.119.135
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#065 NL9 CF31'
+  type: vless
+  server: 90.156.228.74
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#066 NL10 CF32'
+  type: vless
+  server: 81.200.154.2
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#067 DE6 CF33'
+  type: vless
+  server: 80.76.32.12
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#068 NL11 CF34'
+  type: vless
+  server: 85.193.92.242
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#069 NL12 CF35'
+  type: vless
+  server: 95.140.157.183
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#070 US8 CF36'
+  type: vless
+  server: 108.162.198.24
+  port: 2096
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#071 IN3'
+  type: vless
+  server: 194.61.31.126
+  port: 443
+  uuid: 5f39f871-2fae-446e-99ad-719fa8be687c
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  reality-opts:
+    public-key: L3UuY_lketYWBrW_naLct9-VFIAGwdtMplkubdHdEHQ
+    short-id: ce874361e8dfcd4e
+  servername: www.microsoft.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 78e691d782c9b9b2cd3c5621
+    grpc-dial-options:
+      with-insecure-skip-verify: false
+- name: '#072 TR2 CF37'
+  type: vless
+  server: 213.142.149.3
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#073 TR3 CF38'
+  type: vless
+  server: 213.142.149.3
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#074 AE3 CF39'
+  type: vless
+  server: 139.185.50.5
+  port: 14594
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#075 HK7 CF40'
+  type: vless
+  server: 202.85.53.77
+  port: 7000
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#076 JP6 CF41'
+  type: vless
+  server: 5.34.222.200
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#077 JP7 CF42'
+  type: vless
+  server: 54.249.169.40
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#078 HK8'
+  type: trojan
+  server: 58.152.110.120
+  port: 443
+  password: 2cf6d686799e6fa95316394064f26c0a
+  udp: true
+  tfo: false
+  tls: true
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+  network: tcp
+- name: '#079 HK9 CF43'
+  type: vless
+  server: 202.85.53.54
+  port: 7000
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#080 JP8 CF44'
+  type: vless
+  server: 54.95.79.44
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#081 JP9 CF45'
+  type: vless
+  server: 18.183.89.240
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#082 KR2 CF46'
+  type: vless
+  server: 106.242.64.238
+  port: 50000
+  uuid: 6923b959-c65f-764c-b072-94711382d716
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: s2.sni565.netlib.re
+  servername: s2.sni565.netlib.re
+  network: ws
+  ws-opts:
+    path: /proxyip=tw.sni2025.netlib.re
+    headers:
+      Host: s2.sni565.netlib.re
+- name: '#083 GB6 CF47'
+  type: vless
+  server: 5.144.182.111
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#084 KR3 CF48'
+  type: vless
+  server: 146.56.99.255
+  port: 56789
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#085 DE7 CF49'
+  type: vless
+  server: 51.195.102.180
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#086 DE8 CF50'
+  type: vless
+  server: 51.195.43.174
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#087 DE9 CF51'
+  type: vless
+  server: 142.132.140.130
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#088 DE10 CF52'
+  type: vless
+  server: 49.12.210.182
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#089 SG4'
+  type: vmess
+  server: 144.48.180.187
+  port: 30812
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#090 SE1 CF53'
+  type: vless
+  server: 83.147.255.67
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#091 NL13 CF54'
+  type: vless
+  server: 95.140.157.183
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#092 GB7 CF55'
+  type: vless
+  server: 206.189.25.65
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#093 DE11 CF56'
+  type: vless
+  server: 80.76.32.12
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#094 NL14 CF57'
+  type: vless
+  server: 81.200.154.2
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#095 GB8 CF58'
+  type: vless
+  server: 167.99.86.115
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#096 PL2 CF59'
+  type: vless
+  server: 193.124.41.29
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#097 DE12 CF60'
+  type: vless
+  server: 77.221.157.32
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#098 JP10 CF61'
+  type: vless
+  server: 47.79.41.201
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#099 PL3 CF62'
+  type: vless
+  server: 193.124.41.29
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#100 NL15 CF63'
+  type: vless
+  server: 89.19.211.109
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#101 NL16 CF64'
+  type: vless
+  server: 85.193.95.23
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#102 DE13 CF65'
+  type: vless
+  server: 49.12.210.182
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#103 DE14 CF66'
+  type: vless
+  server: 77.221.157.32
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#104 HK10'
+  type: trojan
+  server: 58.152.110.120
+  port: 443
+  password: 2cf6d686799e6fa95316394064f26c0a
+  udp: true
+  tfo: false
+  tls: true
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+  network: tcp
+- name: '#105 KR4 CF67'
+  type: vless
+  server: 146.56.99.255
+  port: 56789
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#106 SG5'
+  type: hysteria2
+  server: singaporex-1.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Singaporex-1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#107 IN4 CF68'
+  type: vless
+  server: 98.70.151.163
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#108 SE2 CF69'
+  type: vless
+  server: 83.147.255.67
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#109 IN5 CF70'
+  type: vless
+  server: 98.70.1.250
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#110 KR5 CF71'
+  type: vless
+  server: 106.242.64.238
+  port: 50000
+  uuid: 6923b959-c65f-764c-b072-94711382d716
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: s2.sni565.netlib.re
+  servername: s2.sni565.netlib.re
+  network: ws
+  ws-opts:
+    path: /proxyip=tw.sni2025.netlib.re
+    headers:
+      Host: s2.sni565.netlib.re
+- name: '#111 TH1'
+  type: vless
+  server: 47.81.13.178
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    short-id: ''
+  servername: www.primevideo.com
+  client-fingerprint: chrome
+  network: tcp
+- name: '#112 FI1'
+  type: vless
+  server: fin.monkeyisland.xyz
+  port: 443
+  uuid: 6184fcfb-52e0-40bb-a271-bbd097b70a8e
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: 1079eb4613718645
+  servername: fin.monkeyisland.xyz
+  client-fingerprint: chrome
+  network: tcp
+- name: '#113 CN1'
+  type: vmess
+  server: 183.236.51.36
+  port: 59003
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#114 US9'
+  type: vless
+  server: 77.110.127.105
+  port: 443
+  uuid: 72239cbc-5a25-411c-b4f5-b9167a10f5e1
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -Bdu8i-HU28Xmx87RMou5okYo8TqfbyZ8Ufs9RodUGE
+    short-id: 097de35e52ec5256
+  servername: st.ozone.ru
+  client-fingerprint: chrome
+  network: tcp
+- name: '#115 DE15'
+  type: vmess
+  server: frankfurt01.zgjok.com
+  port: 443
+  uuid: b71579b1-6593-426d-90ac-f002fa96ade1
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: frankfurt01.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: frankfurt01.zgjok.com
+- name: '#116 HK11'
+  type: trojan
+  server: 112.120.31.179
+  port: 443
+  password: BxceQaOe
+  udp: true
+  tfo: false
+  tls: true
+  sni: 112.120.31.179
+  skip-cert-verify: true
+  network: tcp
+- name: '#117 SG6'
+  type: vmess
+  server: v12.hdacd.com
+  port: 30812
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#118 SG7'
+  type: vmess
+  server: singapore02.zgjok.com
+  port: 443
+  uuid: 780c7671-e8c8-45ab-922b-4fdfc4310aa0
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: singapore02.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: singapore02.zgjok.com
+- name: '#119 HK12'
+  type: trojan
+  server: hkucy.zippydeal.xyz
+  port: 5903
+  password: fg20mtCFHy
+  udp: true
+  tfo: false
+  tls: true
+  sni: hkucy.zippydeal.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: '#120 HK13'
+  type: trojan
+  server: 58.152.53.8
+  port: 443
+  password: BxceQaOe
+  udp: true
+  tfo: false
+  tls: true
+  sni: 58.152.53.8
+  skip-cert-verify: true
+  network: tcp
+- name: '#121 CH1'
+  type: vless
+  server: us1.candyfans.win
+  port: 443
+  uuid: d82baa81-c138-49fc-b81e-7ef0eb7ff063
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: us1.candyfans.win
+  servername: us1.candyfans.win
+  network: ws
+  ws-opts:
+    path: /cgunws
+    headers:
+      Host: us1.candyfans.win
+- name: '#122 JP11'
+  type: vmess
+  server: tokyo01.zgjok.com
+  port: 443
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: tokyo01.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: tokyo01.zgjok.com
+- name: '#123 RU11'
+  type: trojan
+  server: 37.18.14.33
+  port: 443
+  password: Qzy7tgpRhu
+  udp: true
+  tfo: false
+  tls: true
+  sni: 37.18.14.33
+  skip-cert-verify: true
+  network: tcp
+- name: '#124 RU12'
+  type: vmess
+  server: 45.136.244.201
+  port: 49934
+  uuid: 90afa47d-341a-497d-ae25-1d81258804d5
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#125 HK14'
+  type: vmess
+  server: www.zhoubowen.vip
+  port: 443
+  uuid: 71b2655e-07d9-4dad-a770-a2b08275142b
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: www.zhoubowen.vip
+  ws-opts:
+    path: /biutefor.icu
+    headers:
+      Host: www.zhoubowen.vip
+- name: '#126 US10'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2053
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461829028.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461826098.796813.xyz
+- name: '#127 US11'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2053
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461821795.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461824533.796813.xyz
+- name: '#128 US12'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2053
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461828397.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461824330.796813.xyz
+- name: '#129 US13'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2083
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461825650.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461826502.796813.xyz
+- name: '#130 US14'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2087
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461829943.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461821075.796813.xyz
+- name: '#131 US15'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2096
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461829252.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461824413.796813.xyz
+- name: '#132 US16'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 8443
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461826563.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17641461828912.796812.xyz
+- name: '#133 US17'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 8443
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461828831.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461827575.796813.xyz
+- name: '#134 US18'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2053
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461821895.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17641461827530.796812.xyz
+- name: '#135 US19'
+  type: trojan
+  server: bestcdn1.868863.xyz
+  port: 2053
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461823271.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17641461821128.796812.xyz
+- name: '#136 US20'
+  type: trojan
+  server: bestcdn1.868863.xyz
+  port: 2096
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461825397.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461822926.796813.xyz
+- name: '#137 US21'
+  type: trojan
+  server: bestcdn1.868863.xyz
+  port: 2087
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461828265.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17641461825011.206355.xyz
+- name: '#138 US22'
+  type: trojan
+  server: bestcdn2.868863.xyz
+  port: 2083
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461825177.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17641461826653.796812.xyz
+- name: '#139 US23'
+  type: trojan
+  server: bestcdn2.868863.xyz
+  port: 2087
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461822951.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461826634.796813.xyz
+- name: '#140 US24'
+  type: trojan
+  server: bestcdn2.868863.xyz
+  port: 2096
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461821986.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17641461828488.206355.xyz
+- name: '#141 US25'
+  type: trojan
+  server: bestcdn3.868863.xyz
+  port: 2087
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461821965.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17641461825657.796812.xyz
+- name: '#142 US26'
+  type: trojan
+  server: bestcdn3.868863.xyz
+  port: 2083
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461825982.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461823473.796813.xyz
+- name: '#143 US27'
+  type: trojan
+  server: bestcdn3.868863.xyz
+  port: 2053
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461822530.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17641461821961.206355.xyz
+- name: '#144 US28'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2096
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461824798.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17641461824883.796812.xyz
+- name: '#145 US29'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 8443
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461821732.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461828856.796813.xyz
+- name: '#146 US30'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2083
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461827377.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17641461826370.206355.xyz
+- name: '#147 US31'
+  type: trojan
+  server: bestcdn5.868863.xyz
+  port: 8443
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461828427.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17641461822437.796812.xyz
+- name: '#148 US32'
+  type: trojan
+  server: bestcdn5.868863.xyz
+  port: 2053
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461828286.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17641461825084.796813.xyz
+- name: '#149 US33'
+  type: trojan
+  server: bestcdn5.868863.xyz
+  port: 8443
+  password: 0e08c130-7574-493c-a935-07a53fe58f9f
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17641461823728.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17641461824212.206355.xyz
+- name: '#150 CA4'
+  type: hysteria2
+  server: fgsgfgffggfqa.qishuijc.top
+  password: da71b9d0-11fc-4601-b20a-9c08effb7a3f
+  sni: fgsgfgffggfqa.qishuijc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+- name: '#151 SG8'
+  type: hysteria2
+  server: sg-hw.ywx.fr
+  password: c73ef1df-31e2-4713-8603-84fad596944e
+  sni: sg-hw.ywx.fr
+  skip-cert-verify: true
+  port: 443
+  obfs: salamander
+  obfs-password: ZGFiYjMyZGQxNjI4NzVkMQ==
+- name: '#152 US34'
+  type: hysteria2
+  server: mkbk-us-cn2.ywx.fr
+  password: c73ef1df-31e2-4713-8603-84fad596944e
+  sni: mkbk-us-cn2.ywx.fr
+  skip-cert-verify: true
+  port: 443
+  obfs: salamander
+  obfs-password: ZGFiYjMyZGQxNjI4NzVkMQ==
+- name: '#153 HK15 CF72'
+  type: vless
+  server: 202.85.53.67
+  port: 7000
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#154 HK16'
+  type: vmess
+  server: 47.243.69.126
+  port: 31904
+  uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: http
+  aead: true
+  tfo: false
+  http-opts:
+    method: GET
+    path:
+    - /5665115ewwe
+    headers:
+      Host:
+      - 47.243.69.126
+- name: '#155 KR6'
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: seoul02.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: seoul02.zgjok.com
+- name: '#156 CL1'
+  type: hysteria2
+  server: valparaiso-4.nezhasu.cn
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Valparaiso-4.nezhasu.cn
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#157 JP12'
+  type: vmess
+  server: tokyo01.zgjok.com
+  port: 443
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: tokyo01.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: tokyo01.zgjok.com
+- name: '#158 CL2'
+  type: hysteria2
+  server: valparaiso-3.nezhasu.cn
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: Valparaiso-3.nezhasu.cn
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#159 DE16'
+  type: vmess
+  server: frankfurt01.zgjok.com
+  port: 443
+  uuid: b71579b1-6593-426d-90ac-f002fa96ade1
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: frankfurt01.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: frankfurt01.zgjok.com
+- name: '#160 CL3'
+  type: hysteria2
+  server: valparaiso-3.nezhasu.cn
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Valparaiso-3.nezhasu.cn
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#161 CL4'
+  type: hysteria2
+  server: valparaiso-3.nezhasu.cn
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Valparaiso-3.nezhasu.cn
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#162 RU13'
+  type: vmess
+  server: 45.136.244.201
+  port: 49934
+  uuid: 90afa47d-341a-497d-ae25-1d81258804d5
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#163 NL17'
+  type: vmess
+  server: v30.hdacd.com
+  port: 30830
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: '#164 NL18'
+  type: vless
+  server: 141.227.130.86
+  port: 53025
+  uuid: 4ba7deb3-83a9-48d2-ad8a-e115183b1e6d
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    grpc-dial-options:
+      with-insecure-skip-verify: false
+- name: '#165 HK17 CF73'
+  type: vless
+  server: 68.64.176.135
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#166 SG9'
+  type: vmess
+  server: singapore02.zgjok.com
+  port: 443
+  uuid: 780c7671-e8c8-45ab-922b-4fdfc4310aa0
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: singapore02.zgjok.com
+  ws-opts:
+    path: /
+    headers:
+      Host: singapore02.zgjok.com
+- name: '#167 HK18 CF74'
+  type: vless
+  server: freeyx.cloudflare88.eu.org
+  port: 2096
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#168 IN6'
+  type: trojan
+  server: hyfuuf6.wsone.icu
+  port: 443
+  password: M7v%w11Se*
+  udp: true
+  tfo: false
+  tls: true
+  sni: hyfuuf6.wsone.icu
+  skip-cert-verify: true
+  network: tcp
+- name: '#169 JP13 CF75'
+  type: vless
+  server: 18.183.89.240
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#170 HK19'
+  type: vmess
+  server: www.zhoubowen.vip
+  port: 443
+  uuid: 71b2655e-07d9-4dad-a770-a2b08275142b
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: www.zhoubowen.vip
+  ws-opts:
+    path: /biutefor.icu
+    headers:
+      Host: www.zhoubowen.vip
+- name: '#171 HK20'
+  type: trojan
+  server: 47.242.225.242
+  port: 443
+  password: 92690597d6298061459918a371e8d77d
+  udp: true
+  tfo: false
+  tls: true
+  sni: hezijiasuqi.com
+  skip-cert-verify: true
+  network: tcp
+- name: '#172 US35 CF76'
+  type: vless
+  server: 154.26.183.70
+  port: 8443
+  uuid: 6923b959-c65f-764c-b072-94711382d716
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: s2.sni565.netlib.re
+  servername: s2.sni565.netlib.re
+  network: ws
+  ws-opts:
+    path: /proxyip=tw.sni2025.netlib.re
+    headers:
+      Host: s2.sni565.netlib.re
+- name: '#173 DE17 CF77'
+  type: vless
+  server: 185.103.252.54
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#174 HK21 CF78'
+  type: vless
+  server: 202.85.53.160
+  port: 7000
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#175 NL19 CF79'
+  type: vless
+  server: 85.193.95.220
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#176 SG10 CF80'
+  type: vless
+  server: 210.87.111.61
+  port: 39738
+  uuid: aa7f42cc-616f-4550-9a87-4b85bb409121
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: vless3.datatestvless.click
+  servername: vless3.datatestvless.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560&telegram@freecodes
+    headers:
+      Host: vless3.datatestvless.click
+- name: '#177 SG11 CF81'
+  type: vless
+  server: 210.87.111.61
+  port: 39738
+  uuid: aa7f42cc-616f-4550-9a87-4b85bb409121
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: vless3.datatestvless.click
+  servername: vless3.datatestvless.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: vless3.datatestvless.click
+- name: '#178 PL4 CF82'
+  type: vless
+  server: 91.149.253.249
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#179 NL20 CF83'
+  type: vless
+  server: 85.193.95.220
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#180 CH2'
+  type: vless
+  server: us1.candyfans.win
+  port: 443
+  uuid: d82baa81-c138-49fc-b81e-7ef0eb7ff063
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: us1.candyfans.win
+  servername: us1.candyfans.win
+  network: ws
+  ws-opts:
+    path: /cgunws
+    headers:
+      Host: us1.candyfans.win
+- name: '#181 HK22 CF84'
+  type: vless
+  server: 202.85.53.77
+  port: 7000
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#182 SG12 CF85'
+  type: vless
+  server: 178.239.123.216
+  port: 24443
+  uuid: aa7f42cc-616f-4550-9a87-4b85bb409121
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: vless3.datatestvless.click
+  servername: vless3.datatestvless.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: vless3.datatestvless.click
+- name: '#183 CL5'
+  type: hysteria2
+  server: valparaiso-2.nezhasu.cn
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Valparaiso-2.nezhasu.cn
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#184 GB9'
+  type: hysteria2
+  server: lundun1.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: lundun1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#185 US36'
+  type: hysteria2
+  server: phoenix-2.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: phoenix-2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#186 ID1'
+  type: hysteria2
+  server: batam3.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: batam3.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#187 GB10'
+  type: hysteria2
+  server: lundun2.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: lundun2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#188 ZA1'
+  type: hysteria2
+  server: johannesburg-4.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Johannesburg-4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#189 ZA2'
+  type: hysteria2
+  server: johannesburg-2.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Johannesburg-2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#190 ID2'
+  type: hysteria2
+  server: yn1.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: yn1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#191 NL21'
+  type: hysteria2
+  server: amsterdam.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Amsterdam.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#192 KR7'
+  type: hysteria2
+  server: chuncheon-1.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: chuncheon-1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#193 JP14'
+  type: hysteria2
+  server: tokyo.nezhasu.com
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: Tokyo.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#194 US37'
+  type: hysteria2
+  server: phoenix-1.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: phoenix-1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#195 ID3'
+  type: hysteria2
+  server: batam4.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: batam4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#196 IL1'
+  type: hysteria2
+  server: ylsl.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: ylsl.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#197 ID4'
+  type: hysteria2
+  server: batam3.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: batam3.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#198 US38'
+  type: hysteria2
+  server: phoenix-4.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: phoenix-4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#199 JP15'
+  type: hysteria2
+  server: tokyo.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Tokyo.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#200 IN7'
+  type: hysteria2
+  server: mumbai-1.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: mumbai-1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#201 ZA3'
+  type: hysteria2
+  server: johannesburg-3.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Johannesburg-3.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#202 ID5'
+  type: hysteria2
+  server: yn2.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: yn2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#203 KR8'
+  type: hysteria2
+  server: chuncheon-1.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: chuncheon-1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#204 DE18'
+  type: hysteria2
+  server: falankefu1.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: falankefu1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#205 US39'
+  type: hysteria2
+  server: gy9.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: gy9.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#206 US40'
+  type: hysteria2
+  server: ashburn.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: ashburn.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#207 GB11'
+  type: hysteria2
+  server: lundun2.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: lundun2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#208 GB12'
+  type: hysteria2
+  server: lundun1.nezhasu.com
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: lundun1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#209 US41'
+  type: hysteria2
+  server: gy9.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: gy9.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#210 MX1'
+  type: hysteria2
+  server: gy5.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: gy5.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#211 SG13'
+  type: hysteria2
+  server: singaporex-1.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Singaporex-1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#212 JP16'
+  type: hysteria2
+  server: db1.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: db1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#213 ID6'
+  type: hysteria2
+  server: yn1.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: yn1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#214 MX2'
+  type: hysteria2
+  server: gy6.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: gy6.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#215 MX3'
+  type: hysteria2
+  server: gy5.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: gy5.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#216 IN8'
+  type: hysteria2
+  server: mumbai-4.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: mumbai-4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#217 JP17'
+  type: hysteria2
+  server: db1.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: db1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#218 FR1'
+  type: hysteria2
+  server: 195.154.206.231
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  port: 33880
+- name: '#219 SG14'
+  type: hysteria2
+  server: singaporex-4.nezhasu.com
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: Singaporex-4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#220 GB13'
+  type: hysteria2
+  server: lundun3.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: lundun3.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#221 SG15'
+  type: hysteria2
+  server: singaporex-3.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Singaporex-3.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#222 ID7'
+  type: hysteria2
+  server: batam4.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: batam4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#223 NL22'
+  type: hysteria2
+  server: amsterdam.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Amsterdam.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#224 ZA4'
+  type: hysteria2
+  server: johannesburg-2.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Johannesburg-2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#225 DE19'
+  type: hysteria2
+  server: falankefu1.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: falankefu1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#226 ZA5'
+  type: hysteria2
+  server: johannesburg-4.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Johannesburg-4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#227 IN9'
+  type: hysteria2
+  server: mumbai-4.nezhasu.com
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: mumbai-4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#228 JP18'
+  type: hysteria2
+  server: gy2.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: gy2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#229 US42'
+  type: hysteria2
+  server: sanjose.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: SanJose.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#230 BR2'
+  type: hysteria2
+  server: bx1.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: bx1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#231 US43'
+  type: hysteria2
+  server: ashburn.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: ashburn.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#232 IL2'
+  type: hysteria2
+  server: ylsl.nezhasu.com
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: ylsl.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#233 KR9'
+  type: hysteria2
+  server: chuncheon-2.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: chuncheon-2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#234 US44'
+  type: hysteria2
+  server: phoenix-2.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: phoenix-2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#235 ID8'
+  type: hysteria2
+  server: yn2.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: yn2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#236 GB14'
+  type: hysteria2
+  server: lundun1.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: lundun1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#237 US45'
+  type: hysteria2
+  server: phoenix-1.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: phoenix-1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#238 IN10'
+  type: hysteria2
+  server: mumbai-1.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: mumbai-1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#239 US46'
+  type: vless
+  server: usa29.unlockmatrix.org
+  port: 443
+  uuid: 9b0c1d6e-7f6e-4b06-96ba-b8a397a69166
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+    short-id: ''
+  servername: www.bing.com
+  client-fingerprint: chrome
+  network: tcp
+- name: '#240 JP19'
+  type: hysteria2
+  server: tokyo.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Tokyo.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#241 SG16'
+  type: hysteria2
+  server: singaporex-4.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Singaporex-4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#242 ZA6'
+  type: hysteria2
+  server: johannesburg-3.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Johannesburg-3.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#243 IN11'
+  type: hysteria2
+  server: mumbai-2.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: mumbai-2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#244 KR10'
+  type: hysteria2
+  server: chuncheon-2.nezhasu.com
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: chuncheon-2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#245 MX4'
+  type: hysteria2
+  server: gy6.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: gy6.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#246 ZA7'
+  type: hysteria2
+  server: johannesburg-1.nezhasu.cn
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Johannesburg-1.nezhasu.cn
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#247 SG17'
+  type: hysteria2
+  server: singaporex-3.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Singaporex-3.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#248 GB15'
+  type: hysteria2
+  server: lundun4.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: lundun4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#249 GB16'
+  type: hysteria2
+  server: lundun3.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: lundun3.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#250 IN12'
+  type: hysteria2
+  server: mumbai-3.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: mumbai-3.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#251 LV1'
+  type: vless
+  server: 188.253.21.154
+  port: 40721
+  uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  reality-opts:
+    public-key: TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk
+    short-id: df8611c07d
+  servername: yahoo.com
+  client-fingerprint: chrome
+  network: tcp
+- name: '#252 SG18'
+  type: hysteria2
+  server: singaporex-4.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: Singaporex-4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#253 IN13'
+  type: hysteria2
+  server: mumbai-2.nezhasu.com
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: mumbai-2.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#254 HK23 CF86'
+  type: vless
+  server: 202.85.53.160
+  port: 7000
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#255 HK24 CF87'
+  type: vless
+  server: 68.64.176.135
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#256 DE20 CF88'
+  type: vless
+  server: 185.103.252.54
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#257 NL23 CF89'
+  type: vless
+  server: 85.193.95.220
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  alpn:
+  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#258 US47'
+  type: vless
+  server: usvless.yydzx.xyz
+  port: 17342
+  uuid: 5b7124d0-7092-466c-b9fa-c13be64f0cb0
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  sni: usvless.yydzx.xyz
+  servername: usvless.yydzx.xyz
+  network: tcp
+- name: '#259 US48 CF90'
+  type: vless
+  server: 154.17.225.73
+  port: 443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#260 NL24 CF91'
+  type: vless
+  server: 194.35.119.49
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#261 NL25 CF92'
+  type: vless
+  server: 194.35.119.135
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#262 NL26 CF93'
+  type: vless
+  server: 90.156.228.74
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#263 NL27 CF94'
+  type: vless
+  server: 85.193.92.242
+  port: 2053
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#264 NL28 CF95'
+  type: vless
+  server: 85.193.95.23
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#265 AE4 CF96'
+  type: vless
+  server: 193.123.90.82
+  port: 12648
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#266 NL29 CF97'
+  type: vless
+  server: 89.19.211.109
+  port: 8443
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#267 AE5 CF98'
+  type: vless
+  server: 139.185.50.5
+  port: 14594
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: kuangbao.xiejiang.dpdns.org
+  servername: kuangbao.xiejiang.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+- name: '#268 US49'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2053
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626032443.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626031654.796813.xyz
+- name: '#269 US50'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2053
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626033444.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626038889.796813.xyz
+- name: '#270 US51'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2053
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626037109.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626031823.796813.xyz
+- name: '#271 US52'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2083
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626033218.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626037854.796813.xyz
+- name: '#272 US53'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2087
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626039125.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626036625.796813.xyz
+- name: '#273 US54'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2096
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626034683.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626037096.796813.xyz
+- name: '#274 US55'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 8443
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626033008.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17640626035131.796812.xyz
+- name: '#275 US56'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 8443
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626036168.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626034173.796813.xyz
+- name: '#276 US57'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2053
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626037676.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17640626032501.796812.xyz
+- name: '#277 US58'
+  type: trojan
+  server: bestcdn1.868863.xyz
+  port: 2053
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626038301.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17640626039227.796812.xyz
+- name: '#278 US59'
+  type: trojan
+  server: bestcdn1.868863.xyz
+  port: 2096
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626032327.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626031790.796813.xyz
+- name: '#279 US60'
+  type: trojan
+  server: bestcdn1.868863.xyz
+  port: 2087
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626038647.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17640626031881.206355.xyz
+- name: '#280 US61'
+  type: trojan
+  server: bestcdn2.868863.xyz
+  port: 2083
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626032212.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17640626037469.796812.xyz
+- name: '#281 US62'
+  type: trojan
+  server: bestcdn2.868863.xyz
+  port: 2087
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626032285.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626032379.796813.xyz
+- name: '#282 US63'
+  type: trojan
+  server: bestcdn2.868863.xyz
+  port: 2096
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626039274.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17640626033671.206355.xyz
+- name: '#283 US64'
+  type: trojan
+  server: bestcdn3.868863.xyz
+  port: 2087
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626033093.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17640626037743.796812.xyz
+- name: '#284 US65'
+  type: trojan
+  server: bestcdn3.868863.xyz
+  port: 2083
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626034360.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626037566.796813.xyz
+- name: '#285 US66'
+  type: trojan
+  server: bestcdn3.868863.xyz
+  port: 2053
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626039679.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17640626034529.206355.xyz
+- name: '#286 US67'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2096
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626033071.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17640626035224.796812.xyz
+- name: '#287 US68'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 8443
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626031944.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626034468.796813.xyz
+- name: '#288 US69'
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2083
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626038056.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17640626038218.206355.xyz
+- name: '#289 US70'
+  type: trojan
+  server: bestcdn5.868863.xyz
+  port: 8443
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626034177.796812.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17640626031065.796812.xyz
+- name: '#290 US71'
+  type: trojan
+  server: bestcdn5.868863.xyz
+  port: 2053
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626034852.796813.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /agrbniuh
+    headers:
+      Host: 17640626034552.796813.xyz
+- name: '#291 US72'
+  type: trojan
+  server: bestcdn5.868863.xyz
+  port: 8443
+  password: 7dbe276f-356f-47b5-95b9-93deaf0dc5d0
+  udp: true
+  tfo: false
+  tls: true
+  sni: 17640626031579.206355.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /videomuaawe
+    headers:
+      Host: 17640626036290.206355.xyz
+- name: '#292 CA5'
+  type: hysteria2
+  server: fgsgfgffggfqa.qishuijc.top
+  password: cb4c45c8-62c9-4804-84b2-5368e412c19e
+  sni: fgsgfgffggfqa.qishuijc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-40450
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+- name: '#293 IN14'
+  type: hysteria2
+  server: mumbai-4.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: mumbai-4.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#294 CL6'
+  type: hysteria2
+  server: valparaiso-1.nezhasu.cn
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: Valparaiso-1.nezhasu.cn
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#295 IL3'
+  type: hysteria2
+  server: ylsl.nezhasu.com
+  password: 52d0cb21-56da-4f00-862f-be01b66446a8
+  sni: ylsl.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#296 CL7'
+  type: hysteria2
+  server: valparaiso-4.nezhasu.cn
+  password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
+  sni: Valparaiso-4.nezhasu.cn
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#297 IN15'
+  type: hysteria2
+  server: mumbai-1.nezhasu.com
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: mumbai-1.nezhasu.com
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-65535
+- name: '#298 US73 CF99'
+  type: vless
+  server: 104.16.45.68
+  port: 443
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: www.x-aniu--sg.netlib.re
+  servername: www.x-aniu--sg.netlib.re
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.x-aniu--sg.netlib.re
+- name: '#299 US74 CF100'
+  type: vless
+  server: 104.26.15.108
+  port: 443
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: bp.hexo.cloudns.ch
+  servername: bp.hexo.cloudns.ch
+  network: ws
+  ws-opts:
+    path: /proxyip=proxyip.sg.cmliussss.net
+    headers:
+      Host: bp.hexo.cloudns.ch
+- name: '#300 US75'
+  type: vless
+  server: 77.110.119.225
+  port: 443
+  uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hnec5SxCD6Os-u0FNi_YS5CML1a_oWb0niZJ1mGuFBo
+    short-id: 07e904766d29b958
+  servername: st.ozone.ru
+  client-fingerprint: chrome
+  network: tcp
+- name: '#301 SG19 CF101'
+  type: vless
+  server: 178.239.123.216
+  port: 24443
+  uuid: aa7f42cc-616f-4550-9a87-4b85bb409121
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: vless3.datatestvless.click
+  servername: vless3.datatestvless.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560&Telegram@freecodes
+    headers:
+      Host: vless3.datatestvless.click
+- name: '#302 NL30'
+  type: hysteria
+  server: 51.159.226.1
+  port: 49003
+  auth_str: dongtaiwang.com
+  protocol: udp
+  up: '11'
+  down: '55'
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: '#303 FR2'
+  type: hysteria
+  server: 195.154.200.40
+  port: 15010
+  auth_str: dongtaiwang.com
+  protocol: udp
+  up: '100'
+  down: '100'
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: '#304 SG20 CF102'
+  type: vless
+  server: 210.87.111.61
+  port: 39738
+  uuid: aa7f42cc-616f-4550-9a87-4b85bb409121
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: vless3.datatestvless.click
+  servername: vless3.datatestvless.click
+  network: ws
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳+@WangCai2
+    headers:
+      Host: vless3.datatestvless.click
+- name: '#305 PL5 CF103'
+  type: trojan
+  server: 145.239.88.255
+  port: 8443
+  password: 823f57d2-d271-48a6-859e-d041179e1c6b
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/145.239.88.255=8443
+    headers:
+      Host: joss.gpj.web.id
+- name: '#306 NL31 CF104'
+  type: trojan
+  server: 45.83.20.29
+  port: 443
+  password: ff022848-4fb7-465a-9e6f-756d3dfc2c6a
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/45.83.20.29=443
+    headers:
+      Host: joss.gpj.web.id
+- name: '#307 ES2 CF105'
+  type: trojan
+  server: 185.114.72.31
+  port: 2053
+  password: fa115af5-0647-4549-acd9-5166695ea2de
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/185.114.72.31=2053
+    headers:
+      Host: joss.gpj.web.id
+- name: '#308 NL32 CF106'
+  type: trojan
+  server: 45.83.20.29
+  port: 443
+  password: ff022848-4fb7-465a-9e6f-756d3dfc2c6a
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/45.83.20.29=443
+    headers:
+      Host: joss.gpj.web.id
+- name: '#309 ES3 CF107'
+  type: trojan
+  server: 185.114.72.31
+  port: 2053
+  password: fa115af5-0647-4549-acd9-5166695ea2de
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/185.114.72.31=2053
+    headers:
+      Host: joss.gpj.web.id
+- name: '#310 PL6 CF108'
+  type: trojan
+  server: 145.239.88.255
+  port: 8443
+  password: 823f57d2-d271-48a6-859e-d041179e1c6b
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/145.239.88.255=8443
+    headers:
+      Host: joss.gpj.web.id
+- name: '#311 NL33 CF109'
+  type: trojan
+  server: 45.83.20.29
+  port: 443
+  password: ff022848-4fb7-465a-9e6f-756d3dfc2c6a
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/45.83.20.29=443
+- name: '#312 FI2 CF110'
+  type: trojan
+  server: 138.124.15.75
+  port: 443
+  password: 3ea503c7-2e03-424a-812d-6f0d803e73dc
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/138.124.15.75=443
+- name: '#313 SE3 CF111'
+  type: trojan
+  server: 95.182.120.208
+  port: 2053
+  password: 3b38715b-f08a-46dd-9904-7531ca4bb6e8
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/95.182.120.208=2053
+- name: '#314 DK1 CF112'
+  type: trojan
+  server: 38.180.72.65
+  port: 8443
+  password: de3bc763-2fc6-46aa-aec7-a52a0d1c0550
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/38.180.72.65=8443
+    headers:
+      Host: joss.gpj.web.id
+- name: '#315 SE4 CF113'
+  type: trojan
+  server: 95.182.120.208
+  port: 2053
+  password: 3b38715b-f08a-46dd-9904-7531ca4bb6e8
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/95.182.120.208=2053
+    headers:
+      Host: joss.gpj.web.id
+- name: '#316 FR3 CF114'
+  type: trojan
+  server: 141.94.222.214
+  port: 2053
+  password: 17178783-0dd7-4544-bf6b-e0694a1e3da7
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/141.94.222.214=2053
+    headers:
+      Host: joss.gpj.web.id
+- name: '#317 FI3 CF115'
+  type: trojan
+  server: 138.124.15.75
+  port: 443
+  password: 3ea503c7-2e03-424a-812d-6f0d803e73dc
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/138.124.15.75=443
+    headers:
+      Host: joss.gpj.web.id
+- name: '#318 DE21 CF116'
+  type: trojan
+  server: 62.60.246.168
+  port: 443
+  password: a25e963f-8f68-4b28-8c11-5d721f616434
+  udp: true
+  tfo: false
+  tls: true
+  sni: joss.gpj.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/62.60.246.168=443
+    headers:
+      Host: joss.gpj.web.id
+- name: '#319 HK25'
+  type: vless
+  server: 192.238.204.48
+  port: 55558
+  uuid: 1eb58333-3051-47c2-a2eb-44e5b64233c8
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: LPatmFrK3hRMrtAybjzB7DBfqCaKnKQ6s95kmXrrFxg
+    short-id: b2defcc6
+  servername: apple.com
+  client-fingerprint: chrome
+  network: tcp
+- name: '#320 HK26'
+  type: hysteria2
+  server: 00c7d00a-t48f40-t5hsrg-1j0a4.hk1.hyhuawei.com
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: 00c7d00a-t48f40-t5hsrg-1j0a4.hk1.hyhuawei.com
+  skip-cert-verify: true
+  port: 443
+- name: '#321 HK27'
+  type: hysteria2
+  server: 6f2518bc-t4a9s0-t4o3yx-1kcpe.hk1.hyhuawei.com
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  sni: 6f2518bc-t4a9s0-t4o3yx-1kcpe.hk1.hyhuawei.com
+  skip-cert-verify: true
+  port: 443
+- name: '#322 HK28'
+  type: hysteria2
+  server: d5e8eacc-t48f40-t4jnze-1teuc.hk2.hyhuawei.com
+  password: a5a81a34-f257-11ef-ba82-f23c913c8d2b
+  sni: d5e8eacc-t48f40-t4jnze-1teuc.hk2.hyhuawei.com
+  skip-cert-verify: true
+  port: 443
+- name: '#323 HK29'
+  type: vmess
+  server: 865c5c01-sv4n40-t65a3e-tqgz.hk3.p5pv.com
+  port: 80
+  uuid: 88da0d21-b25d-11ec-b9f7-f23c91cfbbc9
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 865c5c01-sv4n40-t65a3e-tqgz.hk3.p5pv.com
+- name: '#324 JP20'
+  type: hysteria2
+  server: iij.mggl.wang
+  password: bc4d55c1-38df-43e6-8df7-3733e84d9399
+  sni: iij.mggl.wang
+  skip-cert-verify: true
+  port: 35789
+- name: '#325 US76'
+  type: hysteria2
+  server: 15a77f84-t53wg0-t69l7r-1teuc.us.hyhuawei.com
+  password: a5a81a34-f257-11ef-ba82-f23c913c8d2b
+  sni: 15a77f84-t53wg0-t69l7r-1teuc.us.hyhuawei.com
+  skip-cert-verify: true
+  port: 443
+- name: '#326 US77'
+  type: hysteria2
+  server: us2083.yydzx.xyz
+  password: 4741863d-e3ac-4b9d-8185-466f437b3fa8
+  sni: us2083.yydzx.xyz
+  skip-cert-verify: true
+  port: 13209
+- name: '#327 VN2'
+  type: hysteria2
+  server: ptyn.jgpyjc.top
+  password: a3f0565b-44fa-49af-91f6-52854c2e960e
+  sni: ptyn.jgpyjc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+- name: '#328 DE22'
+  type: hysteria2
+  server: mmnmzxhjadskfefuhn.jgpyjc.top
+  password: a3f0565b-44fa-49af-91f6-52854c2e960e
+  sni: mmnmzxhjadskfefuhn.jgpyjc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: NTIwN2U5MjA3OTIzZTM2OQ==
+- name: '#329 JP21'
+  type: hysteria2
+  server: sfdhgseffswqefw.jgpyjc.top
+  password: a3f0565b-44fa-49af-91f6-52854c2e960e
+  sni: sfdhgseffswqefw.jgpyjc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+- name: '#330 JP22'
+  type: hysteria2
+  server: sfdhgseffswqefw.jgpyjc.top
+  password: 67964eef-8a49-45e2-9203-b80839862654
+  sni: sfdhgseffswqefw.jgpyjc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+- name: '#331 CA6'
+  type: hysteria2
+  server: fgsgfgffggfqa.qishuijc.top
+  password: 67964eef-8a49-45e2-9203-b80839862654
+  sni: fgsgfgffggfqa.qishuijc.top
+  skip-cert-verify: true
+  port: 40400
+  ports: 40400-42450
+  obfs: salamander
+  obfs-password: MWM0NDYzYmVjY2Q2YWFlNA==
+proxy-groups:
+- name: 🚀 手动切换
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - ChatGPT、Claude、Gemini、微软AI、GROK
+  - DIRECT
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: 📹 YouTube
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: 🎥 NETFLIX
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: 🎮️ 游戏平台
+  type: select
+  proxies:
+  - 🎯 国内直连
+  - 🚀 手动切换
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: ChatGPT、Claude、Gemini、微软AI、GROK
+  type: select
+  proxies:
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🎯 国内直连
+  - 🚀 手动切换
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: 📲 电报信息
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - ♻️ 自动选择
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - 🎯 国内直连
+  - 🚀 手动切换
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: 🎯 国内直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 手动切换
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 🎯 国内直连
+  - '#001 VN1'
+  - '#002 AE1 CF1'
+  - '#003 HK1'
+  - '#004 KR1'
+  - '#005 TR1'
+  - '#006 JP1'
+  - '#007 JP2'
+  - '#008 US1'
+  - '#009 SG1'
+  - '#010 RU1'
+  - '#011 DE1'
+  - '#012 RU2'
+  - '#013 US2'
+  - '#014 HK2'
+  - '#015 NL1'
+  - '#016 SG2'
+  - '#017 SG3'
+  - '#018 RU3'
+  - '#019 CA1'
+  - '#020 ES1'
+  - '#021 HR1'
+  - '#022 HK3'
+  - '#023 CA2'
+  - '#024 BR1'
+  - '#025 NL2'
+  - '#026 HK4'
+  - '#027 CA3'
+  - '#028 NL3 CF2'
+  - '#029 DE2 CF3'
+  - '#030 HK5 CF4'
+  - '#031 GB1 CF5'
+  - '#032 GB2 CF6'
+  - '#033 NL4 CF7'
+  - '#034 NL5 CF8'
+  - '#035 NL6 CF9'
+  - '#036 HK6 CF10'
+  - '#037 DE3 CF11'
+  - '#038 GB3 CF12'
+  - '#039 JP3 CF13'
+  - '#040 AE2 CF14'
+  - '#041 US3 CF15'
+  - '#042 US4 CF16'
+  - '#043 RU4'
+  - '#044 RU5'
+  - '#045 US5'
+  - '#046 RU6'
+  - '#047 KZ1'
+  - '#048 RU7'
+  - '#049 RU8'
+  - '#050 RU9'
+  - '#051 RU10 CF17'
+  - '#052 PL1 CF18'
+  - '#053 US6 CF19'
+  - '#054 US7 CF20'
+  - '#055 JP4 CF21'
+  - '#056 JP5 CF22'
+  - '#057 IN1 CF23'
+  - '#058 IN2 CF24'
+  - '#059 GB4 CF25'
+  - '#060 GB5 CF26'
+  - '#061 DE4 CF27'
+  - '#062 DE5 CF28'
+  - '#063 NL7 CF29'
+  - '#064 NL8 CF30'
+  - '#065 NL9 CF31'
+  - '#066 NL10 CF32'
+  - '#067 DE6 CF33'
+  - '#068 NL11 CF34'
+  - '#069 NL12 CF35'
+  - '#070 US8 CF36'
+  - '#071 IN3'
+  - '#072 TR2 CF37'
+  - '#073 TR3 CF38'
+  - '#074 AE3 CF39'
+  - '#075 HK7 CF40'
+  - '#076 JP6 CF41'
+  - '#077 JP7 CF42'
+  - '#078 HK8'
+  - '#079 HK9 CF43'
+  - '#080 JP8 CF44'
+  - '#081 JP9 CF45'
+  - '#082 KR2 CF46'
+  - '#083 GB6 CF47'
+  - '#084 KR3 CF48'
+  - '#085 DE7 CF49'
+  - '#086 DE8 CF50'
+  - '#087 DE9 CF51'
+  - '#088 DE10 CF52'
+  - '#089 SG4'
+  - '#090 SE1 CF53'
+  - '#091 NL13 CF54'
+  - '#092 GB7 CF55'
+  - '#093 DE11 CF56'
+  - '#094 NL14 CF57'
+  - '#095 GB8 CF58'
+  - '#096 PL2 CF59'
+  - '#097 DE12 CF60'
+  - '#098 JP10 CF61'
+  - '#099 PL3 CF62'
+  - '#100 NL15 CF63'
+  - '#101 NL16 CF64'
+  - '#102 DE13 CF65'
+  - '#103 DE14 CF66'
+  - '#104 HK10'
+  - '#105 KR4 CF67'
+  - '#106 SG5'
+  - '#107 IN4 CF68'
+  - '#108 SE2 CF69'
+  - '#109 IN5 CF70'
+  - '#110 KR5 CF71'
+  - '#111 TH1'
+  - '#112 FI1'
+  - '#113 CN1'
+  - '#114 US9'
+  - '#115 DE15'
+  - '#116 HK11'
+  - '#117 SG6'
+  - '#118 SG7'
+  - '#119 HK12'
+  - '#120 HK13'
+  - '#121 CH1'
+  - '#122 JP11'
+  - '#123 RU11'
+  - '#124 RU12'
+  - '#125 HK14'
+  - '#126 US10'
+  - '#127 US11'
+  - '#128 US12'
+  - '#129 US13'
+  - '#130 US14'
+  - '#131 US15'
+  - '#132 US16'
+  - '#133 US17'
+  - '#134 US18'
+  - '#135 US19'
+  - '#136 US20'
+  - '#137 US21'
+  - '#138 US22'
+  - '#139 US23'
+  - '#140 US24'
+  - '#141 US25'
+  - '#142 US26'
+  - '#143 US27'
+  - '#144 US28'
+  - '#145 US29'
+  - '#146 US30'
+  - '#147 US31'
+  - '#148 US32'
+  - '#149 US33'
+  - '#150 CA4'
+  - '#151 SG8'
+  - '#152 US34'
+  - '#153 HK15 CF72'
+  - '#154 HK16'
+  - '#155 KR6'
+  - '#156 CL1'
+  - '#157 JP12'
+  - '#158 CL2'
+  - '#159 DE16'
+  - '#160 CL3'
+  - '#161 CL4'
+  - '#162 RU13'
+  - '#163 NL17'
+  - '#164 NL18'
+  - '#165 HK17 CF73'
+  - '#166 SG9'
+  - '#167 HK18 CF74'
+  - '#168 IN6'
+  - '#169 JP13 CF75'
+  - '#170 HK19'
+  - '#171 HK20'
+  - '#172 US35 CF76'
+  - '#173 DE17 CF77'
+  - '#174 HK21 CF78'
+  - '#175 NL19 CF79'
+  - '#176 SG10 CF80'
+  - '#177 SG11 CF81'
+  - '#178 PL4 CF82'
+  - '#179 NL20 CF83'
+  - '#180 CH2'
+  - '#181 HK22 CF84'
+  - '#182 SG12 CF85'
+  - '#183 CL5'
+  - '#184 GB9'
+  - '#185 US36'
+  - '#186 ID1'
+  - '#187 GB10'
+  - '#188 ZA1'
+  - '#189 ZA2'
+  - '#190 ID2'
+  - '#191 NL21'
+  - '#192 KR7'
+  - '#193 JP14'
+  - '#194 US37'
+  - '#195 ID3'
+  - '#196 IL1'
+  - '#197 ID4'
+  - '#198 US38'
+  - '#199 JP15'
+  - '#200 IN7'
+  - '#201 ZA3'
+  - '#202 ID5'
+  - '#203 KR8'
+  - '#204 DE18'
+  - '#205 US39'
+  - '#206 US40'
+  - '#207 GB11'
+  - '#208 GB12'
+  - '#209 US41'
+  - '#210 MX1'
+  - '#211 SG13'
+  - '#212 JP16'
+  - '#213 ID6'
+  - '#214 MX2'
+  - '#215 MX3'
+  - '#216 IN8'
+  - '#217 JP17'
+  - '#218 FR1'
+  - '#219 SG14'
+  - '#220 GB13'
+  - '#221 SG15'
+  - '#222 ID7'
+  - '#223 NL22'
+  - '#224 ZA4'
+  - '#225 DE19'
+  - '#226 ZA5'
+  - '#227 IN9'
+  - '#228 JP18'
+  - '#229 US42'
+  - '#230 BR2'
+  - '#231 US43'
+  - '#232 IL2'
+  - '#233 KR9'
+  - '#234 US44'
+  - '#235 ID8'
+  - '#236 GB14'
+  - '#237 US45'
+  - '#238 IN10'
+  - '#239 US46'
+  - '#240 JP19'
+  - '#241 SG16'
+  - '#242 ZA6'
+  - '#243 IN11'
+  - '#244 KR10'
+  - '#245 MX4'
+  - '#246 ZA7'
+  - '#247 SG17'
+  - '#248 GB15'
+  - '#249 GB16'
+  - '#250 IN12'
+  - '#251 LV1'
+  - '#252 SG18'
+  - '#253 IN13'
+  - '#254 HK23 CF86'
+  - '#255 HK24 CF87'
+  - '#256 DE20 CF88'
+  - '#257 NL23 CF89'
+  - '#258 US47'
+  - '#259 US48 CF90'
+  - '#260 NL24 CF91'
+  - '#261 NL25 CF92'
+  - '#262 NL26 CF93'
+  - '#263 NL27 CF94'
+  - '#264 NL28 CF95'
+  - '#265 AE4 CF96'
+  - '#266 NL29 CF97'
+  - '#267 AE5 CF98'
+  - '#268 US49'
+  - '#269 US50'
+  - '#270 US51'
+  - '#271 US52'
+  - '#272 US53'
+  - '#273 US54'
+  - '#274 US55'
+  - '#275 US56'
+  - '#276 US57'
+  - '#277 US58'
+  - '#278 US59'
+  - '#279 US60'
+  - '#280 US61'
+  - '#281 US62'
+  - '#282 US63'
+  - '#283 US64'
+  - '#284 US65'
+  - '#285 US66'
+  - '#286 US67'
+  - '#287 US68'
+  - '#288 US69'
+  - '#289 US70'
+  - '#290 US71'
+  - '#291 US72'
+  - '#292 CA5'
+  - '#293 IN14'
+  - '#294 CL6'
+  - '#295 IL3'
+  - '#296 CL7'
+  - '#297 IN15'
+  - '#298 US73 CF99'
+  - '#299 US74 CF100'
+  - '#300 US75'
+  - '#301 SG19 CF101'
+  - '#302 NL30'
+  - '#303 FR2'
+  - '#304 SG20 CF102'
+  - '#305 PL5 CF103'
+  - '#306 NL31 CF104'
+  - '#307 ES2 CF105'
+  - '#308 NL32 CF106'
+  - '#309 ES3 CF107'
+  - '#310 PL6 CF108'
+  - '#311 NL33 CF109'
+  - '#312 FI2 CF110'
+  - '#313 SE3 CF111'
+  - '#314 DK1 CF112'
+  - '#315 SE4 CF113'
+  - '#316 FR3 CF114'
+  - '#317 FI3 CF115'
+  - '#318 DE21 CF116'
+  - '#319 HK25'
+  - '#320 HK26'
+  - '#321 HK27'
+  - '#322 HK28'
+  - '#323 HK29'
+  - '#324 JP20'
+  - '#325 US76'
+  - '#326 US77'
+  - '#327 VN2'
+  - '#328 DE22'
+  - '#329 JP21'
+  - '#330 JP22'
+  - '#331 CA6'
+rule-providers:
+  Proxy:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/geolocation-!cn.yaml
+    path: ./ruleset/geolocation-!cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  YouTube:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/youtube.yaml
+    path: ./ruleset/YouTube.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  NETFLIXip:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/netflix.yaml
+    path: ./ruleset/NETFLIXip.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  NETFLIX:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/netflix.yaml
+    path: ./ruleset/NETFLIX.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  游戏平台:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/category-games-!cn.yaml
+    path: ./ruleset/category-games-!cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  微软服务:
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    path: ./ruleset/微软服务.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  TELEGRAM:
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    path: ./ruleset/TELEGRAM.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  苹果服务:
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+    path: ./ruleset/苹果服务.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  ChatGPT、Claude、Gemini、微软AI、GROK:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/category-ai-!cn.yaml
+    path: ./ruleset/category-ai-!cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+rules:
+- RULE-SET,YouTube,📹 YouTube
+- RULE-SET,NETFLIX,🎥 NETFLIX
+- RULE-SET,NETFLIXip,🎥 NETFLIX
+- RULE-SET,游戏平台,🎮️ 游戏平台
+- RULE-SET,TELEGRAM,📲 电报信息
+- RULE-SET,苹果服务,🍎 苹果服务
+- RULE-SET,ChatGPT、Claude、Gemini、微软AI、GROK,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,copilot.microsoft.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,bat.bing.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,eu-mobile.events.data.microsoft.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,browser.events.data.microsoft.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,login.microsoftonline.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- RULE-SET,微软服务,Ⓜ️ 微软服务
+- GEOSITE,geolocation-cn,🎯 国内直连
+- GEOIP,CN,🎯 国内直连
+- RULE-SET,Proxy,🚀 手动切换
+- MATCH,🐟 漏网之鱼
