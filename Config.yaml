@@ -1,0 +1,3634 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 9090
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: lt|bd33|puddincat07@Telegram
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.28
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: lt|28c6|puddincat07@Telegram
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: fr|8db3|puddincat07@Telegram
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: xx|d1d1|puddincat07@Telegram
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: pupas-shirting-unsung.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: au|e49c|puddincat07@Telegram
+  password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
+  port: 443
+  server: 95.111.222.113
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: lt|ff2a|puddincat07@Telegram
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.35
+  type: ss
+- alterId: 0
+  name: hk|ea60|puddincat07@Telegram
+  password: BxceQaOe
+  port: 443
+  server: 219.79.214.159
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: ch|0cd8|puddincat07@Telegram
+  password: nqcIfYHlpMn3jzqkNDjKaG
+  port: 25572
+  server: 138.124.67.26
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: gb|5e68|puddincat07@Telegram
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.218
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: xx|1d69|puddincat07@Telegram
+  password: 861de7db-5ada-4b36-903c-0ad6ba25d75a
+  port: 33998
+  server: 4349ufu.54jvd5y6ojams-us02.my777999.top
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: hk|a6c8|puddincat07@Telegram
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.223.223
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: nl|ab7b|puddincat07@Telegram
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.140
+  type: ss
+- cipher: aes-256-gcm
+  name: gb|4829|puddincat07@Telegram
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 145.239.6.202
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: nl|ec68|puddincat07@Telegram
+  password: uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh
+  port: 443
+  server: 178.23.190.238
+  type: ss
+- cipher: aes-256-gcm
+  name: us|cd00|puddincat07@Telegram
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 15.204.87.217
+  type: ss
+  udp: true
+- name: us|ff5d|puddincat07@Telegram
+  network: ws
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 104.17.147.11
+  skip-cert-verify: true
+  sni: jobscareerfortoday.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jobscareerfortoday.com
+    path: 6b777a91
+- cipher: aes-128-gcm
+  name: gb|b581|puddincat07@Telegram
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: nl|35af|puddincat07@Telegram
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.151
+  type: ss
+- name: us|6016|puddincat07@Telegram
+  password: ce8b8b30ebba45f2a38dd608b85e8628
+  port: 443
+  server: 104.19.159.10
+  skip-cert-verify: true
+  sni: jobscareerfortoday.com
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: us|2d05|puddincat07@Telegram
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 23.134.94.175
+  type: ss
+  udp: true
+- alterId: 0
+  name: 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.242
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  password: '123'
+  port: 6100
+  server: 14.18.106.88
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  port: 1090
+  server: 121.169.46.116
+  type: socks5
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: github.com/Ruk1ng001_3434376164333837
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 36887
+  server: ss.029.node-for-bigairport.win
+  type: ss
+- name: 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  port: 1080
+  server: 161.35.82.57
+  type: socks5
+  udp: true
+- alterId: 2
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: github.com/Ruk1ng001_6631383961303161
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: github.com/Ruk1ng001_3837346366363163
+  port: 30830
+  server: v30.hdacd.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  password: Ejtp4SfY82
+  port: 10881
+  server: 38.54.87.34
+  type: http
+  username: 09ahaEWmXn
+- name: 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  password: nOEy3w0R
+  port: 20344
+  server: 8.218.207.5
+  type: http
+  username: kZXMC3Z1
+- alterId: 2
+  cipher: auto
+  name: github.com/Ruk1ng001_37353234663638
+  port: 30809
+  server: v9.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  password: BxceQaOe
+  port: 443
+  server: 219.79.214.159
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  port: 50011
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- alterId: 2
+  cipher: auto
+  name: github.com/Ruk1ng001_6631306661336630
+  port: 30806
+  server: v6.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: github.com/Ruk1ng001_6435313562666230
+  port: 30812
+  server: v12.hdacd.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  password: 76nlxJLO35
+  port: 36855
+  server: 172.93.165.193
+  type: http
+  username: xZedCGy2A5
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: github.com/Ruk1ng001_3562396435613365
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-gcm
+  name: github.com/Ruk1ng001_3766643833333865
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 11689
+  server: ss.038.node-for-bigairport.win
+  type: ss
+- name: 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.242
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: github.com/Ruk1ng001_3363323732376161
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  port: 10808
+  server: 213.35.126.34
+  type: socks5
+  udp: true
+- name: ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  password: gs4BXwT6SW
+  port: 10988
+  server: 154.26.192.123
+  type: http
+  username: fQ67Dpe5dU
+- name: tg频道:@ripaojiedian
+  server: 63.180.254.10
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇭🇰 香港|@ripaojiedian
+  server: v10.hdacd.com
+  port: 30807
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: 🇭🇰 香港3|@ripaojiedian
+  server: 112.118.116.178
+  port: 443
+  type: trojan
+  password: e2722c0fb503f8a592436c12bce0509a
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇭🇰 香港4|@ripaojiedian
+  server: 219.79.214.159
+  port: 443
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 香港5|@ripaojiedian
+  server: 58.152.30.31
+  port: 443
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 🇯🇵 日本|@ripaojiedian
+  server: 18.179.13.93
+  port: 3760
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 🇯🇵 日本2|@ripaojiedian
+  server: 160.16.117.182
+  port: 3093
+  type: trojan
+  password: e2722c0fb503f8a592436c12bce0509a
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇯🇵 日本3|@ripaojiedian
+  server: 160.16.117.182
+  port: 3169
+  type: trojan
+  password: e2722c0fb503f8a592436c12bce0509a
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡|@ripaojiedian
+  server: 160.16.153.13
+  port: 3145
+  type: trojan
+  password: e2722c0fb503f8a592436c12bce0509a
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡2|@ripaojiedian
+  server: 160.16.132.158
+  port: 1507
+  type: trojan
+  password: e2722c0fb503f8a592436c12bce0509a
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡3|@ripaojiedian
+  server: 18.167.69.38
+  port: 1691
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%252Fripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国|@ripaojiedian
+  server: 160.16.89.176
+  port: 2890
+  type: trojan
+  password: e2722c0fb503f8a592436c12bce0509a
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇺🇸 美国2|@ripaojiedian
+  server: 160.16.138.24
+  port: 4054
+  type: trojan
+  password: e2722c0fb503f8a592436c12bce0509a
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇺🇸 美国3|@ripaojiedian
+  server: 43.199.204.139
+  port: 4569
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国4|@ripaojiedian
+  server: 88.210.36.107
+  port: 2377
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: feb7fa9:154948
+- name: 🇻🇳 越南|@ripaojiedian
+  server: 103.186.155.121
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇺🇸US_1|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: koma-yt.pages.dev
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tro8sFW1S91B6sZrM1
+- delay: 1381
+  name: 🇺🇸US_2|1015KB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 172.66.44.230
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /tro8sFW1S91B6sZrM1
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  delay: 1664
+  down: 55 Mbps
+  name: 🇫🇷FR_1|1.7MB/s
+  port: 26691
+  protocol: udp
+  server: 62.210.196.68
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11 Mbps
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55
+  name: 🇫🇷FR_2|1.4MB/s
+  port: 35511
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_3|1.4MB/s
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  servername: broadcastlv.chat.bilibili.com
+- client-fingerprint: chrome
+  fingerprint: ''
+  grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 🇨🇿CZ_1|3.6MB/s
+  network: grpc
+  port: 23920
+  server: 194.182.79.105
+  tls: false
+  type: vless
+  udp: false
+  uuid: 75724a4a-3e8b-405d-b830-2bbc6949ea03
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL_1|3.3MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.188
+  type: ss
+  udp: true
+- encryption: none
+  name: 🇫🇮FI_1|2.1MB/s
+  network: ws
+  port: 8080
+  server: 104.17.147.22
+  type: vless
+  udp: true
+  uuid: Parsashonam-Bot-41
+  ws-opts:
+    headers:
+      Host: Fi.Parsashonam.CfD.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/45.0.2454.93 Safari/537.36
+    path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2056
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL_2|1.2MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.10
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL_3|1.9MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.184
+  type: ss
+  udp: true
+- name: 🇩🇪DE_1|2.7MB/s
+  network: ws
+  port: 8080
+  server: 104.26.4.60
+  type: vless
+  udp: true
+  uuid: d345d11e-c424-4583-b36e-527ab1f0afa4
+  ws-opts:
+    headers:
+      Host: v2raynselling.kir-rasol-kir.workers.dev
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
+        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+    path: /
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+  xudp: true
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_2|2.6MB/s
+  network: ws
+  port: 443
+  server: 172.66.213.38
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8685c59b-a192-49e7-aedc-0019c576d766
+  ws-opts:
+    headers:
+      Host: pls.v50m.eu.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/49.0.2623.112 Safari/537.36
+    path: /
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  xudp: true
+  servername: pls.v50m.eu.org
+- client-fingerprint: random
+  encryption: none
+  name: 🇩🇪DE_3|2.1MB/s
+  network: ws
+  port: 443
+  server: 172.67.65.217
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1; vivo 1716 Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
+    path: /proxyip=ProxyIP.SG.CMLiussss.net
+  xudp: true
+  servername: bp.suoni.nyc.mn
+- name: 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  password: BxceQaOe
+  port: 443
+  server: 219.79.214.159
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  password: BxceQaOe
+  port: 443
+  server: 58.152.30.31
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.64
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  network: ws
+  port: 443
+  server: 104.26.14.26
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/35.0.1916.153 Safari/537.36
+    path: /proxyip%3DProxyIP.SG.CMLiussss.net
+  xudp: true
+  servername: bp.suoni.nyc.mn
+- client-fingerprint: random
+  name: 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  network: ws
+  port: 443
+  server: 51.91.251.31
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+    path: /proxyip=ProxyIP.SG.CMLiussss.net
+  servername: bp.suoni.nyc.mn
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  port: 50011
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.220
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.49
+  type: ss
+- client-fingerprint: chrome
+  name: 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  password: BxceQaOe
+  port: 443
+  server: 58.152.30.31
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  country: 🇸🇬SG
+  name: 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.45
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  port: 11689
+  server: ss.038.node-for-bigairport.win
+  type: ss
+  udp: true
+- delay: 1546
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  network: grpc
+  port: 21250
+  server: 209.38.168.122
+  tls: false
+  type: vless
+  udp: true
+  uuid: 69239696-f17e-4eb2-a337-7ce07d65d23d
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.34
+  type: ss
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  port: 26691
+  protocol: udp
+  server: 62.210.196.68
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.79
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.192
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  network: ws
+  port: 16645
+  server: m.cnmjin.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: dc875b7c-c954-40e0-9007-73a4422e25c8
+  ws-opts:
+    headers:
+      HOST: 53bcf48886181e0dd5bd8dea7ab9d4a2.mobgslb.tbcache.com
+      Host: m.cnmjin.net
+    path: /
+  servername: 53bcf48886181e0dd5bd8dea7ab9d4a2.mobgslb.tbcache.com
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.41
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.56
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.64
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.44
+  type: ss
+- name: 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  password: ''
+  port: 4781
+  server: 210.75.240.178
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  password: BxceQaOe
+  port: 443
+  server: 58.152.30.31
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  password: ''
+  port: 5566
+  server: 37.18.73.60
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- cipher: aes-256-cfb
+  name: 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.115
+  type: ss
+  udp: true
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55
+  name: 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  port: 35511
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11
+- encryption: none
+  grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  network: grpc
+  port: 40187
+  server: 143.244.197.90
+  type: vless
+  udp: true
+  uuid: f22d79bb-4eaf-45ee-b406-81ad3745dff1
+  xudp: true
+- down: ''
+  fingerprint: ''
+  name: 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  obfs: salamander
+  obfs-password: '&O#28YB5qK!5t#U'
+  password: yhqy5AHofQq
+  port: 46914
+  server: channel4.saghetalaie.homes
+  skip-cert-verify: true
+  sni: www.google.com
+  type: hysteria2
+  up: ''
+- name: 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  password: ''
+  port: 1090
+  server: 121.169.46.116
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- cipher: rc4-md5
+  country: 🇺🇸US
+  name: 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.178
+  type: ss
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  network: ws
+  port: 16645
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dc875b7c-c954-40e0-9007-73a4422e25c8
+  ws-opts:
+    headers:
+      Host: 53bcf48886181e0dd5bd8dea7ab9d4a2.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- client-fingerprint: random
+  name: 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  network: ws
+  port: 5004
+  server: 194.26.192.251
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+    path: /proxyip=ProxyIP.SG.CMLiussss.net
+  servername: bp.suoni.nyc.mn
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  network: ws
+  port: 443
+  server: 8.39.125.124
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/43.0.2357.65 Safari/537.36
+    path: /proxyip=ProxyIP.SG.CMLiussss.net
+  xudp: true
+  servername: bp.suoni.nyc.mn
+- cipher: rc4-md5
+  country: 🇸🇬 SG
+  name: 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.236
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.45
+  type: ss
+- encryption: none
+  name: 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  network: ws
+  port: 80
+  server: usaa.fastlynew.hosting-ip.com
+  type: vless
+  udp: true
+  uuid: 65981c1c-07da-45fc-93ce-848570b2ec78
+  ws-opts:
+    headers:
+      Host: mojhsjd.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /telegeam-@v2_city--
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+  xudp: true
+- client-fingerprint: random
+  name: 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  network: ws
+  port: 443
+  server: 34.83.245.149
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+    path: /proxyip=ProxyIP.SG.CMLiussss.net
+  servername: bp.suoni.nyc.mn
+- cipher: aes-256-cfb
+  country: 🇨🇳 CN
+  name: 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.172
+  type: ss
+- client-fingerprint: chrome
+  name: 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  network: ws
+  port: 8443
+  server: 31.56.237.252
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /proxyip%3DProxyIP.SG.CMLiussss.net
+  xudp: true
+  servername: bp.suoni.nyc.mn
+- client-fingerprint: chrome
+  name: 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  network: ws
+  port: 443
+  server: 172.67.72.171
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/35.0.1916.153 Safari/537.36
+    path: /proxyip%3DProxyIP.SG.CMLiussss.net
+  xudp: true
+  servername: bp.suoni.nyc.mn
+- alterId: 0
+  cipher: auto
+  country: 🇮🇳IN
+  h2-opts: {}
+  http-opts: {}
+  name: 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  network: tcp
+  port: 550
+  server: 103.97.203.220
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9e0e83ca-0fbc-44b1-8024-0eb8f9414156
+  servername: t.me/v2Line
+- cipher: rc4-md5
+  country: 🇸🇬SG
+  name: 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 128.199.172.224
+  type: ss
+- encryption: none
+  name: 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  network: ws
+  port: 80
+  server: usaa.fastlynew.hosting-ip.com
+  type: vless
+  udp: true
+  uuid: 3c0ffde8-4a25-45c9-91da-d2c90433da96
+  ws-opts:
+    headers:
+      Host: mojhsjd.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /telegeam-@v2_city--
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+  xudp: true
+- encryption: none
+  grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  network: grpc
+  port: 21250
+  server: 209.38.168.122
+  type: vless
+  udp: true
+  uuid: 69239696-f17e-4eb2-a337-7ce07d65d23d
+  xudp: true
+- cipher: rc4-md5
+  country: 🇯🇵JP
+  name: 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 172.105.199.111
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.213
+  type: ss
+- name: 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  password: BxceQaOe
+  port: 443
+  server: 219.79.214.159
+  skip-cert-verify: true
+  sni: t.me%25252Fripaojiedian
+  tfo: false
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  network: tcp
+  port: 550
+  server: 103.97.203.220
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9e0e83ca-0fbc-44b1-8024-0eb8f9414156
+  xudp: true
+- client-fingerprint: random
+  name: 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  network: ws
+  port: 443
+  server: 104.26.1.176
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+    path: /proxyip=ProxyIP.SG.CMLiussss.net
+  servername: bp.suoni.nyc.mn
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  network: ws
+  port: 2052
+  server: yx1.xn--11x.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7451edf9-bb10-470f-ab64-846d5a0814a7
+  ws-opts:
+    headers:
+      Host: 2112176225.online.video.downloader.0123456789ru.xn--11x.org
+    path: /
+  servername: 2112176225.online.video.downloader.0123456789ru.xn--11x.org
+- encryption: none
+  name: 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  network: ws
+  port: 2095
+  server: 46.224.119.100
+  type: vless
+  udp: true
+  uuid: ddd02f94-4422-4242-835a-90e71a231704
+  ws-opts:
+    headers:
+      Host: test3.amin8263.ir
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.227
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.43
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.225
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇨🇳 CN
+  name: 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.65
+  type: ss
+- cipher: rc4-md5
+  country: 🇸🇬 SG
+  name: 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
+- encryption: none
+  grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  network: grpc
+  port: 23920
+  server: 194.182.79.105
+  type: vless
+  udp: true
+  uuid: 75724a4a-3e8b-405d-b830-2bbc6949ea03
+  xudp: true
+- grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  network: grpc
+  port: 40187
+  server: 143.244.197.90
+  tls: false
+  type: vless
+  udp: true
+  uuid: f22d79bb-4eaf-45ee-b406-81ad3745dff1
+- cipher: aes-256-cfb
+  country: 🇩🇰 DK
+  name: 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.36.27.94
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 48720c
+  server: us01-vlr01-gmn03.vpnvezdehod.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2ca07504-c06a-41a4-b26b-99807a7d24cf
+  network: tcp
+  servername: hls-svod.itunes.apple.com
+- name: 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  server: 168.138.194.92
+  port: '28253'
+  type: hysteria2
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  password: 130ec091-df05-4af9-9695-dc982e98a8ec
+  sni: www.bing.com
+- name: 中国_121709066 (2)
+  server: 223.95.183.131
+  port: '45295'
+  type: ss
+  cipher: aes-128-gcm
+  password: b637f2e47b7827b308ebf399008075d2
+- name: 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  server: 103.186.155.34
+  port: '38388'
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  server: 51.91.250.218
+  port: '443'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+    path: '%2Fproxyip%3DProxyIP.SG.CMLiussss.net'
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  network: ws
+  servername: bp.suoni.nyc.mn
+  tls: true
+- name: 中国_121709003 (5)
+  server: 223.95.183.131
+  port: '47116'
+  type: ss
+  cipher: aes-128-gcm
+  password: b637f2e47b7827b308ebf399008075d2
+- name: 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  server: 172.67.77.237
+  port: '443'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: c.iamdt.dpdns.org
+    path: '%2F'
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  network: ws
+  servername: c.iamdt.dpdns.org
+  tls: true
+- name: 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  server: 8.35.211.162
+  port: '443'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+    path: '%2Fproxyip%3DProxyIP.SG.CMLiussss.net'
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  network: ws
+  servername: bp.suoni.nyc.mn
+  tls: true
+- name: 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  server: 172.66.44.230
+  port: '8443'
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: '%2Ftro8sFW1S91B6sZrM1'
+  password: 8r<[9'l6hAO#8ZQi
+  network: ws
+  sni: Koma-YT.PAGeS.Dev
+- name: 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  server: 172.66.44.230
+  port: '8443'
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: '%2Ftro8sFW1S91B6sZrM1'
+  password: 8r<[9'l6hAO#8ZQi
+  network: ws
+  sni: Koma-YT.PAGeS.Dev
+- name: 英国_121509014 (10)
+  server: 82.38.31.184
+  port: '8080'
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  server: ip.sb
+  port: '8080'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: feng4.l1ut8bi9.workers.dev
+    path: '%2F%3Fed%3D2048'
+  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
+  network: ws
+  servername: feng4.l1ut8bi9.workers.dev
+  tls: false
+- name: 🇳🇱[openproxylist.com] (12)
+  server: zula.ir
+  port: '443'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: aEZA3HoSTpHAseCoNDuCtSofarnEWcAMpvLWS.MMogAmES.iR.
+    path: /admin?ed=1024
+  uuid: 73856b73-19d2-47e6-b991-5eaa421161ea
+  network: ws
+  alpn:
+  - http/1.1
+  servername: aEZA3HoSTpHAseCoNDuCtSofarnEWcAMpvLWS.MMogAmES.iR.
+  tls: true
+- name: 中国_121709002 (13)
+  server: 223.95.183.131
+  port: '25819'
+  type: ss
+  cipher: aes-128-gcm
+  password: b637f2e47b7827b308ebf399008075d2
+- name: 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  server: f1.askkf.com
+  port: '443'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: s.askkf.com
+    path: '%2F'
+  uuid: 81fae892-37b3-47d5-d047-b44b3395fa38
+  network: ws
+  servername: s.askkf.com
+  tls: true
+- name: 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  server: 104.26.4.167
+  port: '443'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: bp.suoni.nyc.mn
+    path: '%2Fproxyip%3DProxyIP.SG.CMLiussss.net'
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  network: ws
+  servername: bp.suoni.nyc.mn
+  tls: true
+- name: 德国_121609009 (16)
+  server: 194.59.183.134
+  port: '46114'
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lejSRyqa033OEPmEQsvRsl
+- name: 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  server: pupas-shirting-unsung.freesocks.work
+  port: '443'
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: p78naCf2EfOlRSLTX0wFVx
+- name: 中国_121709001 (18)
+  server: 223.95.183.131
+  port: '39398'
+  type: ss
+  cipher: aes-128-gcm
+  password: b637f2e47b7827b308ebf399008075d2
+- name: 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  server: xn--b6gac.eu.org
+  port: '8080'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: feng4.l1ut8bi9.workers.dev
+    path: '%2F%3Fed%3D2048'
+  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
+  network: ws
+  servername: feng4.l1ut8bi9.workers.dev
+  tls: false
+- name: 🇻🇳VN-103.186.155.218-5369 (20)
+  server: 103.186.155.218
+  port: '38388'
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇫🇷@FreakConfig (21)
+  server: www.visa.com.br
+  port: '443'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+    path: '%2Fws'
+  uuid: e0acdcf9-df32-45c6-95a6-17b0b6180de6
+  network: ws
+  servername: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+  tls: true
+- name: 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  server: 172.66.44.230
+  port: '8443'
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: '%2Ftro8sFW1S91B6sZrM1'
+  password: 8r<[9'l6hAO#8ZQi
+  network: ws
+  sni: Koma-YT.PAGeS.Dev
+- name: 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  server: 172.66.44.230
+  port: '8443'
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: '%2Ftro8sFW1S91B6sZrM1'
+  password: 8r<[9'l6hAO#8ZQi
+  network: ws
+  sni: Koma-YT.PAGeS.Dev
+- name: 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  server: 172.66.44.230
+  port: '8443'
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: '%2Ftro8sFW1S91B6sZrM1'
+  password: 8r<[9'l6hAO#8ZQi
+  network: ws
+  sni: Koma-YT.PAGeS.Dev
+- name: 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  server: 141.193.213.60
+  port: '443'
+  type: trojan
+  ws-opts:
+    headers:
+      Host: a3t5vfl95f4d5d9y.catimecsgo.xyz
+    path: '%2Fimages'
+  password: 8b45d379-702f-41b3-a6b2-9c87a01dcd5c
+  network: ws
+  sni: a3t5vfl95f4d5d9y.catimecsgo.xyz
+- name: '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  server: 185.18.184.66
+  port: '80'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: hello.96xckkzx.workers.dev
+    path: /?ed=2048@v2ray_configs_pools--@v2ray_configs_pools
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  network: ws
+  servername: hello.96xckkzx.workers.dev
+  tls: false
+- name: Singapore cloudflare (27)
+  server: 104.16.33.150
+  port: '2096'
+  type: vless
+  client-fingerprint: chrome
+  ws-opts:
+    headers:
+      Host: vless.hubp.de
+    path: '%2F%3FBIA_TELEGRAM%40AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1'
+  uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb
+  network: ws
+  alpn:
+  - h2%2Chttp%2F1.1
+  servername: vless.hubp.de
+  tls: true
+- name: 🇺🇸_US_美国 (28)
+  server: 161.33.185.230
+  port: '28253'
+  type: hysteria2
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  password: 7a88d322-eb4a-4a59-8c62-8c60d76abf4b
+  sni: www.bing.com
+- name: '@vpnserverrr (14) (29)'
+  server: '2001:41d0:70e:c100::'
+  port: '443'
+  type: vmess
+  skip-cert-verify: true
+  ws-opts:
+    headers:
+      Host: serkat.org
+    path: /linkvws
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: '0'
+  cipher: auto
+  network: ws
+  servername: serkat.org
+  tls: true
+- name: 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  server: switcher-nick-croquet.freesocks.work
+  port: '443'
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: wwzVn2ZnHfqYa6l8EWh3eY
+- name: US美国(mibei77.com 米贝节点分享) (31)
+  server: switcher-nick-croquet.freesocks.work
+  port: '443'
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: RFK38Cg7APneSB5cWDcpbm
+- name: 澳大利亚_121509001 (32)
+  server: 95.111.222.113
+  port: '443'
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
+- name: 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  server: 103.149.183.191
+  port: '8388'
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: US美国(mibei77.com 米贝节点分享) (34)
+  server: switcher-nick-croquet.freesocks.work
+  port: '443'
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+- name: 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  server: 23.95.75.146
+  port: '443'
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
+- name: 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  server: 103.149.182.191
+  port: '8388'
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+  server: 185.231.233.112
+  port: '989'
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+proxy-groups:
+- name: 🚀 手动切换
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - ChatGPT、Claude、Gemini、微软AI、GROK
+  - DIRECT
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: 📹 YouTube
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: 🎥 NETFLIX
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: 🎮️ 游戏平台
+  type: select
+  proxies:
+  - 🎯 国内直连
+  - 🚀 手动切换
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: ChatGPT、Claude、Gemini、微软AI、GROK
+  type: select
+  proxies:
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🎯 国内直连
+  - 🚀 手动切换
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: 📲 电报信息
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - ♻️ 自动选择
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - 🎯 国内直连
+  - 🚀 手动切换
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: 🎯 国内直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 手动切换
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 手动切换
+  - 🎯 国内直连
+  - lt|bd33|puddincat07@Telegram
+  - lt|28c6|puddincat07@Telegram
+  - fr|8db3|puddincat07@Telegram
+  - xx|d1d1|puddincat07@Telegram
+  - au|e49c|puddincat07@Telegram
+  - lt|ff2a|puddincat07@Telegram
+  - hk|ea60|puddincat07@Telegram
+  - ch|0cd8|puddincat07@Telegram
+  - gb|5e68|puddincat07@Telegram
+  - xx|1d69|puddincat07@Telegram
+  - hk|a6c8|puddincat07@Telegram
+  - nl|ab7b|puddincat07@Telegram
+  - gb|4829|puddincat07@Telegram
+  - nl|ec68|puddincat07@Telegram
+  - us|cd00|puddincat07@Telegram
+  - us|ff5d|puddincat07@Telegram
+  - gb|b581|puddincat07@Telegram
+  - nl|35af|puddincat07@Telegram
+  - us|6016|puddincat07@Telegram
+  - us|2d05|puddincat07@Telegram
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6266636366623330
+  - 🟡_🇨🇳_📶_github.com/Ruk1ng001_3165323762303130
+  - 🟡_🇰🇷_📶_github.com/Ruk1ng001_3764353236333539
+  - github.com/Ruk1ng001_3434376164333837
+  - 🔴_🇳🇱_💻_github.com/Ruk1ng001_3566383035656465
+  - github.com/Ruk1ng001_6631383961303161
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6366653537656537
+  - github.com/Ruk1ng001_3837346366363163
+  - 🟠_🇵🇭_💻_github.com/Ruk1ng001_3663626139626334
+  - 🟡_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6466663835346538
+  - github.com/Ruk1ng001_37353234663638
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6265373034383065
+  - 🟠_🇫🇷_📶_github.com/Ruk1ng001_3131383538386534
+  - github.com/Ruk1ng001_6631306661336630
+  - github.com/Ruk1ng001_6435313562666230
+  - 🟡_🇨🇳:🇭🇰_💻_github.com/Ruk1ng001_6563343062613731
+  - github.com/Ruk1ng001_3562396435613365
+  - github.com/Ruk1ng001_3766643833333865
+  - 🟡_🇨🇳:🇭🇰_📶_github.com/Ruk1ng001_6361626137373063
+  - 🔴_🇲🇩_💼_github.com/Ruk1ng001_65373938613838
+  - github.com/Ruk1ng001_3363323732376161
+  - 🟡_🇸🇬_💻_github.com/Ruk1ng001_6633386466313030
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_6638623562336563
+  - tg频道:@ripaojiedian
+  - 🇭🇰 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇯🇵 日本3|@ripaojiedian
+  - 🇸🇬 新加坡|@ripaojiedian
+  - 🇸🇬 新加坡2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇺🇸 美国|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇺🇸 美国3|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 🇺🇸US_1|1.1MB/s
+  - 🇺🇸US_2|1015KB/s
+  - 🇫🇷FR_1|1.7MB/s
+  - 🇫🇷FR_2|1.4MB/s
+  - 🇺🇸US_3|1.4MB/s
+  - 🇨🇿CZ_1|3.6MB/s
+  - 🇳🇱NL_1|3.3MB/s
+  - 🇫🇮FI_1|2.1MB/s
+  - 🇳🇱NL_2|1.2MB/s
+  - 🇳🇱NL_3|1.9MB/s
+  - 🇩🇪DE_1|2.7MB/s
+  - 🇩🇪DE_2|2.6MB/s
+  - 🇩🇪DE_3|2.1MB/s
+  - 🇭🇰HK²_1|16.3MB/s|2%|D+|X|KeepHistory
+  - 🇭🇰HK²_2|1.6MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_1|3.4MB/s|GPT⁺|GM|YT-US|TK|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_1|7.6MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR¹-SG⁰_1|1.2MB/s|3%|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇫🇷FR²_1|2.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_2|2.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_3|3.1MB/s|GPT⁺|GM|TK|NF|X|KeepSucceed
+  - 🇭🇰HK²_3|3.8MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_1|13.6MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇸🇬SG²_2|11.0MB/s|0%|GPT⁺|GM|X
+  - 🇬🇧GB²_1|1.2MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_4|0.5MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_2|3.9MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_5|1.8MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_6|2.2MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_3|1.2MB/s|69%|GPT|TK|NF|X
+  - 🇻🇳VN²_7|1.8MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_8|1.1MB/s|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_9|1.5MB/s|GPT⁺|NF|X
+  - 🇻🇳VN²_10|1.0MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US²_1|10.9MB/s|0%|GPT⁺|GM|X|KeepHistory
+  - 🇭🇰HK²_4|1.4MB/s|2%|YT|NF|D+|X|KeepSucceed
+  - 🇩🇪DE²_1|1.6MB/s|GPT⁺|NF|X|KeepHistory
+  - 🇻🇳VN²_11|1.9MB/s|GPT⁺|GM|YT-US|X|KeepSucceed
+  - 🇫🇷FR²_4|2.3MB/s|GPT⁺|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_1|0.6MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇱🇻LV²_1|4.7MB/s|0%|GPT⁺|YT-US|TK|NF|X|KeepSucceed
+  - 🇰🇷KR²_1|2.2MB/s|1%|GPT⁺|YT|X|KeepSucceed
+  - 🇺🇸US¹⁺_1|3.9MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X
+  - 🇻🇳VN²_12|2.1MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇫🇷FR²_5|0.8MB/s|69%|GPT⁺|YT-CN|TK|NF|X
+  - 🇩🇪DE¹-SG⁰_1|5.9MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_2|4.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇸🇬SG²_3|7.8MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_13|3.2MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇩🇪DE²_2|3.1MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_3|7.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇻🇳VN²_14|1.6MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucceed
+  - 🇩🇪DE⁻¹_1|4.5MB/s|GPT⁺|TK|NF|D+|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_4|7.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇮🇳IN²_1|7.8MB/s|GPT⁺|GM|YT-CA|NF|X
+  - 🇸🇬SG²_4|5.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇩🇪DE²_3|5.6MB/s|10%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇬🇧GB²_2|1.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇯🇵JP²_1|12.0MB/s|50%|GPT⁺|GM|YT|TK|NF|X
+  - 🇻🇳VN²_15|1.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepHistory
+  - 🇭🇰HK²_5|18.6MB/s|2%|D+|X|KeepSucceed
+  - 🇮🇳IN²_2|6.8MB/s|GPT⁺|GM|YT-CA|NF|X|KeepSucceed
+  - 🇺🇸US¹-SG⁰_5|8.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed
+  - 🇷🇺RU²_1|1.6MB/s|YT|TK|X|KeepHistory
+  - 🇩🇪DE²_4|4.8MB/s|10%|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_16|2.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+  - 🇻🇳VN²_17|3.1MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_18|0.6MB/s|GPT⁺|GM|YT-US|TK|NF|X|KeepSucceed
+  - 🇻🇳VN²_19|2.2MB/s|GPT⁺|YT|TK|NF|X
+  - 🇸🇬SG²_5|3.2MB/s|GPT⁺|GM|YT|TK|NF|X
+  - 🇨🇿CZ²_1|6.0MB/s|0%|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇳🇱NL²_2|3.2MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed
+  - 🇩🇰DK²_1|0.6MB/s|GPT⁺|YT|TK|NF|X
+  - 🇺🇸US²_2|0.8MB/s|0%|GPT|GM|YT-RU|NF|D+|X|KeepHistory
+  - 🇯🇵 机场推荐:dafei.de 日本 09 (1)
+  - 中国_121709066 (2)
+  - 🇻🇳 机场推荐:dafei.de 越南 01 (5) (3)
+  - 🇫🇷 机场推荐:dafei.de 法国 03 (20) (4)
+  - 中国_121709003 (5)
+  - 🇩🇪 机场推荐:dafei.de 德国 05 (6)
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01 (56) (7)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (8)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22) (9)
+  - 英国_121509014 (10)
+  - 【机场推荐：https://a0a.xyz/】25 (7) (12) (11)
+  - 🇳🇱[openproxylist.com] (12)
+  - 中国_121709002 (13)
+  - 🇺🇸 机场推荐:dafei.de 美国 31 (14)
+  - 🇩🇪 机场推荐:dafei.de 德国 03 (29) (15)
+  - 德国_121609009 (16)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
+    (17)
+  - 中国_121709001 (18)
+  - 【机场推荐：https://a0a.xyz/】17 (23) (50) (19)
+  - 🇻🇳VN-103.186.155.218-5369 (20)
+  - 🇫🇷@FreakConfig (21)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (22)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (23) (23)
+  - 🇺🇸 机场推荐:dafei.de 美国 08 (11) (14) (17) (24)
+  - 🇨🇦 机场推荐:dafei.de 加拿大 04 (23) (25)
+  - '@v2ray_configs_pools👈⚡❤️‍🔥 (199) (425) (88) (32) (26)'
+  - Singapore cloudflare (27)
+  - 🇺🇸_US_美国 (28)
+  - '@vpnserverrr (14) (29)'
+  - 🇺🇸 US美国(mibei77.com 米贝节点分享) (30)
+  - US美国(mibei77.com 米贝节点分享) (31)
+  - 澳大利亚_121509001 (32)
+  - 🇭🇰 机场推荐:dafei.de 香港 08 (33)
+  - US美国(mibei77.com 米贝节点分享) (34)
+  - 🇺🇸 SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443 (35)
+  - 🇭🇰 机场推荐:dafei.de 香港 28 (150) (320) (58) (65) (36)
+  - 🇵🇹 机场推荐:dafei.de 葡萄牙 01 (37)
+rule-providers:
+  Proxy:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/geolocation-!cn.yaml
+    path: ./ruleset/geolocation-!cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  YouTube:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/youtube.yaml
+    path: ./ruleset/YouTube.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  NETFLIXip:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/netflix.yaml
+    path: ./ruleset/NETFLIXip.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  NETFLIX:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/netflix.yaml
+    path: ./ruleset/NETFLIX.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  游戏平台:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/category-games-!cn.yaml
+    path: ./ruleset/category-games-!cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  微软服务:
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    path: ./ruleset/微软服务.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  TELEGRAM:
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    path: ./ruleset/TELEGRAM.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  苹果服务:
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+    path: ./ruleset/苹果服务.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+  ChatGPT、Claude、Gemini、微软AI、GROK:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/category-ai-!cn.yaml
+    path: ./ruleset/category-ai-!cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
+rules:
+- RULE-SET,YouTube,📹 YouTube
+- RULE-SET,NETFLIX,🎥 NETFLIX
+- RULE-SET,NETFLIXip,🎥 NETFLIX
+- RULE-SET,游戏平台,🎮️ 游戏平台
+- RULE-SET,TELEGRAM,📲 电报信息
+- RULE-SET,苹果服务,🍎 苹果服务
+- RULE-SET,ChatGPT、Claude、Gemini、微软AI、GROK,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,copilot.microsoft.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,bat.bing.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,eu-mobile.events.data.microsoft.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,browser.events.data.microsoft.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- DOMAIN,login.microsoftonline.com,ChatGPT、Claude、Gemini、微软AI、GROK
+- RULE-SET,微软服务,Ⓜ️ 微软服务
+- GEOSITE,geolocation-cn,🎯 国内直连
+- GEOIP,CN,🎯 国内直连
+- RULE-SET,Proxy,🚀 手动切换
+- MATCH,🐟 漏网之鱼
